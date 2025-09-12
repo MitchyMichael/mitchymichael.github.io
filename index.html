@@ -6,37 +6,38 @@
         <title>My Tech Portfolio</title>
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body class="bg-gray-100 text-gray-800">
+    <body class="bg-gray-900 text-gray-200">
 
         <!-- Navbar -->
-        <header class="bg-white shadow fixed w-full top-0 z-10">
+        <header class="bg-gray-800 shadow fixed w-full top-0 z-10">
             <div
                 class="container mx-auto px-6 py-4 flex justify-between items-center">
-                <h1 class="text-xl font-bold text-blue-600">MyPortfolio</h1>
+                <h1 class="text-xl font-bold text-blue-400">MyPortfolio</h1>
                 <nav class="space-x-6">
-                    <a href="#about" class="hover:text-blue-600">About</a>
-                    <a href="#projects" class="hover:text-blue-600">Projects</a>
-                    <a href="#contact" class="hover:text-blue-600">Contact</a>
+                    <a href="#about" class="hover:text-blue-400">About</a>
+                    <a href="#projects" class="hover:text-blue-400">Projects</a>
+                    <a href="#contact" class="hover:text-blue-400">Contact</a>
                 </nav>
             </div>
         </header>
 
         <!-- Hero Section -->
         <section
-            class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+            class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-700 to-indigo-800 text-white">
             <h2 class="text-5xl font-extrabold mb-4">Hi, I'm Michael 👋</h2>
-            <p class="text-xl mb-6">A Full-Stack Developer passionate about
+            <p class="text-xl mb-6">Full-Stack Developer passionate about
                 building tech solutions</p>
             <a href="#projects"
-                class="px-6 py-3 bg-white text-blue-700 rounded-lg font-semibold shadow hover:bg-gray-200">
+                class="px-6 py-3 bg-blue-500 text-white rounded-lg font-semibold shadow hover:bg-blue-600">
                 View My Work
             </a>
         </section>
 
         <!-- About Section -->
         <section id="about" class="container mx-auto px-6 py-20">
-            <h2 class="text-3xl font-bold mb-6 text-center">About Me</h2>
-            <p class="text-center max-w-2xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-center text-blue-400">About
+                Me</h2>
+            <p class="text-center max-w-2xl mx-auto text-gray-300">
                 I’m a tech enthusiast with experience in web development,
                 software engineering, and modern frameworks.
                 I enjoy turning complex problems into simple, beautiful, and
@@ -45,36 +46,40 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="bg-gray-50 py-20">
+        <section id="projects" class="bg-gray-800 py-20">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold mb-12 text-center">Projects</h2>
+                <h2
+                    class="text-3xl font-bold mb-12 text-center text-blue-400">Projects</h2>
                 <div class="grid md:grid-cols-3 gap-8">
                     <!-- Project Card -->
                     <div
-                        class="bg-white rounded-xl shadow hover:shadow-lg transition p-6">
-                        <h3 class="text-xl font-semibold mb-2">🚀 Project 1</h3>
-                        <p class="text-sm mb-4">A web app built with React and
-                            Tailwind.</p>
+                        class="bg-gray-900 rounded-xl shadow hover:shadow-lg transition p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white">🚀
+                            Project 1</h3>
+                        <p class="text-sm mb-4 text-gray-400">A web app built
+                            with React and Tailwind.</p>
                         <a href="#"
-                            class="text-blue-600 font-semibold hover:underline">View
+                            class="text-blue-400 font-semibold hover:underline">View
                             More →</a>
                     </div>
                     <div
-                        class="bg-white rounded-xl shadow hover:shadow-lg transition p-6">
-                        <h3 class="text-xl font-semibold mb-2">📊 Project 2</h3>
-                        <p class="text-sm mb-4">Data visualization dashboard
-                            using D3.js.</p>
+                        class="bg-gray-900 rounded-xl shadow hover:shadow-lg transition p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white">📊
+                            Project 2</h3>
+                        <p class="text-sm mb-4 text-gray-400">Data visualization
+                            dashboard using D3.js.</p>
                         <a href="#"
-                            class="text-blue-600 font-semibold hover:underline">View
+                            class="text-blue-400 font-semibold hover:underline">View
                             More →</a>
                     </div>
                     <div
-                        class="bg-white rounded-xl shadow hover:shadow-lg transition p-6">
-                        <h3 class="text-xl font-semibold mb-2">🤖 Project 3</h3>
-                        <p class="text-sm mb-4">AI-powered chatbot built with
-                            Python.</p>
+                        class="bg-gray-900 rounded-xl shadow hover:shadow-lg transition p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white">🤖
+                            Project 3</h3>
+                        <p class="text-sm mb-4 text-gray-400">AI-powered chatbot
+                            built with Python.</p>
                         <a href="#"
-                            class="text-blue-600 font-semibold hover:underline">View
+                            class="text-blue-400 font-semibold hover:underline">View
                             More →</a>
                     </div>
                 </div>
@@ -83,23 +88,24 @@
 
         <!-- Contact Section -->
         <section id="contact" class="container mx-auto px-6 py-20">
-            <h2 class="text-3xl font-bold mb-6 text-center">Get in Touch</h2>
+            <h2 class="text-3xl font-bold mb-6 text-center text-blue-400">Get in
+                Touch</h2>
             <form class="max-w-lg mx-auto space-y-4">
                 <input type="text" placeholder="Your Name"
-                    class="w-full p-3 border rounded-lg" />
+                    class="w-full p-3 border border-gray-700 rounded-lg bg-gray-800 text-gray-200 placeholder-gray-400" />
                 <input type="email" placeholder="Your Email"
-                    class="w-full p-3 border rounded-lg" />
+                    class="w-full p-3 border border-gray-700 rounded-lg bg-gray-800 text-gray-200 placeholder-gray-400" />
                 <textarea placeholder="Your Message" rows="5"
-                    class="w-full p-3 border rounded-lg"></textarea>
+                    class="w-full p-3 border border-gray-700 rounded-lg bg-gray-800 text-gray-200 placeholder-gray-400"></textarea>
                 <button
-                    class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700">
+                    class="w-full bg-blue-500 text-white py-3 rounded-lg font-semibold hover:bg-blue-600">
                     Send Message
                 </button>
             </form>
         </section>
 
         <!-- Footer -->
-        <footer class="bg-gray-900 text-white text-center py-6">
+        <footer class="bg-gray-950 text-gray-400 text-center py-6">
             <p>&copy; 2025 Michael. Built with ❤️ and Tailwind CSS.</p>
         </footer>
 
