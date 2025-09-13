@@ -5,13 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>My Github Site</title>
         <script src="https://cdn.tailwindcss.com"></script>
+
+        <style>
+            /* Animasi gradient */
+            @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+            }
+
+            .animated-bg {
+            background: linear-gradient(-45deg, #030f2f, #41526f, #1b656a, #0c1379);
+            background-size: 400% 400%;
+            animation: gradientBackground 15s ease infinite;
+            }
+        </style>
     </head>
     <body
         class="bg-gray-900 text-white font-sans">
 
         <!-- Hero Section -->
         <section
-            class="h-screen flex flex-col justify-center items-center text-center">
+            class="h-screen flex flex-col justify-center items-center text-center animated-bg">
             <h1 class="text-5xl md:text-6xl font-extrabold mb-4">
                 Hi! I'm Michael.
             </h1>
