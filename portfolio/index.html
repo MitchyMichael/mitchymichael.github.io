@@ -13,21 +13,8 @@
     </head>
     <body class="bg-gray-900 text-gray-200">
 
-        <!-- Navbar -->
-        <header class="bg-gray-900 shadow fixed w-full top-0 z-10">
-            <div
-                class="container mx-auto px-6 py-4 flex justify-between items-center">
-                <h1 class="text-xl font-bold text-blue-400">MyPortfolio</h1>
-                <nav class="space-x-6">
-                    <a href="#about" class="hover:text-blue-400">About</a>
-                    <a href="#projects" class="hover:text-blue-400">Projects</a>
-                    <a href="#contact" class="hover:text-blue-400">Contact</a>
-                </nav>
-            </div>
-        </header>
-
         <!-- Hero Section -->
-        <section class="h-screen flex flex-col justify-center items-center text-center bg-gray-800 text-white">
+        <section class="h-screen flex flex-col justify-center items-center text-center text-white">
             <h2 class="text-5xl font-extrabold mb-4">Hi, I'm Michael 👋</h2>
             <p class="text-xl mb-6">Full-Stack Developer passionate about
                 building tech solutions</p>
@@ -38,7 +25,7 @@
         </section>
 
         <!-- About Section -->
-        <section id="about" class="container mx-auto px-6 py-20">
+        <section id="about" class="mx-auto px-6 py-20 bg-gray-800">
             <h2 class="text-3xl font-bold mb-6 text-center text-blue-400">About
                 Me</h2>
             <p class="text-center max-w-2xl mx-auto text-gray-300">
@@ -50,14 +37,15 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="bg-gray-800 py-20">
+        <section id="projects" class="py-20">
             <div class="container mx-auto px-6">
                 <h2
                     class="text-3xl font-bold mb-12 text-center text-blue-400">Projects</h2>
                 <div class="grid md:grid-cols-3 gap-8">
+                    
                     <!-- Project Card -->
                     <div
-                        class="bg-gray-900 rounded-xl shadow hover:shadow-lg transition p-6">
+                        class="bg-gray-800 rounded-xl shadow hover:shadow-lg transition p-6">
                         <h3 class="text-xl font-semibold mb-2 text-white">🚀
                             Project 1</h3>
                         <p class="text-sm mb-4 text-gray-400">A web app built
@@ -67,7 +55,7 @@
                             More →</a>
                     </div>
                     <div
-                        class="bg-gray-900 rounded-xl shadow hover:shadow-lg transition p-6">
+                        class="bg-gray-800 rounded-xl shadow hover:shadow-lg transition p-6">
                         <h3 class="text-xl font-semibold mb-2 text-white">📊
                             Project 2</h3>
                         <p class="text-sm mb-4 text-gray-400">Data visualization
@@ -77,7 +65,7 @@
                             More →</a>
                     </div>
                     <div
-                        class="bg-gray-900 rounded-xl shadow hover:shadow-lg transition p-6">
+                        class="bg-gray-800 rounded-xl shadow hover:shadow-lg transition p-6">
                         <h3 class="text-xl font-semibold mb-2 text-white">🤖
                             Project 3</h3>
                         <p class="text-sm mb-4 text-gray-400">AI-powered chatbot
@@ -88,24 +76,6 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="container mx-auto px-6 py-20">
-            <h2 class="text-3xl font-bold mb-6 text-center text-blue-400">Get in
-                Touch</h2>
-            <form class="max-w-lg mx-auto space-y-4">
-                <input type="text" placeholder="Your Name"
-                    class="w-full p-3 border border-gray-700 rounded-lg bg-gray-800 text-gray-200 placeholder-gray-400" />
-                <input type="email" placeholder="Your Email"
-                    class="w-full p-3 border border-gray-700 rounded-lg bg-gray-800 text-gray-200 placeholder-gray-400" />
-                <textarea placeholder="Your Message" rows="5"
-                    class="w-full p-3 border border-gray-700 rounded-lg bg-gray-800 text-gray-200 placeholder-gray-400"></textarea>
-                <button
-                    class="w-full bg-blue-500 text-white py-3 rounded-lg font-semibold hover:bg-blue-600">
-                    Send Message
-                </button>
-            </form>
         </section>
 
         <!-- Footer -->
