@@ -14,6 +14,9 @@
                         colors: {
                             brand: '#8d225d',
                             brand_light: '#b84b8d'
+                        },
+                        fontFamily: {
+                            sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol']
                         }
                     }
                 }
@@ -30,23 +33,29 @@
 
         <!-- Logo -->
         <link rel="icon" type="image/png" href="../assets/pranala/logo_pranala.png">
+
+        <!-- Google Fonts: Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     </head>
 
-    <body class="bg-gray-50 text-gray-800">
+    <body class="bg-gray-50 text-gray-800 font-sans">
         <!-- Navbar -->
         <nav class="bg-gray-50 shadow fixed w-full top-0 z-50">
             <div class="container mx-auto flex items-center justify-between py-3 sm:px-20 px-3">
                 <div class="flex items-center space-x-2">
                     <img src="../assets/pranala/logo_pranala.png" alt="Logo" class="w-8 h-8">
-                    <h1 class="text-2xl text-brand font-bold">Pranala</h1>
+                    <h1 class="text-xl text-brand font-bold">Pranala</h1>
                 </div>
 
                 <!-- Menu -->
                 <ul class="hidden md:flex space-x-6">
-                    <li><a href="#about" class="hover:text-brand">About</a></li>
-                    <li><a href="#services" class="hover:text-brand">Services</a></li>
-                    <li><a href="#choose" class="hover:text-brand">Why Choose Us</a></li>
-                    <li><a href="#contact" class="hover:text-brand">Contact</a></li>
+                    <li><a href="#about" class="hover:text-brand text-sm">About</a></li>
+                    <li><a href="#services" class="hover:text-brand text-sm">Services</a></li>
+                    <li><a href="#choose" class="hover:text-brand text-sm">Why Choose Us</a></li>
+                    <li><a href="#contact" class="hover:text-brand text-sm">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -58,7 +67,7 @@
                     <!-- Kotak kiri -->
                     <div  data-aos="fade-up" class="h-full flex items-center justify-center">
                         <div class="container mx-auto">
-                            <h2 class="text-3xl md:text-5xl font-black mb-8 text-brand tracking-wide text-center sm:text-left">
+                            <h2 class="sm:text-4xl text-2xl font-bold mb-8 text-brand tracking-wide text-center sm:text-left">
                                 Driving Innovation in Maritime Technology
                             </h2> 
                             <div class="flex items-center justify-between mb-8"> 
@@ -66,7 +75,7 @@
                                 <div class="bg-brand w-2 self-stretch hidden sm:flex"></div> 
 
                                 <!-- Teks --> 
-                                <p class="text-l md:text-l text-gray-700 tracking-wide mx-4 text-center sm:text-left"> 
+                                <p class="text-sm text-gray-700 tracking-wide mx-4 text-center sm:text-left"> 
                                     PT Pranala Digital Transmaritim delivers cutting-edge maritime 
                                     technology solutions to modernize shipping, enhance safety, and optimize operations worldwide. 
                                 </p> 
@@ -74,7 +83,7 @@
                             
                             <!-- Button learn more -->
                             <div class="flex justify-center sm:justify-start">
-                                <a href="#about" class="bg-brand text-white px-6 py-3 rounded-lg shadow-md font-semibold hover:bg-brand_light"> 
+                                <a href="#about" class="bg-brand text-white text-sm px-6 py-3 rounded-lg shadow-md font-semibold hover:bg-brand_light"> 
                                     Learn More 
                                 </a> 
                             </div>
@@ -124,8 +133,8 @@
         <!-- About Section -->
         <section id="about" class="py-20 bg-gray-100">
             <div class="container mx-auto text-left">
-                <h2 data-aos="fade-up" class="text-l text-gray-700 text-center sm:text-left mb-2 sm:ml-20 ml-3">About Us</h2>
-                <h2 data-aos="fade-up" class="text-3xl md:text-4xl font-bold text-brand text-center sm:text-left mb-8 sm:ml-20 ml-3">We are more than Digital Agency</h2>
+                <h2 data-aos="fade-up" class="text-sm text-gray-700 text-center sm:text-left mb-2 sm:ml-20 ml-3">About Us</h2>
+                <h2 data-aos="fade-up" class="sm:text-4xl text-2xl font-bold text-brand text-center sm:text-left mb-8 sm:ml-20 ml-3">We are more than Digital Agency</h2>
                 <div class="h-[700px] grid sm:grid-cols-2 gap-4 mb-8 sm:ml-20 ml-3 sm:mr-20 mr-3">
                     <div data-aos="fade-up" class="bg-[url(../assets/pranala/about/a1.jpg)] bg-cover bg-center relative overflow-hidden">
                         <div class="absolute inset-0 bg-brand opacity-20"></div>
@@ -141,23 +150,23 @@
                 </div>
                 <div class="grid sm:grid-cols-2 gap-4 sm:text-left mb-8 sm:ml-20 ml-3 sm:mr-20 mr-3 mb-6">
                     <div data-aos="fade-up" class="pb-12 sm:pb-0 text-center sm:text-start w-3/4 sm:w-full mx-auto">
-                        <h2 class="text-3xl md:text-4xl font-bold text-brand h-fit mb-2">Who are we</h2>
-                        <p class="mb-4 text-gray-700 sm:w-2/3">PT Pranala Digital Transmaritim is a maritime technology company committed to advancing safety, efficiency, and sustainability in global shipping through innovative digital solutions.</p>
+                        <h2 class="sm:text-4xl text-2xl font-bold text-brand h-fit mb-2">Who are we</h2>
+                        <p class="text-sm mb-4 text-gray-700 sm:w-2/3">PT Pranala Digital Transmaritim is a maritime technology company committed to advancing safety, efficiency, and sustainability in global shipping through innovative digital solutions.</p>
                         
                         <!-- Button learn more -->
                         <div class="flex justify-center sm:justify-start">
-                            <a href="" class="font-bold text-brand"> 
+                            <a href="" class="font-bold text-brand text-sm"> 
                                 Learn More →
                             </a> 
                         </div>
                     </div>
                     <div data-aos="fade-up" class="text-center sm:text-start w-3/4 sm:w-full mx-auto">
-                        <h2 class="text-3xl md:text-4xl font-bold text-brand h-fit mb-2">What we do</h2>
-                        <p class="mb-4 text-gray-700 sm:w-2/3">We develop smart maritime systems that modernize ship operations, from cargo planning and stability calculations to regulatory compliance and digital transformation — helping the industry achieve safer, smarter, and more sustainable shipping.</p>
+                        <h2 class="sm:text-4xl text-2xl font-bold text-brand h-fit mb-2">What we do</h2>
+                        <p class="text-sm mb-4 text-gray-700 sm:w-2/3">We develop smart maritime systems that modernize ship operations, from cargo planning and stability calculations to regulatory compliance and digital transformation — helping the industry achieve safer, smarter, and more sustainable shipping.</p>
                     
                         <!-- Button learn more -->
                         <div class="flex justify-center sm:justify-start">
-                            <a href="" class="font-bold text-brand"> 
+                            <a href="" class="font-bold text-brand text-sm"> 
                                 Learn More →
                             </a> 
                         </div>
@@ -168,9 +177,9 @@
 
         <!-- Services -->
         <section id="services" class="py-20">
-            <div class="container mx-auto sm:px-20 px-6">
-                <h2 data-aos="fade-up" class="text-l text-gray-700 text-center mb-2 ml-3">Our Services</h2>
-                <h2 data-aos="fade-up" class="text-3xl md:text-4xl font-bold text-brand text-center mb-8 ml-3">From Ship to Shore, We Deliver Maritime Excellence</h2>
+            <div class="container mx-auto sm:px-20 px-6 text-sm">
+                <h2 data-aos="fade-up" class="text-sm text-gray-700 text-center mb-2 ml-3">Our Services</h2>
+                <h2 data-aos="fade-up" class="sm:text-4xl text-2xl font-bold text-brand text-center mb-8 ml-3">From Ship to Shore, We Deliver Maritime Excellence</h2>
                 <div class="grid md:grid-cols-3 gap-8 mb-4">
                     <div data-aos="fade-up" class="p-6 rounded-xl shadow-lg hover:shadow-2xl hover:bg-brand group transition">
                         <h3 class="italic text-xl font-bold mb-4 text-brand group-hover:text-gray-100">Loading Instrument & Stability Systems</h3>
@@ -219,12 +228,12 @@
         </section>
 
         <!-- Why choose us -->
-        <section id="choose" class="py-20 bg-gray-100">
+        <section id="choose" class="py-20 bg-gray-100 text-sm">
             <div class="container mx-auto sm:px-20 px-6">
-                <h2 data-aos="fade-up" class="text-l text-gray-700 text-center mb-2 ml-3">Why Choose Us</h2>
-                <h2 data-aos="fade-up" class="text-3xl md:text-4xl font-bold text-brand text-center mb-8 ml-3">Innovating Today, Securing Tomorrow’s Maritime Industry</h2>
+                <h2 data-aos="fade-up" class="text-sm text-gray-700 text-center mb-2 ml-3">Why Choose Us</h2>
+                <h2 data-aos="fade-up" class="sm:text-4xl text-2xl font-bold text-brand text-center mb-8 ml-3">Innovating Today, Securing Tomorrow’s Maritime Industry</h2>
                 <div class="grid md:grid-cols-3 gap-8">
-                    <div data-aos="fade-up" class="p-6 rounded-xl shadow-lg hover:shadow-2xl transition h-[500px] mt-8">
+                    <div data-aos="fade-up" class="p-6 rounded-xl shadow-lg hover:shadow-2xl transition h-[400px] mt-8">
                         <div class="mx-auto h-1/3 mb-6 flex items-center justify-center">
                             <svg xmlns="http://www.w3.org/2000/svg" 
                             viewBox="0 0 57.27 55.45" 
@@ -239,7 +248,7 @@
                             This ensures our solutions are not only innovative but also practical and trusted in real-world operations.
                         </p>
                     </div>
-                    <div data-aos="fade-up" class="p-6 rounded-xl shadow-lg hover:shadow-2xl transition h-[500px] mt-8">
+                    <div data-aos="fade-up" class="p-6 rounded-xl shadow-lg hover:shadow-2xl transition h-[400px] mt-8">
                         <div class="mx-auto h-1/3 mb-6 flex items-center justify-center">
                             <svg xmlns="http://www.w3.org/2000/svg" 
                             class="h-full text-brand" 
@@ -254,7 +263,7 @@
                             By choosing us, you gain tools that help safeguard your crew, vessels, and operations with full regulatory compliance.
                         </p>
                     </div>
-                    <div data-aos="fade-up" class="p-6 rounded-xl shadow-lg hover:shadow-2xl transition h-[500px] mt-8">
+                    <div data-aos="fade-up" class="p-6 rounded-xl shadow-lg hover:shadow-2xl transition h-[400px] mt-8">
                         <div class="mx-auto h-1/3 mb-6 flex items-center justify-center">
                             <svg xmlns="http://www.w3.org/2000/svg" 
                             class="h-full text-brand" 
@@ -277,10 +286,10 @@
         <section id="contact" class="py-20">
             <div class="container mx-auto sm:px-20 px-6">
                 <div class="grid md:grid-cols-2 grid-cols-1 flex">
-                    <div data-aos="fade-up" class="font-bold text-3xl md:text-6xl md:w-3/4 text-brand mb-8 text-center md:text-left">
+                    <div data-aos="fade-up" class="font-bold sm:text-4xl text-2xl md:w-3/4 text-brand mb-8 text-center md:text-left">
                         <h3>Let’s Navigate the Future Together</h3>
                     </div>
-                    <div data-aos="fade-up" class="w-full text-gray-700 text-justify">
+                    <div data-aos="fade-up" class="w-full text-gray-700 text-justify text-sm">
                         <p>
                             Ready to explore how digital innovation can transform your maritime operations? In today’s competitive and highly regulated industry, 
                             technology is no longer optional—it is essential. By combining maritime expertise with advanced digital tools, we help you unlock new 
@@ -297,7 +306,7 @@
 
                         <!-- Button -->
                         <div class="mt-8 flex justify-center md:justify-start">
-                            <a href="" class="bg-brand text-white px-6 py-3 rounded-lg shadow-md font-semibold hover:bg-brand_light">
+                            <a href="" class="text-sm bg-brand text-white px-6 py-3 rounded-lg shadow-md font-semibold hover:bg-brand_light">
                                 Schedule a Consultation
                             </a>
                         </div>
