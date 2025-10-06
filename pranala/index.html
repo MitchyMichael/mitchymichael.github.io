@@ -38,11 +38,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
     </head>
 
     <body class="bg-gray-50 text-gray-800 font-sans">
-        <!-- Navbar -->
+        <!-- MARK: Navbar -->
         <nav class="bg-gray-50 shadow fixed w-full top-0 z-50">
             <div class="container mx-auto flex items-center justify-between py-3 sm:px-20 px-3">
                 <div class="flex items-center space-x-2">
@@ -60,7 +59,7 @@
             </div>
         </nav>
 
-        <!-- Hero Section (enhanced) -->
+        <!-- MARK: Hero Section (enhanced) -->
         <section class="relative text-white h-svh flex items-center overflow-hidden xl:bg-none bg-[url('../assets/pranala/hero/h2.jpg')] bg-cover bg-center">
             <!-- Mobile overlays -->
             <div class="xl:hidden absolute inset-0 bg-black/60"></div>
@@ -172,7 +171,7 @@
             </div>
         </section>
 
-        <!-- About Section (enhanced) -->
+        <!-- MARK: About Section (enhanced) -->
         <section id="about" class="py-20 bg-gray-100">
             <div class="container mx-auto">
                 <!-- Heading -->
@@ -364,171 +363,192 @@
             </div>
         </section>
 
-        <!-- Services (enhanced) -->
-        <section id="services" class="relative py-20 overflow-hidden">
-        <!-- subtle background decor -->
-        <div class="pointer-events-none absolute inset-0 -z-10 opacity-40">
-            <div class="absolute -top-24 -left-24 h-64 w-64 rounded-full bg-brand/20 blur-3xl"></div>
-            <div class="absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-brand_light/20 blur-3xl"></div>
-        </div>
+        <!-- MARK: Services (redesigned) -->
+        <section id="services" aria-labelledby="services-title" class="relative py-24 overflow-hidden">
+            <!-- Background image (parallax) -->
+            <div class="pointer-events-none absolute inset-0 -z-30">
+                <div class="absolute inset-0 bg-[url('https://i.pinimg.com/1200x/3d/d4/5a/3dd45a72e3986f68cbb1db4c5ee22849.jpg')] bg-cover bg-center md:bg-fixed"></div>
+                <!-- Dark gradient for readability -->
+                <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,12,24,.78)_0%,rgba(5,12,24,.62)_35%,rgba(5,12,24,.25)_100%)]"></div>
+            </div>
 
-        <div class="container mx-auto sm:px-20 px-6 text-sm">
-            <!-- Heading -->
-            <div class="text-center mb-10" data-aos="fade-up">
-            <span class="inline-flex items-center gap-2 rounded-full bg-brand/10 px-3 py-1 text-[10px] sm:text-xs font-semibold text-brand tracking-widest uppercase">
-                <span class="h-1 w-1 rounded-full bg-brand"></span> Our Services
-            </span>
-            <h2 class="mt-3 sm:text-4xl text-2xl font-extrabold">
-                <span class="bg-gradient-to-r from-brand to-brand_light bg-clip-text text-transparent">
-                From Ship to Shore, We Deliver Maritime Excellence
+            <!-- Subtle decor blobs -->
+            <div class="pointer-events-none absolute inset-0 -z-20 opacity-50">
+                <div class="absolute -top-32 -left-32 h-80 w-80 rounded-full bg-brand/25 blur-3xl"></div>
+                <div class="absolute -bottom-32 -right-32 h-80 w-80 rounded-full bg-brand_light/25 blur-3xl"></div>
+            </div>
+
+            <div class="container mx-auto sm:px-20 px-6 text-sm">
+                <!-- Heading -->
+                <div class="text-center mb-12" data-aos="fade-up">
+                <span class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-[10px] sm:text-xs font-semibold text-white ring-1 ring-white/15 tracking-widest uppercase">
+                    <span class="h-1 w-1 rounded-full bg-white"></span> Our Services
                 </span>
-            </h2>
-            <div class="h-1 w-10 bg-brand/30 mx-auto mt-3 rounded"></div>
-            </div>
+                <h2 id="services-title" class="mt-4 sm:text-4xl text-2xl font-extrabold text-white leading-tight">
+                    From Ship to Shore, We Deliver Maritime Excellence
+                </h2>
+                <p class="mt-3 max-w-2xl mx-auto text-white/80">Solusi digital maritim end-to-end — aman, efisien, dan siap masa depan.</p>
+                <div class="h-1 w-12 bg-white/20 mx-auto mt-5 rounded"></div>
+                </div>
 
-            <!-- Cards grid -->
-            <div class="grid md:grid-cols-3 gap-6">
-            <!-- 1 -->
-            <div data-aos="fade-up" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-brand/30 via-brand/10 to-brand_light/30">
-                <div class="h-full rounded-2xl bg-white p-6 shadow-lg border border-black/5 transition-all duration-300 group-hover:-translate-y-1 group-hover:bg-brand">
-                <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand ring-1 ring-brand/20 transition-colors group-hover:bg-white/10 group-hover:text-white">
-                    <!-- icon: gauge / instruments -->
-                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a9 9 0 0 0-9 9 8.96 8.96 0 0 0 3.07 6.77 1 1 0 1 0 1.3-1.52A7 7 0 1 1 19 12a6.96 6.96 0 0 1-1.03 3.64 1 1 0 0 0 1.73 1.01A8.96 8.96 0 0 0 21 12a9 9 0 0 0-9-9Zm4.24 6.76-5.66 5.66a1.5 1.5 0 1 1-2.12-2.12l5.66-5.66a1.5 1.5 0 1 1 2.12 2.12Z"/></svg>
-                </div>
-                <h3 class="italic text-xl font-bold mb-3 text-brand transition-colors group-hover:text-white">Loading Instrument & Stability Systems</h3>
-                <p class="text-gray-700 transition-colors group-hover:text-white/90">
-                    Advanced tools for cargo planning, damage stability, and compliance with international maritime regulations.
-                </p>
-                </div>
-            </div>
+                <!-- Cards grid -->
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card template -->
+                <!-- 1 -->
+                <article data-aos="fade-up" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-white/25 via-white/10 to-white/25">
+                    <div class="relative h-full rounded-2xl bg-white/80 backdrop-blur-md p-6 shadow-lg ring-1 ring-black/5 transition-all duration-300 group-hover:-translate-y-1">
+                    <!-- Shine on hover -->
+                    <span class="pointer-events-none absolute inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(60%_60%_at_20%_10%,#ffffff66,transparent_70%)]"></span>
 
-            <!-- 2 -->
-            <div data-aos="fade-up" data-aos-delay="50" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-brand/30 via-brand/10 to-brand_light/30">
-                <div class="h-full rounded-2xl bg-white p-6 shadow-lg border border-black/5 transition-all duration-300 group-hover:-translate-y-1 group-hover:bg-brand">
-                <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand ring-1 ring-brand/20 transition-colors group-hover:bg-white/10 group-hover:text-white">
-                    <!-- icon: window / platform -->
-                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3H4V5Zm0 5h16v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9Zm4 2v2h6v-2H8Z"/></svg>
-                </div>
-                <h3 class="italic text-xl font-bold mb-3 text-brand transition-colors group-hover:text-white">Maritime Digital Platforms</h3>
-                <p class="text-gray-700 transition-colors group-hover:text-white/90">
-                    Integrated desktop and web-based solutions to digitalize ship operations and fleet management.
-                </p>
-                </div>
-            </div>
+                    <div class="relative z-10">
+                        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand ring-1 ring-brand/20 transition-colors group-hover:bg-brand group-hover:text-white">
+                        <!-- gauge -->
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a9 9 0 0 0-9 9 8.96 8.96 0 0 0 3.07 6.77 1 1 0 1 0 1.3-1.52A7 7 0 1 1 19 12a6.96 6.96 0 0 1-1.03 3.64 1 1 0 0 0 1.73 1.01A8.96 8.96 0 0 0 21 12a9 9 0 0 0-9-9Zm4.24 6.76-5.66 5.66a1.5 1.5 0 1 1-2.12-2.12l5.66-5.66a1.5 1.5 0 1 1 2.12 2.12Z"/></svg>
+                        </div>
+                        <h3 class="italic text-xl font-bold mb-2 text-brand group-hover:text-brand_light transition-colors">Loading Instrument & Stability Systems</h3>
+                        <p class="text-gray-700 group-hover:text-gray-50 transition-colors">
+                        Advanced tools untuk cargo planning, damage stability, dan kepatuhan regulasi internasional.
+                        </p>
+                    </div>
+                    </div>
+                </article>
 
-            <!-- 3 -->
-            <div data-aos="fade-up" data-aos-delay="100" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-brand/30 via-brand/10 to-brand_light/30">
-                <div class="h-full rounded-2xl bg-white p-6 shadow-lg border border-black/5 transition-all duration-300 group-hover:-translate-y-1 group-hover:bg-brand">
-                <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand ring-1 ring-brand/20 transition-colors group-hover:bg-white/10 group-hover:text-white">
-                    <!-- icon: graduation / training -->
-                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm0 13.74L6 13v3.5C6 19.43 8.69 21 12 21s6-1.57 6-4.5V13l-6 3.74Z"/></svg>
-                </div>
-                <h3 class="italic text-xl font-bold mb-3 text-brand transition-colors group-hover:text-white">Training & Simulation</h3>
-                <p class="text-gray-700 transition-colors group-hover:text-white/90">
-                    Interactive software for academies and professionals to learn safe, efficient ship operations.
-                </p>
-                </div>
-            </div>
+                <!-- 2 -->
+                <article data-aos="fade-up" data-aos-delay="50" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-white/25 via-white/10 to-white/25">
+                    <div class="relative h-full rounded-2xl bg-white/80 backdrop-blur-md p-6 shadow-lg ring-1 ring-black/5 transition-all duration-300 group-hover:-translate-y-1">
+                    <span class="pointer-events-none absolute inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(60%_60%_at_20%_10%,#ffffff66,transparent_70%)]"></span>
+                    <div class="relative z-10">
+                        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand ring-1 ring-brand/20 transition-colors group-hover:bg-brand group-hover:text-white">
+                        <!-- platform -->
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3H4V5Zm0 5h16v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9Zm4 2v2h6v-2H8Z"/></svg>
+                        </div>
+                        <h3 class="italic text-xl font-bold mb-2 text-brand group-hover:text-brand_light">Maritime Digital Platforms</h3>
+                        <p class="text-gray-700 group-hover:text-gray-50">Solusi desktop & web terintegrasi untuk digitalisasi operasi kapal dan fleet management.</p>
+                    </div>
+                    </div>
+                </article>
 
-            <!-- 4 -->
-            <div data-aos="fade-up" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-brand/30 via-brand/10 to-brand_light/30">
-                <div class="h-full rounded-2xl bg-white p-6 shadow-lg border border-black/5 transition-all duration-300 group-hover:-translate-y-1 group-hover:bg-brand">
-                <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand ring-1 ring-brand/20 transition-colors group-hover:bg-white/10 group-hover:text-white">
-                    <!-- icon: boxes / cargo -->
-                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M21 8V6l-9-4-9 4v2l9 4 9-4Zm-9 6L3 10v8l9 4 9-4v-8l-9 4Z"/></svg>
-                </div>
-                <h3 class="italic text-xl font-bold mb-3 text-brand transition-colors group-hover:text-white">Cargo & Stability Solutions</h3>
-                <p class="text-gray-700 transition-colors group-hover:text-white/90">
-                    Optimize loading plans and ensure vessels operate within safe stability limits.
-                </p>
-                </div>
-            </div>
+                <!-- 3 -->
+                <article data-aos="fade-up" data-aos-delay="100" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-white/25 via-white/10 to-white/25">
+                    <div class="relative h-full rounded-2xl bg-white/80 backdrop-blur-md p-6 shadow-lg ring-1 ring-black/5 transition-all duration-300 group-hover:-translate-y-1">
+                    <span class="pointer-events-none absolute inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(60%_60%_at_20%_10%,#ffffff66,transparent_70%)]"></span>
+                    <div class="relative z-10">
+                        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand ring-1 ring-brand/20 transition-colors group-hover:bg-brand group-hover:text-white">
+                        <!-- training -->
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm0 13.74L6 13v3.5C6 19.43 8.69 21 12 21s6-1.57 6-4.5V13l-6 3.74Z"/></svg>
+                        </div>
+                        <h3 class="italic text-xl font-bold mb-2 text-brand group-hover:text-brand_light">Training & Simulation</h3>
+                        <p class="text-gray-700 group-hover:text-gray-50">Software interaktif untuk akademi & profesional mempelajari operasi kapal yang aman & efisien.</p>
+                    </div>
+                    </div>
+                </article>
 
-            <!-- 5 -->
-            <div data-aos="fade-up" data-aos-delay="50" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-brand/30 via-brand/10 to-brand_light/30">
-                <div class="h-full rounded-2xl bg-white p-6 shadow-lg border border-black/5 transition-all duration-300 group-hover:-translate-y-1 group-hover:bg-brand">
-                <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand ring-1 ring-brand/20 transition-colors group-hover:bg-white/10 group-hover:text-white">
-                    <!-- icon: chip / smart -->
-                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M9 2v2H7a2 2 0 0 0-2 2v2H3v2h2v4H3v2h2v2a2 2 0 0 0 2 2h2v2h2v-2h4v2h2v-2h2a2 2 0 0 0 2-2v-2h2v-2h-2v-4h2V8h-2V6a2 2 0 0 0-2-2h-2V2h-2v2h-4V2H9Zm-2 6h10v8H7V8Z"/></svg>
-                </div>
-                <h3 class="italic text-xl font-bold mb-3 text-brand transition-colors group-hover:text-white">Smart Ship Applications</h3>
-                <p class="text-gray-700 transition-colors group-hover:text-white/90">
-                    Custom desktop and cloud systems tailored for maritime operators.
-                </p>
-                </div>
-            </div>
+                <!-- 4 -->
+                <article data-aos="fade-up" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-white/25 via-white/10 to-white/25">
+                    <div class="relative h-full rounded-2xl bg-white/80 backdrop-blur-md p-6 shadow-lg ring-1 ring-black/5 transition-all duration-300 group-hover:-translate-y-1">
+                    <span class="pointer-events-none absolute inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(60%_60%_at_20%_10%,#ffffff66,transparent_70%)]"></span>
+                    <div class="relative z-10">
+                        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand ring-1 ring-brand/20 transition-colors group-hover:bg-brand group-hover:text-white">
+                        <!-- cargo -->
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M21 8V6l-9-4-9 4v2l9 4 9-4Zm-9 6L3 10v8l9 4 9-4v-8l-9 4Z"/></svg>
+                        </div>
+                        <h3 class="italic text-xl font-bold mb-2 text-brand group-hover:text-brand_light">Cargo & Stability Solutions</h3>
+                        <p class="text-gray-700 group-hover:text-gray-50">Optimasi rencana muat & memastikan batas stabilitas kapal tetap aman.</p>
+                    </div>
+                    </div>
+                </article>
 
-            <!-- 6 -->
-            <div data-aos="fade-up" data-aos-delay="100" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-brand/30 via-brand/10 to-brand_light/30">
-                <div class="h-full rounded-2xl bg-white p-6 shadow-lg border border-black/5 transition-all duration-300 group-hover:-translate-y-1 group-hover:bg-brand">
-                <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand ring-1 ring-brand/20 transition-colors group-hover:bg-white/10 group-hover:text-white">
-                    <!-- icon: compass / advisory -->
-                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2Zm3.9 6.1-2.83 6.01a1 1 0 0 1-.46.46L6.6 17.9l2.83-6.01a1 1 0 0 1 .46-.46L15.9 8.1Z"/></svg>
-                </div>
-                <h3 class="italic text-xl font-bold mb-3 text-brand transition-colors group-hover:text-white">Consulting & Advisory</h3>
-                <p class="text-gray-700 transition-colors group-hover:text-white/90">
-                    Expert guidance to help you implement digital transformation in shipping.
-                </p>
-                </div>
-            </div>
+                <!-- 5 -->
+                <article data-aos="fade-up" data-aos-delay="50" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-white/25 via-white/10 to-white/25">
+                    <div class="relative h-full rounded-2xl bg-white/80 backdrop-blur-md p-6 shadow-lg ring-1 ring-black/5 transition-all duration-300 group-hover:-translate-y-1">
+                    <span class="pointer-events-none absolute inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(60%_60%_at_20%_10%,#ffffff66,transparent_70%)]"></span>
+                    <div class="relative z-10">
+                        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand ring-1 ring-brand/20 transition-colors group-hover:bg-brand group-hover:text-white">
+                        <!-- smart -->
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M9 2v2H7a2 2 0 0 0-2 2v2H3v2h2v4H3v2h2v2a2 2 0 0 0 2 2h2v2h2v-2h4v2h2v-2h2a2 2 0 0 0 2-2v-2h2v-2h-2v-4h2V8h-2V6a2 2 0 0 0-2-2h-2V2h-2v2h-4V2H9Zm-2 6h10v8H7V8Z"/></svg>
+                        </div>
+                        <h3 class="italic text-xl font-bold mb-2 text-brand group-hover:text-brand_light">Smart Ship Applications</h3>
+                        <p class="text-gray-700 group-hover:text-gray-50">Aplikasi desktop & cloud yang disesuaikan untuk operator maritim.</p>
+                    </div>
+                    </div>
+                </article>
 
-            <!-- 7 -->
-            <div data-aos="fade-up" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-brand/30 via-brand/10 to-brand_light/30">
-                <div class="h-full rounded-2xl bg-white p-6 shadow-lg border border-black/5 transition-all duration-300 group-hover:-translate-y-1 group-hover:bg-brand">
-                <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand ring-1 ring-brand/20 transition-colors group-hover:bg-white/10 group-hover:text-white">
-                    <!-- icon: shield / compliance -->
-                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 4 5v6c0 5 3.4 9.74 8 11 4.6-1.26 8-6 8-11V5l-8-3Zm0 17.9C8.77 18.08 6 14.51 6 11.14V6.3l6-2.25 6 2.25v4.84c0 3.37-2.77 6.94-6 8.71Z"/></svg>
-                </div>
-                <h3 class="italic text-xl font-bold mb-3 text-brand transition-colors group-hover:text-white">Safety & Compliance</h3>
-                <p class="text-gray-700 transition-colors group-hover:text-white/90">
-                    Digital tools to keep ships safer and compliant with IMO, SOLAS, and SIRE 2.0.
-                </p>
-                </div>
-            </div>
+                <!-- 6 -->
+                <article data-aos="fade-up" data-aos-delay="100" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-white/25 via-white/10 to-white/25">
+                    <div class="relative h-full rounded-2xl bg-white/80 backdrop-blur-md p-6 shadow-lg ring-1 ring-black/5 transition-all duration-300 group-hover:-translate-y-1">
+                    <span class="pointer-events-none absolute inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(60%_60%_at_20%_10%,#ffffff66,transparent_70%)]"></span>
+                    <div class="relative z-10">
+                        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand ring-1 ring-brand/20 transition-colors group-hover:bg-brand group-hover:text-white">
+                        <!-- advisory -->
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2Zm3.9 6.1-2.83 6.01a1 1 0 0 1-.46.46L6.6 17.9l2.83-6.01a1 1 0 0 1 .46-.46L15.9 8.1Z"/></svg>
+                        </div>
+                        <h3 class="italic text-xl font-bold mb-2 text-brand group-hover:text-brand_light">Consulting & Advisory</h3>
+                        <p class="text-gray-700 group-hover:text-gray-50">Pendampingan implementasi transformasi digital di dunia pelayaran.</p>
+                    </div>
+                    </div>
+                </article>
 
-            <!-- 8 -->
-            <div data-aos="fade-up" data-aos-delay="50" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-brand/30 via-brand/10 to-brand_light/30">
-                <div class="h-full rounded-2xl bg-white p-6 shadow-lg border border-black/5 transition-all duration-300 group-hover:-translate-y-1 group-hover:bg-brand">
-                <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand ring-1 ring-brand/20 transition-colors group-hover:bg-white/10 group-hover:text-white">
-                    <!-- icon: speed / efficiency -->
-                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7a5 5 0 0 0-5 5H5a7 7 0 1 1 7 7v-2a5 5 0 0 0 0-10Zm6.07 1.93L13 14l-1.41-1.41 5.07-5.07L18.07 8.93Z"/></svg>
-                </div>
-                <h3 class="italic text-xl font-bold mb-3 text-brand transition-colors group-hover:text-white">Efficiency & Optimization</h3>
-                <p class="text-gray-700 transition-colors group-hover:text-white/90">
-                    Smarter cargo planning that saves time and cost across operations.
-                </p>
-                </div>
-            </div>
+                <!-- 7 -->
+                <article data-aos="fade-up" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-white/25 via-white/10 to-white/25">
+                    <div class="relative h-full rounded-2xl bg-white/80 backdrop-blur-md p-6 shadow-lg ring-1 ring-black/5 transition-all duration-300 group-hover:-translate-y-1">
+                    <span class="pointer-events-none absolute inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(60%_60%_at_20%_10%,#ffffff66,transparent_70%)]"></span>
+                    <div class="relative z-10">
+                        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand ring-1 ring-brand/20 transition-colors group-hover:bg-brand group-hover:text-white">
+                        <!-- compliance -->
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 4 5v6c0 5 3.4 9.74 8 11 4.6-1.26 8-6 8-11V5l-8-3Zm0 17.9C8.77 18.08 6 14.51 6 11.14V6.3l6-2.25 6 2.25v4.84c0 3.37-2.77 6.94-6 8.71Z"/></svg>
+                        </div>
+                        <h3 class="italic text-xl font-bold mb-2 text-brand group-hover:text-brand_light">Safety & Compliance</h3>
+                        <p class="text-gray-700 group-hover:text-gray-50">Perangkat digital untuk kepatuhan IMO, SOLAS, dan SIRE 2.0.</p>
+                    </div>
+                    </div>
+                </article>
 
-            <!-- 9 -->
-            <div data-aos="fade-up" data-aos-delay="100" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-brand/30 via-brand/10 to-brand_light/30">
-                <div class="h-full rounded-2xl bg-white p-6 shadow-lg border border-black/5 transition-all duration-300 group-hover:-translate-y-1 group-hover:bg-brand">
-                <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand ring-1 ring-brand/20 transition-colors group-hover:bg-white/10 group-hover:text-white">
-                    <!-- icon: book / education -->
-                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M3 6a3 3 0 0 1 3-3h12v16h-1a3 3 0 0 0-3 3H6a3 3 0 0 1-3-3V6Zm14 11V5H6a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h7a5 5 0 0 1 4-2Z"/></svg>
-                </div>
-                <h3 class="italic text-xl font-bold mb-3 text-brand transition-colors group-hover:text-white">Education & Knowledge Transfer</h3>
-                <p class="text-gray-700 transition-colors group-hover:text-white/90">
-                    Empowering the next generation with training modules and digital simulators.
-                </p>
-                </div>
-            </div>
-            </div>
+                <!-- 8 -->
+                <article data-aos="fade-up" data-aos-delay="50" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-white/25 via-white/10 to-white/25">
+                    <div class="relative h-full rounded-2xl bg-white/80 backdrop-blur-md p-6 shadow-lg ring-1 ring-black/5 transition-all duration-300 group-hover:-translate-y-1">
+                    <span class="pointer-events-none absolute inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(60%_60%_at_20%_10%,#ffffff66,transparent_70%)]"></span>
+                    <div class="relative z-10">
+                        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand ring-1 ring-brand/20 transition-colors group-hover:bg-brand group-hover:text-white">
+                        <!-- efficiency -->
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7a5 5 0 0 0-5 5H5a7 7 0 1 1 7 7v-2a5 5 0 0 0 0-10Zm6.07 1.93L13 14l-1.41-1.41 5.07-5.07L18.07 8.93Z"/></svg>
+                        </div>
+                        <h3 class="italic text-xl font-bold mb-2 text-brand group-hover:text-brand_light">Efficiency & Optimization</h3>
+                        <p class="text-gray-700 group-hover:text-gray-50">Perencanaan muatan yang lebih cerdas — hemat waktu & biaya.</p>
+                    </div>
+                    </div>
+                </article>
 
-            <!-- CTA -->
-            <div class="mt-10 flex items-center justify-center gap-3" data-aos="fade-up">
-            <a href="#contact"
-                class="inline-flex items-center gap-2 rounded-lg bg-brand px-5 py-3 text-white sm:text-base text-xs font-semibold shadow-sm hover:bg-brand_light transition">
-                Discuss Your Project
-                <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 0 1 0-1.414L9.586 11H3a1 1 0 1 1 0-2h6.586L7.293 6.707A1 1 0 0 1 8.707 5.293l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414 0Z"/></svg>
-            </a>
-            <a href="#about"
-                class="inline-flex items-center gap-2 rounded-lg border border-brand/30 text-brand sm:text-base text-xs px-5 py-3 font-semibold hover:bg-brand/5 transition">
-                Learn More
-            </a>
+                <!-- 9 -->
+                <article data-aos="fade-up" data-aos-delay="100" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-white/25 via-white/10 to-white/25">
+                    <div class="relative h-full rounded-2xl bg-white/80 backdrop-blur-md p-6 shadow-lg ring-1 ring-black/5 transition-all duration-300 group-hover:-translate-y-1">
+                    <span class="pointer-events-none absolute inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(60%_60%_at_20%_10%,#ffffff66,transparent_70%)]"></span>
+                    <div class="relative z-10">
+                        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand ring-1 ring-brand/20 transition-colors group-hover:bg-brand group-hover:text-white">
+                        <!-- education -->
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M3 6a3 3 0 0 1 3-3h12v16h-1a3 3 0 0 0-3 3H6a3 3 0 0 1-3-3V6Zm14 11V5H6a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h7a5 5 0 0 1 4-2Z"/></svg>
+                        </div>
+                        <h3 class="italic text-xl font-bold mb-2 text-brand group-hover:text-brand_light">Education & Knowledge Transfer</h3>
+                        <p class="text-gray-700 group-hover:text-gray-50">Simulator & modul pelatihan untuk generasi pelaut berikutnya.</p>
+                    </div>
+                    </div>
+                </article>
+                </div>
+
+                <!-- CTA -->
+                <div class="mt-12 flex items-center justify-center gap-3" data-aos="fade-up">
+                <a href="#contact"
+                    class="inline-flex items-center gap-2 rounded-lg bg-brand px-5 py-3 text-white sm:text-base text-xs font-semibold shadow-sm hover:bg-brand_light transition">
+                    Discuss Your Project
+                    <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 0 1 0-1.414L9.586 11H3a1 1 0 1 1 0-2h6.586L7.293 6.707A1 1 0 0 1 8.707 5.293l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414 0Z"/></svg>
+                </a>
+                <a href="#about"
+                    class="inline-flex items-center gap-2 rounded-lg border border-white/30 text-white sm:text-base text-xs px-5 py-3 font-semibold hover:bg-white/10 transition">
+                    Learn More
+                </a>
+                </div>
             </div>
-        </div>
         </section>
+
 
 
         <!-- Why choose us (enhanced) -->
