@@ -166,14 +166,6 @@
                         </div>
                         </div>
                     </div>
-
-                    <!-- Floating chips -->
-                    <div class="absolute -top-3 right-2">
-                        <span class="rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-[10px] px-3 py-1 font-semibold tracking-widest">ISO-ready</span>
-                    </div>
-                    <div class="absolute bottom-4 left-4">
-                        <span class="rounded-md bg-white/15 backdrop-blur-md border border-white/20 text-[10px] px-2 py-1 font-semibold">Real-time Insights</span>
-                    </div>
                     </div>
                 </div>
                 </div>
@@ -623,38 +615,172 @@
         </section>
 
 
-        <!-- Contact us -->
-        <section id="contact" class="py-20">
-            <div class="container mx-auto sm:px-20 px-6">
-                <div class="grid md:grid-cols-2 grid-cols-1 flex">
-                    <div data-aos="fade-up" class="font-bold sm:text-4xl text-2xl md:w-3/4 text-brand mb-8 text-center md:text-left">
-                        <h3>Let’s Navigate the Future Together</h3>
-                    </div>
-                    <div data-aos="fade-up" class="w-full text-gray-700 text-justify text-sm">
-                        <p>
-                            Ready to explore how digital innovation can transform your maritime operations? In today’s competitive and highly regulated industry, 
-                            technology is no longer optional—it is essential. By combining maritime expertise with advanced digital tools, we help you unlock new 
-                            levels of efficiency, strengthen safety standards, and stay ahead of evolving global regulations. Whether you are operating a single 
-                            vessel or managing a large fleet, our solutions are designed to address the unique challenges you face at sea and in port.
-                        </p>
-                        <div class="h-4"></div>
-                        <p>
-                            Our team is here to provide insights, strategies, and tailored solutions that are built around your operational needs. From optimizing cargo 
-                            planning and stability management to ensuring compliance and enabling smarter decision-making, we work alongside you every step of the way. 
-                            Let’s start the conversation today and chart the course for your future success, empowering your business to navigate the seas with confidence, 
-                            resilience, and innovation.
-                        </p>
+        <!-- Contact us (enhanced) -->
+        <section id="contact" class="relative py-20 overflow-hidden bg-gray-50">
+        <!-- soft background blobs -->
+        <div class="pointer-events-none absolute inset-0 -z-10 opacity-40">
+            <div class="absolute -top-24 -left-24 h-64 w-64 rounded-full bg-brand/15 blur-3xl"></div>
+            <div class="absolute -bottom-28 -right-20 h-72 w-72 rounded-full bg-brand_light/20 blur-3xl"></div>
+        </div>
 
-                        <!-- Button -->
-                        <div class="mt-8 flex justify-center md:justify-start">
-                            <a href="" class="text-sm bg-brand text-white px-6 py-3 rounded-lg shadow-md font-semibold hover:bg-brand_light">
-                                Schedule a Consultation
-                            </a>
-                        </div>
-                    </div>
+        <div class="container mx-auto sm:px-20 px-6">
+            <div class="grid md:grid-cols-2 gap-10 items-start">
+            <!-- Left copy -->
+            <div>
+                <!-- eyebrow + title -->
+                <div class="text-center md:text-left">
+                <span data-aos="fade-up"
+                    class="inline-flex items-center gap-2 rounded-full bg-brand/10 px-3 py-1 text-[10px] sm:text-xs font-semibold text-brand tracking-widest uppercase">
+                    <span class="h-1 w-1 rounded-full bg-brand"></span> Contact us
+                </span>
+                <h3 data-aos="fade-up" data-aos-delay="50"
+                    class="mt-3 font-extrabold text-brand sm:text-4xl text-2xl">
+                    Let’s Navigate the Future Together
+                </h3>
+                </div>
+
+                <!-- sub copy -->
+                <p data-aos="fade-up" data-aos-delay="100"
+                class="mt-6 text-gray-700 text-sm leading-relaxed md:text-justify">
+                Ready to explore how digital innovation can transform your maritime operations?
+                In today’s competitive and highly regulated industry, technology is essential.
+                We combine maritime expertise with modern software to unlock efficiency, elevate safety,
+                and keep you ahead of evolving global regulations.
+                </p>
+
+                <!-- bullets -->
+                <ul data-aos="fade-up" data-aos-delay="150" class="mt-6 grid sm:grid-cols-2 gap-3">
+                <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 mt-0.5 text-brand" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.17 5.12 12.3 3.71 13.7 9 19l12-12-1.41-1.41z"/></svg>
+                    <span class="text-sm text-gray-800">Cargo planning & stability optimization</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 mt-0.5 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 5.12 12.3 3.71 13.7 9 19l12-12-1.41-1.41z"/></svg>
+                    <span class="text-sm text-gray-800">Compliance-ready (IMO, SOLAS, SIRE 2.0)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 mt-0.5 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 5.12 12.3 3.71 13.7 9 19l12-12-1.41-1.41z"/></svg>
+                    <span class="text-sm text-gray-800">Desktop & cloud maritime platforms</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 mt-0.5 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 5.12 12.3 3.71 13.7 9 19l12-12-1.41-1.41z"/></svg>
+                    <span class="text-sm text-gray-800">Training, simulation, & advisory</span>
+                </li>
+                </ul>
+
+                <!-- CTAs -->
+                <div data-aos="fade-up" data-aos-delay="200" class="mt-8 flex flex-wrap gap-3 justify-center md:justify-start">
+                <a href="#contact-form"
+                    class="inline-flex items-center gap-2 rounded-lg bg-brand px-5 py-3 text-white font-semibold shadow-sm hover:bg-brand_light transition">
+                    Schedule a Consultation
+                    <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 0 1 0-1.414L9.586 11H3a1 1 0 1 1 0-2h6.586L7.293 6.707A1 1 0 0 1 8.707 5.293l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414 0Z"/></svg>
+                </a>
+                <a href="#contact-options"
+                    class="inline-flex items-center gap-2 rounded-lg border border-brand/30 text-brand px-5 py-3 font-semibold hover:bg-brand/5 transition">
+                    See Contact Options
+                </a>
                 </div>
             </div>
+
+            <!-- Right card: quick form + direct contacts -->
+            <div id="contact-options" data-aos="fade-up" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-brand/30 via-brand/10 to-brand_light/30">
+                <div class="rounded-2xl bg-white p-6 sm:p-8 shadow-xl border border-black/5">
+                <!-- quick buttons -->
+                <div class="grid sm:grid-cols-3 gap-3">
+                    <!-- Replace hrefs with your real endpoints -->
+                    <a href="https://wa.me/6281234567890?text=Halo%20tim%20Pranala,%20saya%20ingin%20konsultasi."
+                    target="_blank" rel="noopener"
+                    class="flex items-center justify-center gap-2 rounded-lg bg-brand/10 text-brand px-4 py-3 font-semibold hover:bg-brand/15">
+                    <svg class="w-5 h-5" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M26.576 5.363C23.886 2.673 20.17 1.009 16.065 1.009 7.856 1.009 1.2 7.664 1.2 15.874c0 2.732.737 5.291 2.022 7.491l-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809 8.209-.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507z"/></svg>
+                    WhatsApp
+                    </a>
+                    <a href="mailto:hello@yourdomain.com?subject=Consultation%20Request"
+                    class="flex items-center justify-center gap-2 rounded-lg bg-brand/10 text-brand px-4 py-3 font-semibold hover:bg-brand/15">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v.4l10 6.25L22 6.4V6a2 2 0 00-2-2zm0 4.35l-7.55 4.71a2 2 0 01-1.9 0L3 8.35V18a2 2 0 002 2h14a2 2 0 002-2V8.35z"/></svg>
+                    Email
+                    </a>
+                    <a href="tel:+620000000000"
+                    class="flex items-center justify-center gap-2 rounded-lg bg-brand/10 text-brand px-4 py-3 font-semibold hover:bg-brand/15">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.1.37 2.28.57 3.5.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.22.2 2.4.57 3.5a1 1 0 01-.24 1.01l-2.2 2.28z"/></svg>
+                    Call
+                    </a>
+                </div>
+
+                <!-- divider -->
+                <div class="my-6 flex items-center gap-3">
+                    <span class="h-px flex-1 bg-gray-200"></span>
+                    <span class="text-[10px] uppercase tracking-widest text-gray-500 font-semibold">or send a message</span>
+                    <span class="h-px flex-1 bg-gray-200"></span>
+                </div>
+
+                <!-- quick form -->
+                <form id="contact-form" class="grid gap-4"
+                        action="https://formspree.io/f/your-id" method="POST">
+                    <!-- TIP: ganti action dengan endpoint form kamu (Formspree/Netlify/backend sendiri) -->
+                    <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-medium text-gray-600 mb-1" for="name">Name</label>
+                        <input id="name" name="name" type="text" required
+                            class="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm focus:ring-2 focus:ring-brand focus:outline-none"
+                            placeholder="Your name">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-gray-600 mb-1" for="email">Email</label>
+                        <input id="email" name="email" type="email" required
+                            class="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm focus:ring-2 focus:ring-brand focus:outline-none"
+                            placeholder="you@company.com">
+                    </div>
+                    </div>
+
+                    <div>
+                    <label class="block text-xs font-medium text-gray-600 mb-1" for="company">Company (optional)</label>
+                    <input id="company" name="company" type="text"
+                            class="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm focus:ring-2 focus:ring-brand focus:outline-none"
+                            placeholder="Company name">
+                    </div>
+
+                    <div>
+                    <label class="block text-xs font-medium text-gray-600 mb-1" for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required
+                                class="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm focus:ring-2 focus:ring-brand focus:outline-none"
+                                placeholder="Tell us about your use case…"></textarea>
+                    </div>
+
+                    <div class="flex items-center justify-between gap-3">
+                    <div class="text-[11px] text-gray-500">
+                        By submitting, you agree to be contacted about your inquiry.
+                    </div>
+                    <button type="submit"
+                            class="inline-flex items-center gap-2 rounded-lg bg-brand px-5 py-2.5 text-white text-sm font-semibold shadow-sm hover:bg-brand_light transition">
+                        Send Message
+                        <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M2.94 2.94a1.5 1.5 0 0 0-.41 1.43l1.07 4.3a1.5 1.5 0 0 0 1.08 1.08l4.3 1.07a1.5 1.5 0 0 0 1.43-.41l6.36-6.36a1 1 0 0 0-1.41-1.41L9.99 9.18 8.34 8.76 7.92 7.11l6.33-6.33A1 1 0 1 0 12.84-.63L6.48 5.73a1.5 1.5 0 0 0-.41 1.43l.42 1.65-1.65-.42A1.5 1.5 0 0 0 3.76 7L2.69 2.7a1.5 1.5 0 0 0-1.43-.41l1.68.65z"/></svg>
+                    </button>
+                    </div>
+                </form>
+
+                <!-- meta info -->
+                <div class="mt-6 grid sm:grid-cols-3 gap-4 text-xs text-gray-600">
+                    <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+                    <a href="https://maps.google.com" target="_blank" rel="noopener" class="hover:underline">
+                        Surabaya, Indonesia (Open in Maps)
+                    </a>
+                    </div>
+                    <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4h18v2H3zm0 6h12v2H3zm0 6h18v2H3z"/></svg>
+                    Mon–Fri, 09:00–17:00 WIB
+                    </div>
+                    <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7l5 10H7l5-10z"/></svg>
+                    Avg. response: &lt; 1 business day
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
         </section>
+
 
         <!-- Footer -->
         <footer class="bg-[linear-gradient(135deg,#8d225d_0%,#8d225d_70%,#b84b8d_70%,#b84b8d_100%)] text-white" data-aos="fade-up">
