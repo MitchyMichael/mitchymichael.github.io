@@ -45,14 +45,14 @@
     </head>
 
     <body class="bg-white">
-        <!-- First Section -->
+        <!-- MARK: First Section -->
         <section id="bg-slider" class="flex items-end h-svh transition-all duration-5000 bg-cover bg-center">
             
             <!-- Overlay vignette radial -->
             <div class="absolute inset-0 bg-black bg-opacity-20"></div>
             <div class="absolute inset-0 bg-[radial-gradient(circle,rgba(0,0,0,0)_70%,rgba(0,0,0,0.7)_100%)]"></div>
             
-            <!-- Navbar -->
+            <!-- MARK: Navbar -->
             <div class="absolute bg-white shadow w-full h-fit top-0 z-50">
                 <div class="container mx-auto flex items-center justify-between py-3 sm:px-20 px-3">
                     <div class="flex items-center space-x-2">
@@ -83,6 +83,7 @@
                 </div>
             </div>
 
+            <!-- MARK: Hero -->
             <div class="container w-full h-2/3 mx-auto sm:px-20 px-3 z-50">
                 <!-- Title -->
                 <div class="container w-full h-1/2 mx-auto">
@@ -189,7 +190,7 @@
             </div>
         </section>
 
-        <!-- Sejarah & Nilai -->
+        <!-- MARK: Sejarah & Nilai -->
         <section class="py-20 bg-gray-100">
             <div data-aos="fade-up" class="container mx-auto text-center">
                 <h1 class="text-lg sm:text-2xl font-semibold mb-2 text-brand">SEJARAH DAN NILAI</h1>
@@ -206,7 +207,7 @@
             </div>
         </section>
 
-        <!-- Produk Unggulan -->
+        <!-- MARK: Produk Unggulan -->
         <section class="py-20">
             <div class="container mx-auto text-center">
                 <h1 data-aos="fade-up" class="text-lg sm:text-2xl font-semibold mb-2 text-brand">PRODUK UNGGULAN KAMI</h1>
@@ -365,7 +366,7 @@
             </div>
         </section>
 
-        <!-- Mengapa Harus Kami -->
+        <!-- MARK: Mengapa Harus Kami -->
         <section data-aos="fade-up" class="py-20 bg-gray-100 bg-[url('https://kawijayamakmoer.com/public/img/whyus.png')] bg-cover bg-top">
             <div class="container mx-auto">
                 <div class="grid xl:grid-cols-2 sm:ml-20 ml-3 sm:mr-20 mr-3 mb-4 gap-4">
@@ -388,7 +389,7 @@
             </div>
         </section>
 
-        <!-- ====== Footer ====== -->
+        <!-- MARK: Footer -->
         <footer class="relative pt-20 text-white">
             <!-- Wave separator -->
             <!-- <svg class="w-full -mt-20 block" viewBox="0 0 1440 120" aria-hidden="true">
@@ -423,7 +424,7 @@
                         </a>
                 </div>
 
-                <!-- Sponsor Logos (small bar) -->
+                <!-- MARK: Sponsor Logos (small bar) -->
                 <section data-aos="fade-up" aria-label="Sponsor" class="py-6 mt-10">
                     <div class="container mx-auto sm:px-20 px-3">
                         <div class="flex items-center gap-3 text-white text-[10px] sm:text-xs font-semibold tracking-widest uppercase mb-4">
@@ -461,7 +462,7 @@
                 <!-- Main footer grid -->
                 <div class="grid md:grid-cols-4 gap-8 mt-10" data-aos="fade-up" data-aos-delay="100">
                 
-                    <!-- About -->
+                    <!-- MARK: About -->
                     <div>
                         <div class="flex items-center gap-2 mb-4">
                             <img src="https://kawijayamakmoer.com/public/img/logo_kwi.png" alt="KJM" class="h-9 w-auto rounded">
@@ -491,7 +492,7 @@
                         </div>
                     </div>
 
-                    <!-- Quick Links -->
+                    <!-- MARK: Quick Links -->
                     <div>
                         <h4 class="text-lg font-semibold mb-4">Tautan Cepat</h4>
                         <ul class="space-y-2 text-white/90 text-xs xl:text-base">
@@ -503,7 +504,7 @@
                         </ul>
                     </div>
 
-                    <!-- Popular Products -->
+                    <!-- MARK: Popular Products -->
                     <div>
                         <h4 class="text-lg font-semibold mb-4">Produk Populer</h4>
                         <ul class="space-y-2 text-white/90 text-xs xl:text-base">
@@ -515,7 +516,7 @@
                         </ul>
                     </div>
 
-                    <!-- Contact -->
+                    <!-- MARK: Contact -->
                     <div>
                         <h4 class="text-lg font-semibold mb-4">Kontak</h4>
 
@@ -577,7 +578,7 @@
                     </div>
                 </div>
 
-                <!-- Bottom bar -->
+                <!-- MARK: Bottom bar -->
                 <div class="mt-10 border-t border-white/20 py-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs xl:text-sm text-white/90">
                 <p>&copy; 1978–<span id="kjm-year">2025</span> CV Kawi Jaya Makmoer. All rights reserved.</p>
                 <div class="flex items-center gap-3">
@@ -590,14 +591,13 @@
                 </div>
             </div>
         </footer>
-        <!-- ====== /Footer ====== -->
 
-        <!-- Auto year -->
+        <!-- MARK: Auto year -->
         <script>
             document.getElementById('kjm-year').textContent = new Date().getFullYear();
         </script>
 
-        <!-- Animate hero -->
+        <!-- MARK: Animate hero -->
         <script>
             document.addEventListener('DOMContentLoaded', function () {
             const images = [
@@ -625,7 +625,7 @@
             });
         </script>
 
-        <!-- Animate on Scroll -->
+        <!-- MARK: Animate on Scroll -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
