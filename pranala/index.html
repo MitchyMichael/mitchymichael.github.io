@@ -23,30 +23,28 @@
             }
         </script>
         
+        <!-- Animate on scroll -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-        <style>
-            html {
-                scroll-behavior: smooth;
-            }
-        </style>
-
         <!-- Logo -->
-        <link rel="icon" type="image/png" href="../assets/pranala/logo_pranala.png">
+        <link rel="icon" type="image/png" href="./assets/logo_pranala.png">
 
         <!-- Google Fonts: Poppins -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- External CSS -->
+        <link rel="stylesheet" href="./index.css">
     </head>
 
     <body class="bg-gray-50 text-gray-800 font-sans">
         <!-- MARK: Navbar -->
-        <nav class="bg-gray-50 shadow fixed w-full top-0 z-50">
+        <nav id="navbar" class="fixed w-full top-0 z-50 bg-transparent transition-colors duration-500 text-white">
             <div class="container mx-auto flex items-center justify-between py-3 sm:px-20 px-3">
                 <div class="flex items-center space-x-2">
-                    <img src="../assets/pranala/logo_pranala.png" alt="Logo" class="w-8 h-8">
-                    <h1 class="text-xl text-brand font-bold">Pranala</h1>
+                    <img src="./assets/logo_pranala.png" alt="Logo" class="w-8 h-8">
+                    <h1 id="navbar_title" class="text-xl text-white font-bold transition-colors">Pranala</h1>
                 </div>
 
                 <!-- Menu -->
@@ -60,111 +58,110 @@
         </nav>
 
         <!-- MARK: Hero Section (enhanced) -->
-        <section class="relative text-white h-svh flex items-center overflow-hidden xl:bg-none bg-[url('../assets/pranala/hero/h2.jpg')] bg-cover bg-center">
+        <section class="relative text-white h-svh flex items-center overflow-hidden xl:bg-none bg-[url('./assets/hero/h2.jpg')] bg-cover bg-center">
             <!-- Mobile overlays -->
             <div class="xl:hidden absolute inset-0 bg-black/60"></div>
             <div class="xl:hidden absolute inset-0 bg-brand/20"></div>
-
-            <div class="pointer-events-none absolute inset-0 hidden xl:block">
-                <div class="absolute inset-0 bg-gradient-to-br from-black/95 via-brand/30 to-brand_light/70 opacity-90"></div>
-                <div class="absolute -top-96 -left-96 h-[60rem] w-[60rem] rounded-full bg-brand_light/30 blur-[200px] opacity-70"></div>
-                <div class="absolute -bottom-64 -right-64 h-96 w-96 rounded-full bg-white/10 blur-[150px] opacity-50"></div>
-                <div class="absolute inset-0 m-auto h-32 w-32 rounded-full bg-white/5 blur-3xl"></div>
-                <div class="absolute inset-0 opacity-40 [background:radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.4)_1px,transparent_1px)] [background-size:16px_16px]"></div>
+            
+            <!-- MARK: Background -->
+            <div class="pointer-events-none absolute inset-0 hidden xl:block animate-bgMove">
+                <div class="absolute inset-0 bg-gradient-to-br from-black to-brand animate-gradient"></div>
             </div>
-
+            
+            <!-- Content -->
             <div class="relative container mx-auto sm:px-20 px-3 w-full">
                 <div class="grid xl:grid-cols-2 gap-10 items-center">
-                <!-- Left -->
-                <div data-aos="fade-up" class="relative z-10">
-                    <!-- badge -->
-                    <div class="inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 px-3 py-1 text-[10px] sm:text-xs font-semibold tracking-widest uppercase">
-                    <span class="h-1 w-1 rounded-full bg-white"></span> Maritime Technology
-                    </div>
-
-                    <!-- heading -->
-                    <h1 class="mt-4 sm:text-5xl text-3xl font-extrabold leading-tight">
-                    <span class="bg-gradient-to-r from-white via-white to-white/80 bg-clip-text text-transparent">
-                        Driving Innovation in Maritime Technology
-                    </span>
-                    </h1>
-
-                    <!-- subcopy with accent bar -->
-                    <div class="mt-5 flex items-start gap-4">
-                        <span class="hidden sm:block h-10 w-1 rounded bg-white/70"></span>
-                        <p class="text-sm sm:text-base text-white/90 max-w-[56ch]">
-                            PT Pranala Digital Transmaritim delivers cutting-edge maritime solutions to modernize shipping,
-                            enhance safety, and optimize operations worldwide.
-                        </p>
-                    </div>
-
-                    <!-- highlights -->
-                    <div class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs">
-                    <div class="flex items-center gap-2 rounded-lg bg-white/10 border border-white/20 px-3 py-2 backdrop-blur-md">
-                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>
-                        Safety-first
-                    </div>
-                    <div class="flex items-center gap-2 rounded-lg bg-white/10 border border-white/20 px-3 py-2 backdrop-blur-md">
-                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>
-                        Compliance-ready
-                    </div>
-                    <div class="flex items-center gap-2 rounded-lg bg-white/10 border border-white/20 px-3 py-2 backdrop-blur-md">
-                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>
-                        Optimized ops
-                    </div>
-                    </div>
-
-                    <!-- CTA -->
-                    <div class="mt-8 flex flex-wrap items-center gap-3">
-                    <a href="#about"
-                        class="inline-flex items-center gap-2 rounded-lg bg-white text-brand font-semibold text-sm px-5 py-3 shadow-sm hover:bg-brand_light hover:text-white transition">
-                        Learn More
-                        <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 0 1 0-1.414L9.586 11H3a1 1 0 1 1 0-2h6.586L7.293 6.707A1 1 0 0 1 8.707 5.293l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414 0Z"/></svg>
-                    </a>
-                    <a href="#contact"
-                        class="inline-flex items-center gap-2 rounded-lg border border-white/30 bg-white/10 backdrop-blur-md text-white font-semibold text-sm px-5 py-3 hover:bg-white/20 transition">
-                        Contact Us
-                    </a>
-                    </div>
-                </div>
-
-                <!-- Right (Mosaic) -->
-                <div data-aos="fade-left" class="hidden xl:block">
-                    <div class="relative w-full h-[520px] [perspective:1200px]">
-                    <!-- glow -->
-                    <div class="absolute -bottom-10 -right-10 h-56 w-56 rounded-full bg-white/10 blur-2xl"></div>
-
-                    <div class="relative grid grid-cols-2 gap-3 h-full [transform-style:preserve-3d]">
-                        <!-- Col 1 -->
-                        <div class="grid grid-rows-[2fr_1fr] gap-3">
-                        <div class="group relative overflow-hidden rounded-tl-[100px] rounded-br-[100px] rounded-tr-xl rounded-bl-xl ring-1 ring-white/20 shadow-2xl h-full [transform:rotateY(-8deg)_rotateX(2deg)] hover:[transform:rotateY(-5deg)_rotateX(0deg)] transition-transform duration-500">
-                            <div class="absolute inset-0 bg-[url('../assets/pranala/hero/h2.jpg')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105"></div>
-                            <div class="absolute inset-0 bg-brand/20"></div>
+                    
+                    <!-- Left -->
+                    <div data-aos="fade-up" class="relative z-10">
+                        <!-- badge -->
+                        <div class="inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 px-3 py-1 text-[10px] sm:text-xs font-semibold tracking-widest uppercase">
+                            <span class="h-1 w-1 rounded-full bg-white"></span> Maritime Technology
                         </div>
-                        <div class="pl-16 pb-10">
-                            <div class="group relative overflow-hidden rounded-[100px] ring-1 ring-white/20 shadow-xl h-full [transform:rotateY(-8deg)] hover:[transform:rotateY(-5deg)] transition-transform duration-500">
-                            <div class="absolute inset-0 bg-[url('../assets/pranala/hero/h1.jpg')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105"></div>
-                            <div class="absolute inset-0 bg-brand/20"></div>
+
+                        <!-- heading -->
+                        <h1 class="mt-4 sm:text-5xl text-3xl font-extrabold leading-tight">
+                            <span class="bg-gradient-to-r from-white via-white to-white/80 bg-clip-text text-transparent">
+                                Driving Innovation in Maritime Technology
+                            </span>
+                        </h1>
+
+                        <!-- subcopy with accent bar -->
+                        <div class="mt-5 flex items-start gap-4">
+                            <span class="hidden sm:block h-10 w-1 rounded bg-white/70 my-auto"></span>
+                            <p class="text-sm sm:text-base text-white/90 max-w-[56ch]">
+                                PT Pranala Digital Transmaritim delivers cutting-edge maritime solutions to modernize shipping,
+                                enhance safety, and optimize operations worldwide.
+                            </p>
+                        </div>
+
+                        <!-- highlights -->
+                        <div class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs">
+                            <div class="flex items-center gap-2 rounded-lg bg-white/10 border border-white/20 px-3 py-2 backdrop-blur-md">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>
+                                Safety-first
+                            </div>
+                            <div class="flex items-center gap-2 rounded-lg bg-white/10 border border-white/20 px-3 py-2 backdrop-blur-md">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>
+                                Compliance-ready
+                            </div>
+                            <div class="flex items-center gap-2 rounded-lg bg-white/10 border border-white/20 px-3 py-2 backdrop-blur-md">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>
+                                Optimized ops
                             </div>
                         </div>
-                        </div>
 
-                        <!-- Col 2 -->
-                        <div class="grid grid-rows-[1fr_2fr] gap-3">
-                        <div class="pr-16 pt-10">
-                            <div class="group relative overflow-hidden rounded-[100px] ring-1 ring-white/20 shadow-xl h-full [transform:rotateY(8deg)] hover:[transform:rotateY(5deg)] transition-transform duration-500">
-                            <div class="absolute inset-0 bg-[url('../assets/pranala/hero/h3.jpg')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105"></div>
-                            <div class="absolute inset-0 bg-brand/20"></div>
+                        <!-- CTA -->
+                        <div class="mt-8 flex flex-wrap items-center gap-3">
+                            <a href="#about"
+                                class="inline-flex items-center gap-2 rounded-lg bg-white text-brand font-semibold text-sm px-5 py-3 shadow-sm hover:bg-brand_light hover:text-white transition">
+                                    Learn More
+                                <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 0 1 0-1.414L9.586 11H3a1 1 0 1 1 0-2h6.586L7.293 6.707A1 1 0 0 1 8.707 5.293l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414 0Z"/></svg>
+                            </a>
+                            <a href="#contact"
+                                class="inline-flex items-center gap-2 rounded-lg border border-white/30 bg-white/10 backdrop-blur-md text-white font-semibold text-sm px-5 py-3 hover:bg-white/20 transition">
+                                    Contact Us
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right (Mosaic) -->
+                    <div data-aos="fade-left" class="hidden xl:block">
+                        <div class="relative w-full h-[520px] [perspective:1200px]">
+                            <!-- glow -->
+                            <div class="absolute -bottom-10 -right-10 h-56 w-56 rounded-full bg-white/10 blur-2xl"></div>
+
+                            <div class="relative grid grid-cols-2 gap-3 h-full [transform-style:preserve-3d]">
+                                <!-- Col 1 -->
+                                <div class="grid grid-rows-[2fr_1fr] gap-3">
+                                    <div class="group relative overflow-hidden rounded-tl-[100px] rounded-br-[100px] rounded-tr-xl rounded-bl-xl ring-1 ring-white/20 shadow-2xl h-full [transform:rotateY(-8deg)_rotateX(2deg)] hover:[transform:rotateY(-5deg)_rotateX(0deg)] transition-transform duration-500">
+                                        <div class="absolute inset-0 bg-[url('./assets/hero/h2.jpg')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105"></div>
+                                        <div class="absolute inset-0 bg-brand/20"></div>
+                                    </div>
+                                    <div class="pl-16 pb-10">
+                                        <div class="group relative overflow-hidden rounded-[100px] ring-1 ring-white/20 shadow-xl h-full [transform:rotateY(-8deg)] hover:[transform:rotateY(-5deg)] transition-transform duration-500">
+                                        <div class="absolute inset-0 bg-[url('./assets/hero/h1.jpg')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105"></div>
+                                        <div class="absolute inset-0 bg-brand/20"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Col 2 -->
+                                <div class="grid grid-rows-[1fr_2fr] gap-3">
+                                    <div class="pr-16 pt-10">
+                                        <div class="group relative overflow-hidden rounded-[100px] ring-1 ring-white/20 shadow-xl h-full [transform:rotateY(8deg)] hover:[transform:rotateY(5deg)] transition-transform duration-500">
+                                            <div class="absolute inset-0 bg-[url('./assets/hero/h3.jpg')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105"></div>
+                                            <div class="absolute inset-0 bg-brand/20"></div>
+                                        </div>
+                                    </div>
+                                    <div class="group relative overflow-hidden rounded-tl-[100px] rounded-br-[100px] rounded-tr-xl rounded-bl-xl ring-1 ring-white/20 shadow-2xl h-full [transform:rotateY(8deg)_rotateX(2deg)] hover:[transform:rotateY(5deg)_rotateX(0deg)] transition-transform duration-500">
+                                        <div class="absolute inset-0 bg-[url('./assets/hero/h4.jpg')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105"></div>
+                                        <div class="absolute inset-0 bg-brand/20"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="group relative overflow-hidden rounded-tl-[100px] rounded-br-[100px] rounded-tr-xl rounded-bl-xl ring-1 ring-white/20 shadow-2xl h-full [transform:rotateY(8deg)_rotateX(2deg)] hover:[transform:rotateY(5deg)_rotateX(0deg)] transition-transform duration-500">
-                            <div class="absolute inset-0 bg-[url('../assets/pranala/hero/h4.jpg')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105"></div>
-                            <div class="absolute inset-0 bg-brand/20"></div>
-                        </div>
-                        </div>
                     </div>
-                    </div>
-                </div>
                 </div>
             </div>
         </section>
@@ -174,187 +171,177 @@
             <div class="container mx-auto">
                 <!-- Heading -->
                 <div class="text-center sm:text-left sm:ml-20 ml-3 sm:mr-20 mr-3" data-aos="fade-up">
-                <div class="inline-flex items-center gap-2 rounded-full bg-brand/10 px-3 py-1 text-[10px] sm:text-xs font-semibold text-brand tracking-widest uppercase">
-                    <span class="h-1 w-1 rounded-full bg-brand"></span> About Us
-                </div>
-                <h2 class="mt-3 sm:text-4xl text-2xl font-extrabold leading-tight">
-                    <span class="bg-gradient-to-r from-brand to-brand_light bg-clip-text text-transparent">
-                    We are more than Digital Agency
-                    </span>
-                </h2>
+                    <div class="inline-flex items-center gap-2 rounded-full bg-brand/10 px-3 py-1 text-[10px] sm:text-xs font-semibold text-brand tracking-widest uppercase">
+                        <span class="h-1 w-1 rounded-full bg-brand"></span> About Us
+                    </div>
+                    <h2 class="mt-3 sm:text-4xl text-2xl font-extrabold leading-tight">
+                        <span class="bg-gradient-to-r from-brand to-brand_light bg-clip-text text-transparent">
+                        We are more than Digital Agency
+                        </span>
+                    </h2>
                 </div>
 
                 <!-- Image Mosaic -->
                 <div class="grid sm:grid-cols-2 gap-6 sm:ml-20 ml-3 sm:mr-20 mr-3 mt-10">
                     <!-- Big image -->
                     <div data-aos="fade-up" class="relative group h-[520px] sm:h-full rounded-2xl overflow-hidden shadow-2xl ring-1 ring-black/5">
-                        <div class="absolute inset-0 bg-[url('../assets/pranala/about/a1.jpg')] bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"></div>
+                        <div class="absolute inset-0 bg-[url('./assets/about/a1.jpg')] bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"></div>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
 
                         <!-- Floating chip -->
                         <div class="absolute top-4 left-4">
-                        <span class="rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-white text-[10px] sm:text-xs px-3 py-1 font-semibold tracking-widest">
-                            Maritime Technology
-                        </span>
+                            <span class="rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-white text-[10px] sm:text-xs px-3 py-1 font-semibold tracking-widest">
+                                Maritime Technology
+                            </span>
                         </div>
 
                         <!-- Bottom caption card -->
                         <div class="absolute bottom-4 left-4 right-4">
-                        <div class="rounded-xl bg-white/15 backdrop-blur-md border border-white/20 p-4 text-white">
-                            <p class="text-xs sm:text-sm opacity-90">
-                            Advancing safety, efficiency, and sustainability in global shipping through modern digital solutions.
-                            </p>
-                        </div>
+                            <div class="rounded-xl bg-white/15 backdrop-blur-md border border-white/20 p-4 text-white">
+                                <p class="text-xs sm:text-sm opacity-90">
+                                Advancing safety, efficiency, and sustainability in global shipping through modern digital solutions.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Two stacked images -->
                     <div class="grid grid-rows-2 gap-6">
-                        <div data-aos="fade-up"
-                            class="relative group h-[340px] rounded-2xl overflow-hidden shadow-xl ring-1 ring-black/5">
-                        <div class="absolute inset-0 bg-[url('../assets/pranala/about/a2.jpg')] bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105 group-hover:rotate-[0.5deg]"></div>
-                        <div class="absolute inset-0 bg-brand/20"></div>
-                        <div class="absolute bottom-3 left-3">
-                            <span class="rounded-md bg-white/15 backdrop-blur-md border border-white/20 text-white text-[10px] px-2 py-1 font-semibold">
-                            Safety-First
-                            </span>
-                        </div>
+                        <div data-aos="fade-up" class="relative group h-[340px] rounded-2xl overflow-hidden shadow-xl ring-1 ring-black/5">
+                            <div class="absolute inset-0 bg-[url('./assets/about/a2.jpg')] bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105 group-hover:rotate-[0.5deg]"></div>
+                            <div class="absolute inset-0 bg-brand/20"></div>
+                            <div class="absolute bottom-3 left-3">
+                                <span class="rounded-md bg-white/15 backdrop-blur-md border border-white/20 text-white text-[10px] px-2 py-1 font-semibold">
+                                Safety-First
+                                </span>
+                            </div>
                         </div>
 
-                        <div data-aos="fade-up"
-                            class="relative group h-[340px] rounded-2xl overflow-hidden shadow-xl ring-1 ring-black/5">
-                        <div class="absolute inset-0 bg-[url('../assets/pranala/about/a3.jpg')] bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105 group-hover:-rotate-[0.5deg]"></div>
-                        <div class="absolute inset-0 bg-brand/20"></div>
-                        <div class="absolute bottom-3 left-3">
-                            <span class="rounded-md bg-white/15 backdrop-blur-md border border-white/20 text-white text-[10px] px-2 py-1 font-semibold">
-                            Compliance-Ready
-                            </span>
-                        </div>
+                        <div data-aos="fade-up" class="relative group h-[340px] rounded-2xl overflow-hidden shadow-xl ring-1 ring-black/5">
+                            <div class="absolute inset-0 bg-[url('./assets/about/a3.jpg')] bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105 group-hover:-rotate-[0.5deg]"></div>
+                            <div class="absolute inset-0 bg-brand/20"></div>
+                            <div class="absolute bottom-3 left-3">
+                                <span class="rounded-md bg-white/15 backdrop-blur-md border border-white/20 text-white text-[10px] px-2 py-1 font-semibold">
+                                Compliance-Ready
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Content blocks (enhanced) -->
-                <div class="grid sm:grid-cols-2 gap-10 sm:ml-20 ml-3 sm:mr-20 mr-3 mt-12">
+                <div class="grid xl:grid-cols-2 gap-10 sm:ml-20 ml-3 sm:mr-20 mr-3 mt-12">
 
                     <!-- Who are we -->
-                    <div data-aos="fade-up"
-                        class="relative group p-[1px] rounded-2xl bg-gradient-to-br from-brand/40 via-brand/20 to-brand_light/40">
-                        <div class="rounded-2xl bg-white shadow-xl border border-black/5 p-6 sm:p-8 h-full
-                                    transition-transform duration-300 group-hover:-translate-y-1">
-                        <!-- badge -->
-                        <div class="mb-3">
-                            <span class="inline-flex items-center gap-2 rounded-full bg-brand/10 text-brand px-3 py-1 text-[10px] sm:text-xs font-semibold tracking-widest uppercase">
-                            <span class="h-1 w-1 rounded-full bg-brand"></span> About
-                            </span>
-                        </div>
-
-                        <!-- heading -->
-                        <h3 class="sm:text-3xl text-xl font-extrabold mb-3">
-                            <span class="bg-gradient-to-r from-brand to-brand_light bg-clip-text text-transparent">
-                            Who are we
-                            </span>
-                        </h3>
-
-                        <!-- copy -->
-                        <p class="text-sm text-gray-700 sm:max-w-[42ch] mb-6">
-                            PT Pranala Digital Transmaritim is a maritime technology company committed to advancing safety,
-                            efficiency, and sustainability in global shipping through innovative digital solutions.
-                        </p>
-
-                        <!-- highlights -->
-                        <div class="grid grid-cols-2 gap-3 mb-6">
-                            <div class="flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2">
-                            <svg class="w-4 h-4 text-brand" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.17 4.83 12 3.41 13.41 9 19l12-12-1.41-1.41z"/></svg>
-                            <span class="text-xs font-medium text-gray-800">Maritime-focused</span>
+                    <div data-aos="fade-up" class="relative group p-[1px] rounded-2xl bg-gradient-to-br from-brand/40 via-brand/20 to-brand_light/40">
+                        <div class="rounded-2xl bg-white shadow-xl border border-black/5 p-6 sm:p-8 h-full transition-transform duration-300 group-hover:-translate-y-1">
+                            <!-- badge -->
+                            <div class="mb-3">
+                                <span class="inline-flex items-center gap-2 rounded-full bg-brand/10 text-brand px-3 py-1 text-[10px] sm:text-xs font-semibold tracking-widest uppercase">
+                                    <span class="h-1 w-1 rounded-full bg-brand"></span> About
+                                </span>
                             </div>
-                            <div class="flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2">
-                            <svg class="w-4 h-4 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 4.83 12 3.41 13.41 9 19l12-12-1.41-1.41z"/></svg>
-                            <span class="text-xs font-medium text-gray-800">Safety-first mindset</span>
-                            </div>
-                            <div class="flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2">
-                            <svg class="w-4 h-4 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 4.83 12 3.41 13.41 9 19l12-12-1.41-1.41z"/></svg>
-                            <span class="text-xs font-medium text-gray-800">Compliance-driven</span>
-                            </div>
-                            <div class="flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2">
-                            <svg class="w-4 h-4 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 4.83 12 3.41 13.41 9 19l12-12-1.41-1.41z"/></svg>
-                            <span class="text-xs font-medium text-gray-800">Efficiency at scale</span>
-                            </div>
-                        </div>
 
-                        <!-- CTA -->
-                        <div class="flex flex-wrap items-center gap-3">
-                            <a href="#"
-                            class="inline-flex items-center gap-2 rounded-lg bg-brand text-white text-sm font-semibold px-4 py-2.5
-                                    shadow-sm hover:bg-brand_light transition">
-                            Learn More
-                            <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 0 1 0-1.414L9.586 11H3a1 1 0 1 1 0-2h6.586L7.293 6.707A1 1 0 0 1 8.707 5.293l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414 0Z"/></svg>
-                            </a>
-                            <a href="#contact"
-                            class="inline-flex items-center gap-2 rounded-lg border border-brand/30 text-brand text-sm font-semibold px-4 py-2.5
-                                    hover:bg-brand/5 transition">
-                            Contact
-                            </a>
-                        </div>
+                            <!-- heading -->
+                            <h3 class="sm:text-3xl text-xl font-extrabold mb-3">
+                                <span class="bg-gradient-to-r from-brand to-brand_light bg-clip-text text-transparent">
+                                Who are we
+                                </span>
+                            </h3>
+
+                            <!-- copy -->
+                            <p class="text-sm text-gray-700 sm:max-w-[42ch] mb-6">
+                                PT Pranala Digital Transmaritim is a maritime technology company committed to advancing safety,
+                                efficiency, and sustainability in global shipping through innovative digital solutions.
+                            </p>
+
+                            <!-- highlights -->
+                            <div class="grid grid-cols-2 gap-3 mb-6">
+                                <div class="flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2">
+                                    <svg class="w-4 h-4 text-brand" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.17 4.83 12 3.41 13.41 9 19l12-12-1.41-1.41z"/></svg>
+                                    <span class="text-xs font-medium text-gray-800">Maritime-focused</span>
+                                </div>
+                                <div class="flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2">
+                                    <svg class="w-4 h-4 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 4.83 12 3.41 13.41 9 19l12-12-1.41-1.41z"/></svg>
+                                    <span class="text-xs font-medium text-gray-800">Safety-first mindset</span>
+                                </div>
+                                <div class="flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2">
+                                    <svg class="w-4 h-4 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 4.83 12 3.41 13.41 9 19l12-12-1.41-1.41z"/></svg>
+                                    <span class="text-xs font-medium text-gray-800">Compliance-driven</span>
+                                </div>
+                                <div class="flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2">
+                                    <svg class="w-4 h-4 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 4.83 12 3.41 13.41 9 19l12-12-1.41-1.41z"/></svg>
+                                    <span class="text-xs font-medium text-gray-800">Efficiency at scale</span>
+                                </div>
+                            </div>
+
+                            <!-- CTA -->
+                            <div class="flex flex-wrap items-center gap-3">
+                                <a href="#" class="inline-flex items-center gap-2 rounded-lg bg-brand text-white text-sm font-semibold px-4 py-2.5 shadow-sm hover:bg-brand_light transition">
+                                    Learn More
+                                    <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 0 1 0-1.414L9.586 11H3a1 1 0 1 1 0-2h6.586L7.293 6.707A1 1 0 0 1 8.707 5.293l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414 0Z"/></svg>
+                                </a>
+                                <a href="#contact" class="inline-flex items-center gap-2 rounded-lg border border-brand/30 text-brand text-sm font-semibold px-4 py-2.5 hover:bg-brand/5 transition">
+                                    Contact
+                                </a>
+                            </div>
                         </div>
                     </div>
 
                     <!-- What we do -->
-                    <div data-aos="fade-up"
-                        class="relative group p-[1px] rounded-2xl bg-gradient-to-br from-brand_light/40 via-brand/20 to-brand/40">
-                        <div class="rounded-2xl bg-white shadow-xl border border-black/5 p-6 sm:p-8 h-full
-                                    transition-transform duration-300 group-hover:-translate-y-1">
-                        <!-- badge -->
-                        <div class="mb-3">
-                            <span class="inline-flex items-center gap-2 rounded-full bg-brand/10 text-brand px-3 py-1 text-[10px] sm:text-xs font-semibold tracking-widest uppercase">
-                            <span class="h-1 w-1 rounded-full bg-brand"></span> Capabilities
-                            </span>
-                        </div>
+                    <div data-aos="fade-up" data-aos-delay="100" class="relative group p-[1px] rounded-2xl bg-gradient-to-br from-brand_light/40 via-brand/20 to-brand/40">
+                        <div class="rounded-2xl bg-white shadow-xl border border-black/5 p-6 sm:p-8 h-full transition-transform duration-300 group-hover:-translate-y-1">
+                            <!-- badge -->
+                            <div class="mb-3">
+                                <span class="inline-flex items-center gap-2 rounded-full bg-brand/10 text-brand px-3 py-1 text-[10px] sm:text-xs font-semibold tracking-widest uppercase">
+                                    <span class="h-1 w-1 rounded-full bg-brand"></span> Capabilities
+                                </span>
+                            </div>
 
-                        <!-- heading -->
-                        <h3 class="sm:text-3xl text-xl font-extrabold mb-3">
-                            <span class="bg-gradient-to-r from-brand to-brand_light bg-clip-text text-transparent">
-                            What we do
-                            </span>
-                        </h3>
+                            <!-- heading -->
+                            <h3 class="sm:text-3xl text-xl font-extrabold mb-3">
+                                <span class="bg-gradient-to-r from-brand to-brand_light bg-clip-text text-transparent">
+                                What we do
+                                </span>
+                            </h3>
 
-                        <!-- copy -->
-                        <p class="text-sm text-gray-700 sm:max-w-[52ch] mb-6">
-                            We develop smart maritime systems that modernize ship operations, from cargo planning and stability calculations
-                            to regulatory compliance and digital transformation — helping the industry achieve safer, smarter, and more sustainable shipping.
-                        </p>
+                            <!-- copy -->
+                            <p class="text-sm text-gray-700 sm:max-w-[52ch] mb-6">
+                                We develop smart maritime systems that modernize ship operations, from cargo planning and stability calculations
+                                to regulatory compliance and digital transformation — helping the industry achieve safer, smarter, and more sustainable shipping.
+                            </p>
 
-                        <!-- capabilities -->
-                        <ul class="space-y-3">
-                            <li class="flex items-start gap-3 rounded-lg bg-gray-50 px-3 py-2">
-                            <svg class="w-5 h-5 mt-0.5 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 2 7l10 5 10-5-10-5zm0 9L2 6v11l10 5 10-5V6l-10 5z"/></svg>
-                            <span class="text-sm text-gray-800">Cargo planning & optimization</span>
-                            </li>
-                            <li class="flex items-start gap-3 rounded-lg bg-gray-50 px-3 py-2">
-                            <svg class="w-5 h-5 mt-0.5 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7l5 10H7l5-10z"/></svg>
-                            <span class="text-sm text-gray-800">Stability & trim calculations</span>
-                            </li>
-                            <li class="flex items-start gap-3 rounded-lg bg-gray-50 px-3 py-2">
-                            <svg class="w-5 h-5 mt-0.5 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4h18v2H3zm0 6h12v2H3zm0 6h18v2H3z"/></svg>
-                            <span class="text-sm text-gray-800">Digital logbooks & workflows</span>
-                            </li>
-                            <li class="flex items-start gap-3 rounded-lg bg-gray-50 px-3 py-2">
-                            <svg class="w-5 h-5 mt-0.5 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13h2v-2H3v2zm4 0h14v-2H7v2zM3 17h2v-2H3v2zm4 0h14v-2H7v2zM3 9h2V7H3v2zm4 0h14V7H7v2z"/></svg>
-                            <span class="text-sm text-gray-800">Compliance dashboards & reporting</span>
-                            </li>
-                        </ul>
+                            <!-- capabilities -->
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3 rounded-lg bg-gray-50 px-3 py-2">
+                                    <svg class="w-5 h-5 mt-0.5 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 2 7l10 5 10-5-10-5zm0 9L2 6v11l10 5 10-5V6l-10 5z"/></svg>
+                                    <span class="text-sm text-gray-800">Cargo planning & optimization</span>
+                                </li>
+                                <li class="flex items-start gap-3 rounded-lg bg-gray-50 px-3 py-2">
+                                    <svg class="w-5 h-5 mt-0.5 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7l5 10H7l5-10z"/></svg>
+                                    <span class="text-sm text-gray-800">Stability & trim calculations</span>
+                                </li>
+                                <li class="flex items-start gap-3 rounded-lg bg-gray-50 px-3 py-2">
+                                    <svg class="w-5 h-5 mt-0.5 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4h18v2H3zm0 6h12v2H3zm0 6h18v2H3z"/></svg>
+                                    <span class="text-sm text-gray-800">Digital logbooks & workflows</span>
+                                </li>
+                                <li class="flex items-start gap-3 rounded-lg bg-gray-50 px-3 py-2">
+                                    <svg class="w-5 h-5 mt-0.5 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13h2v-2H3v2zm4 0h14v-2H7v2zM3 17h2v-2H3v2zm4 0h14v-2H7v2zM3 9h2V7H3v2zm4 0h14V7H7v2z"/></svg>
+                                    <span class="text-sm text-gray-800">Compliance dashboards & reporting</span>
+                                </li>
+                            </ul>
 
-                        <!-- chips + CTA -->
-                        <div class="mt-6 flex flex-wrap items-center gap-3">
-                            <span class="rounded-full bg-brand/10 text-brand text-[11px] px-3 py-1 font-semibold">Fleet-scale</span>
-                            <span class="rounded-full bg-brand/10 text-brand text-[11px] px-3 py-1 font-semibold">ISO-ready</span>
-                            <span class="rounded-full bg-brand/10 text-brand text-[11px] px-3 py-1 font-semibold">Real-time</span>
+                            <!-- chips + CTA -->
+                            <div class="mt-6 flex flex-wrap items-center gap-3">
+                                <span class="rounded-full bg-brand/10 text-brand text-[11px] px-3 py-1 font-semibold">Fleet-scale</span>
+                                <span class="rounded-full bg-brand/10 text-brand text-[11px] px-3 py-1 font-semibold">ISO-ready</span>
+                                <span class="rounded-full bg-brand/10 text-brand text-[11px] px-3 py-1 font-semibold">Real-time</span>
 
-                            <a href="#" class="ml-auto inline-flex items-center gap-2 font-semibold text-brand text-sm hover:underline">
-                            Learn More
-                            <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 0 1 0-1.414L9.586 11H3a1 1 0 1 1 0-2h6.586L7.293 6.707A1 1 0 0 1 8.707 5.293l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414 0Z"/></svg>
-                            </a>
-                        </div>
+                                <a href="#" class="ml-auto inline-flex items-center gap-2 font-semibold text-brand text-sm hover:underline">
+                                    Learn More
+                                    <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 0 1 0-1.414L9.586 11H3a1 1 0 1 1 0-2h6.586L7.293 6.707A1 1 0 0 1 8.707 5.293l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414 0Z"/></svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -365,7 +352,8 @@
         <section id="services" aria-labelledby="services-title" class="relative py-24 overflow-hidden">
             <!-- Background image (parallax) -->
             <div class="pointer-events-none absolute inset-0 -z-30">
-                <div class="absolute inset-0 bg-[url('https://i.pinimg.com/1200x/3d/d4/5a/3dd45a72e3986f68cbb1db4c5ee22849.jpg')] bg-cover bg-center md:bg-fixed"></div>
+                <div class="absolute inset-0 bg-[url('./assets/cargo_air.jpg')] bg-cover bg-center md:bg-fixed"></div>
+                <div class="absolute inset-0 bg-brand/50"></div>
                 <!-- Dark gradient for readability -->
                 <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,12,24,.78)_0%,rgba(5,12,24,.62)_35%,rgba(5,12,24,.25)_100%)]"></div>
             </div>
@@ -390,7 +378,7 @@
                 </div>
 
                 <!-- MARK: Services -->
-                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid xl:grid-cols-3 gap-8">
                     <article data-aos="fade-up" class="group relative p-0.5 rounded-3xl shadow-2xl backdrop-blur-xl">
                         <div class="absolute inset-0.5 rounded-[1.4rem] bg-gradient-to-br from-brand/60 to-brand_light/60 opacity-20 group-hover:opacity-40 transition duration-500"></div>
 
@@ -541,7 +529,7 @@
         </section>
 
 
-        <!-- Contact us (enhanced) -->
+        <!-- MARK: Contact us (enhanced) -->
         <section id="contact" class="relative py-20 overflow-hidden bg-gray-50">
         <!-- soft background blobs -->
         <div class="pointer-events-none absolute inset-0 -z-10 opacity-40">
@@ -550,7 +538,7 @@
         </div>
 
         <div class="container mx-auto sm:px-20 px-6">
-            <div class="grid md:grid-cols-2 gap-10 items-start">
+            <div class="grid xl:grid-cols-2 gap-10 items-start">
             <!-- Left copy -->
             <div>
                 <!-- eyebrow + title -->
@@ -612,23 +600,20 @@
             <div id="contact-options" data-aos="fade-up" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-brand/30 via-brand/10 to-brand_light/30">
                 <div class="rounded-2xl bg-white p-6 sm:p-8 shadow-xl border border-black/5">
                 <!-- quick buttons -->
-                <div class="grid sm:grid-cols-3 gap-3">
-                    <!-- Replace hrefs with your real endpoints -->
-                    <a href="https://wa.me/6281234567890?text=Halo%20tim%20Pranala,%20saya%20ingin%20konsultasi."
-                    target="_blank" rel="noopener"
-                    class="flex items-center justify-center gap-2 rounded-lg bg-brand/10 text-brand px-4 py-3 font-semibold hover:bg-brand/15">
-                    <svg class="w-5 h-5" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M26.576 5.363C23.886 2.673 20.17 1.009 16.065 1.009 7.856 1.009 1.2 7.664 1.2 15.874c0 2.732.737 5.291 2.022 7.491l-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809 8.209-.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507z"/></svg>
-                    WhatsApp
+                <div class="grid sm:grid-cols-2 gap-3">
+                    <!-- Whatsapp -->
+                    <a href="https://wa.me/6285853439679" 
+                        target="_blank" rel="noopener"
+                        class="flex items-center justify-center gap-2 rounded-lg bg-brand/10 text-brand px-4 py-3 font-semibold hover:bg-brand/15">
+                        <svg class="w-5 h-5" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M26.576 5.363C23.886 2.673 20.17 1.009 16.065 1.009 7.856 1.009 1.2 7.664 1.2 15.874c0 2.732.737 5.291 2.022 7.491l-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809 8.209-.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507z"/></svg>
+                        WhatsApp
                     </a>
-                    <a href="mailto:hello@yourdomain.com?subject=Consultation%20Request"
-                    class="flex items-center justify-center gap-2 rounded-lg bg-brand/10 text-brand px-4 py-3 font-semibold hover:bg-brand/15">
-                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v.4l10 6.25L22 6.4V6a2 2 0 00-2-2zm0 4.35l-7.55 4.71a2 2 0 01-1.9 0L3 8.35V18a2 2 0 002 2h14a2 2 0 002-2V8.35z"/></svg>
-                    Email
-                    </a>
-                    <a href="tel:+620000000000"
-                    class="flex items-center justify-center gap-2 rounded-lg bg-brand/10 text-brand px-4 py-3 font-semibold hover:bg-brand/15">
-                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.1.37 2.28.57 3.5.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.22.2 2.4.57 3.5a1 1 0 01-.24 1.01l-2.2 2.28z"/></svg>
-                    Call
+
+                    <!-- Email -->
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tam@pranala-dt.co.id" target="_blank" 
+                        class="flex items-center justify-center gap-2 rounded-lg bg-brand/10 text-brand px-4 py-3 font-semibold hover:bg-brand/15">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v.4l10 6.25L22 6.4V6a2 2 0 00-2-2zm0 4.35l-7.55 4.71a2 2 0 01-1.9 0L3 8.35V18a2 2 0 002 2h14a2 2 0 002-2V8.35z"/></svg>
+                        Email
                     </a>
                 </div>
 
@@ -639,10 +624,9 @@
                     <span class="h-px flex-1 bg-gray-200"></span>
                 </div>
 
-                <!-- quick form -->
+                <!-- MARK: quick form -->
                 <form id="contact-form" class="grid gap-4"
                         action="https://formspree.io/f/your-id" method="POST">
-                    <!-- TIP: ganti action dengan endpoint form kamu (Formspree/Netlify/backend sendiri) -->
                     <div class="grid sm:grid-cols-2 gap-4">
                     <div>
                         <label class="block text-xs font-medium text-gray-600 mb-1" for="name">Name</label>
@@ -684,11 +668,11 @@
                     </div>
                 </form>
 
-                <!-- meta info -->
+                <!-- MARK: meta info -->
                 <div class="mt-6 grid sm:grid-cols-3 gap-4 text-xs text-gray-600">
                     <div class="flex items-center gap-2">
                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
-                    <a href="https://maps.google.com" target="_blank" rel="noopener" class="hover:underline">
+                    <a href="https://maps.app.goo.gl/NdCRHJ6LqYCXaZvp9" target="_blank" rel="noopener" class="hover:underline">
                         Surabaya, Indonesia (Open in Maps)
                     </a>
                     </div>
@@ -708,126 +692,133 @@
         </section>
 
 
-        <!-- Footer (enhanced) -->
+        <!-- MARK: Footer (enhanced) -->
         <footer class="relative text-white bg-[linear-gradient(135deg,#8d225d_0%,#8d225d_70%,#b84b8d_70%,#b84b8d_100%)]" data-aos="fade-up">
-        <!-- subtle glow layers -->
-        <div class="absolute inset-0 -z-10 opacity-20 bg-[radial-gradient(60%_60%_at_30%_20%,white_0,transparent_60%)]"></div>
-        <div class="absolute inset-0 -z-10 opacity-10 bg-[radial-gradient(40%_40%_at_80%_80%,white_0,transparent_60%)]"></div>
+            <!-- subtle glow layers -->
+            <div class="absolute inset-0 -z-10 opacity-20 bg-[radial-gradient(60%_60%_at_30%_20%,white_0,transparent_60%)]"></div>
+            <div class="absolute inset-0 -z-10 opacity-10 bg-[radial-gradient(40%_40%_at_80%_80%,white_0,transparent_60%)]"></div>
 
-        <div class="container mx-auto sm:px-20 px-6 py-12">
-            <!-- Top CTA strip -->
-            <div class="rounded-2xl bg-white/10 border border-white/20 backdrop-blur-md p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-4" data-aos="fade-up">
-            <div class="flex items-center gap-3 text-center md:text-left">
-                <!-- <img src="../assets/pranala/logo_pranala.png" alt="Pranala" class="h-10 w-auto rounded"> -->
-                <div>
-                <p class="text-xs sm:text-sm opacity-90">Looking for a reliable maritime tech partner?</p>
-                <h3 class="text-lg sm:text-xl font-semibold">Let’s build safer, smarter, and sustainable shipping.</h3>
+            <div class="container mx-auto sm:px-20 px-6 py-12">
+                <!-- Top CTA strip -->
+                <div class="rounded-2xl bg-white/10 border border-white/20 backdrop-blur-md p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-4" data-aos="fade-up">
+                <div class="flex items-center gap-3 text-center md:text-left">
+                    <div>
+                    <p class="text-xs sm:text-sm opacity-90">Looking for a reliable maritime tech partner?</p>
+                    <h3 class="text-lg sm:text-xl font-semibold">Let’s build safer, smarter, and sustainable shipping.</h3>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                    <a href="https://wa.me/6285853439679" target="_blank"
+                    class="group flex items-center px-4 py-2 rounded-md text-xs sm:text-sm bg-white text-[#8d225d] hover:bg-black/10 hover:text-white border border-white/20 transition">
+                    Contact Us
+                    <svg class="h-4 w-4 ml-2 transition-transform group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 0 1 0-1.414L9.586 11H3a1 1 0 1 1 0-2h6.586L7.293 6.707A1 1 0 0 1 8.707 5.293l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414 0Z"/></svg>
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tam@pranala-dt.co.id" target="_blank" 
+                    class="flex items-center px-4 py-2 rounded-md text-xs sm:text-sm bg-white/10 text-white hover:bg-white/20 border border-white/20 transition">
+                    Email Us
+                    </a>
+                </div>
+                </div>
+
+                <!-- Main grid -->
+                <div class="grid xl:grid-cols-4 md:grid-cols-2 gap-10 mt-10">
+                    <!-- Brand -->
+                    <div data-aos="fade-up">
+                        <div class="flex items-center gap-2 mb-4 justify-center xl:justify-start">
+                        <h1 class="text-2xl font-bold">Pranala</h1>
+                        </div>
+                        <p class="text-white/90 text-xs leading-relaxed text-center xl:text-left">
+                        Driving Innovation in Maritime Technology.<br>Safer, Smarter, and Sustainable Shipping.
+                        </p>
+
+                        <!-- small badges -->
+                        <div class="mt-4 flex flex-wrap items-center justify-center xl:justify-start gap-2">
+                        <span class="text-[10px] px-2 py-1 rounded bg-white/10 border border-white/20">Made in Indonesia</span>
+                        <span class="text-[10px] px-2 py-1 rounded bg-white/10 border border-white/20">Compliance-ready</span>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div data-aos="fade-up" data-aos-delay="50" class="text-center xl:text-left">
+                        <h2 class="font-semibold mb-3">Quick Links</h2>
+                        <ul class="space-y-2 text-sm">
+                        <li><a href="#about" class="hover:underline">About</a></li>
+                        <li><a href="#services" class="hover:underline">Services</a></li>
+                        <li><a href="#choose" class="hover:underline">Why Choose Us</a></li>
+                        <li><a href="#contact" class="hover:underline">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div data-aos="fade-up" data-aos-delay="100" class="text-center xl:text-left">
+                        <h2 class="font-semibold mb-3">Contact</h2>
+                        <ul class="space-y-2 text-sm">
+                            <!-- Email -->
+                            <li class="flex items-center justify-center xl:justify-start gap-2">
+                                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 00-2 2v.4l10 6.25L22 6.4V6a2 2 0 00-2-2zM4 8.35V18a2 2 0 002 2h12a2 2 0 002-2V8.35l-7.55 4.71a2 2 0 01-1.9 0L4 8.35z"/></svg>
+                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tam@pranala-dt.co.id" 
+                                    target="_blank" 
+                                    class="hover:underline">
+                                        tam@pranala-dt.co.id
+                                    </a>
+                            </li>
+
+                            <!-- Whatsapp -->
+                            <li class="flex items-center justify-center xl:justify-start gap-2">
+                                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.1.37 2.28.57 3.5.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.22.2 2.4.57 3.5a1 1 0 01-.24 1.01l-2.2 2.28z"/></svg>
+                                <a href="https://wa.me/6285853439679" 
+                                    target="_blank" 
+                                    class="hover:underline">
+                                        +62 858-5343-9679
+                                </a>
+                            </li>
+                            <li class="flex items-center justify-center xl:justify-start gap-2">
+                                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7z"/></svg>
+                                <a href="https://maps.app.goo.gl/NdCRHJ6LqYCXaZvp9" target="_blank" rel="noopener" class="hover:underline">Surabaya, Indonesia</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Social / Newsletter -->
+                    <div data-aos="fade-up" data-aos-delay="150" class="text-center xl:text-left">
+                        <h2 class="font-semibold mb-3">Follow Us</h2>
+                        <div class="flex space-x-4 justify-center xl:justify-start">
+                            <!-- X Platform -->
+                            <a href="https://x.com/dtpranala" target="_blank" aria-label="X / Twitter" class="p-2 rounded-lg bg-white/10 border border-white/20 hover:bg-white/20 transition">
+                                <svg class="w-5 h-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1187.92 1215.59"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M1102.6,1091.59l-398-578.26-45-65.4L374.83,34.28,351.24,0H1.37L86.69,124,465.27,674.05l45,65.33,304.19,442,23.59,34.25h349.87Zm-223,44.86-316-459.16-45-65.36L151.91,79.14H309.65L606.21,510l45,65.36,386.17,561.07Z"/><polygon class="cls-1" points="518.62 611.93 563.62 677.29 510.27 739.38 100.94 1215.59 0 1215.59 465.27 674.05 518.62 611.93"/><polygon class="cls-1" points="1145.8 0 704.56 513.33 651.21 575.38 606.21 510.02 659.56 447.93 958.45 100.04 1044.86 0 1145.8 0"/></g></g></svg>
+                            </a>
+
+                            <!-- Linkedin -->
+                            <a href="https://www.linkedin.com/company/pt-pranala-digital-transmaritim/" target="_blank" aria-label="LinkedIn" class="p-2 rounded-lg bg-white/10 border border-white/20 hover:bg-white/20 transition">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0zM8 8h4.8v2.2h.1c.67-1.2 2.3-2.46 4.73-2.46 5.05 0 5.98 3.32 5.98 7.63V24h-5v-7.2c0-1.72-.03-3.94-2.4-3.94-2.4 0-2.77 1.87-2.77 3.82V24H8z"/></svg>
+                            </a>
+                        </div>
+                        <!-- tiny note -->
+                        <p class="mt-4 text-[11px] text-white/80">Mon–Fri · 09:00–17:00 WIB</p>
+                    </div>
+                </div>
+
+                <!-- Bottom bar -->
+                <div class="mt-10 border-t border-white/20 pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-[10px]">
+                    <p>© <span id="pl-year">2025</span> PT Pranala Digital Transmaritim. All rights reserved.</p>
+                <div class="flex items-center gap-3">
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                    <span class="opacity-50">•</span>
+                    <a href="#" class="hover:underline">Terms</a>
+                    <span class="opacity-50">•</span>
+                    <a href="#" class="hover:underline">Sitemap</a>
+                </div>
                 </div>
             </div>
-            <div class="flex gap-3">
-                <a href="#contact"
-                class="group flex items-center px-4 py-2 rounded-md text-xs sm:text-sm bg-white text-[#8d225d] hover:bg-black/10 hover:text-white border border-white/20 transition">
-                Contact Us
-                <svg class="h-4 w-4 ml-2 transition-transform group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 0 1 0-1.414L9.586 11H3a1 1 0 1 1 0-2h6.586L7.293 6.707A1 1 0 0 1 8.707 5.293l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414 0Z"/></svg>
-                </a>
-                <a href="mailto:info@pranala.com"
-                class="flex items-center px-4 py-2 rounded-md text-xs sm:text-sm bg-white/10 text-white hover:bg-white/20 border border-white/20 transition">
-                Email Us
-                </a>
-            </div>
-            </div>
-
-            <!-- Main grid -->
-            <div class="grid xl:grid-cols-4 md:grid-cols-3 gap-10 mt-10">
-            <!-- Brand -->
-            <div data-aos="fade-up">
-                <div class="flex items-center gap-2 mb-4 justify-center xl:justify-start">
-                <!-- <img src="../assets/pranala/logo_pranala.png" alt="Pranala" class="h-9 w-auto rounded"> -->
-                <h1 class="text-2xl font-bold">Pranala</h1>
-                </div>
-                <p class="text-white/90 text-xs leading-relaxed text-center xl:text-left">
-                Driving Innovation in Maritime Technology.<br>Safer, Smarter, and Sustainable Shipping.
-                </p>
-
-                <!-- small badges -->
-                <div class="mt-4 flex flex-wrap items-center justify-center xl:justify-start gap-2">
-                <span class="text-[10px] px-2 py-1 rounded bg-white/10 border border-white/20">Made in Indonesia</span>
-                <span class="text-[10px] px-2 py-1 rounded bg-white/10 border border-white/20">Compliance-ready</span>
-                </div>
-            </div>
-
-            <!-- Quick Links -->
-            <div data-aos="fade-up" class="text-center xl:text-left">
-                <h2 class="font-semibold mb-3">Quick Links</h2>
-                <ul class="space-y-2 text-sm">
-                <li><a href="#about" class="hover:underline">About</a></li>
-                <li><a href="#services" class="hover:underline">Services</a></li>
-                <li><a href="#choose" class="hover:underline">Why Choose Us</a></li>
-                <li><a href="#contact" class="hover:underline">Contact</a></li>
-                </ul>
-            </div>
-
-            <!-- Contact Info -->
-            <div data-aos="fade-up" class="text-center xl:text-left">
-                <h2 class="font-semibold mb-3">Contact</h2>
-                <ul class="space-y-2 text-sm">
-                <li class="flex items-center justify-center xl:justify-start gap-2">
-                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 00-2 2v.4l10 6.25L22 6.4V6a2 2 0 00-2-2zM4 8.35V18a2 2 0 002 2h12a2 2 0 002-2V8.35l-7.55 4.71a2 2 0 01-1.9 0L4 8.35z"/></svg>
-                    <a href="mailto:info@pranala.com" class="hover:underline">info@pranala.com</a>
-                </li>
-                <li class="flex items-center justify-center xl:justify-start gap-2">
-                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.1.37 2.28.57 3.5.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.22.2 2.4.57 3.5a1 1 0 01-.24 1.01l-2.2 2.28z"/></svg>
-                    <a href="tel:+6281234567890" class="hover:underline">+62 812-3456-7890</a>
-                </li>
-                <li class="flex items-center justify-center xl:justify-start gap-2">
-                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7z"/></svg>
-                    <a href="https://maps.google.com" target="_blank" rel="noopener" class="hover:underline">Surabaya, Indonesia</a>
-                </li>
-                </ul>
-            </div>
-
-            <!-- Social / Newsletter -->
-            <div data-aos="fade-up" class="text-center xl:text-left">
-                <h2 class="font-semibold mb-3">Follow Us</h2>
-                <div class="flex space-x-4 justify-center xl:justify-start">
-                <a href="#" aria-label="X / Twitter" class="p-2 rounded-lg bg-white/10 border border-white/20 hover:bg-white/20 transition">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.54 6.42c-.81.36-1.68.6-2.6.71a4.51 4.51 0 001.98-2.49 9.06 9.06 0 01-2.86 1.09 4.52 4.52 0 00-7.71 4.12A12.82 12.82 0 013.04 5.13a4.52 4.52 0 001.4 6.04 4.49 4.49 0 01-2.05-.57 4.52 4.52 0 003.63 4.43 4.55 4.55 0 01-2.04.08 4.52 4.52 0 004.22 3.14A9.07 9.07 0 012 19.54 12.79 12.79 0 008.29 21c7.55 0 11.68-6.25 11.68-11.68 0-.18 0-.36-.01-.54a8.36 8.36 0 002.05-2.13z"/></svg>
-                </a>
-                <a href="#" aria-label="Facebook" class="p-2 rounded-lg bg-white/10 border border-white/20 hover:bg-white/20 transition">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S1.86 6.48 1.86 12.07C1.86 17.08 5.66 21.2 10.45 22v-7.02H7.9v-2.91h2.55V9.41c0-2.52 1.5-3.91 3.8-3.91 1.1 0 2.25.2 2.25.2v2.47h-1.27c-1.25 0-1.65.78-1.65 1.58v1.9h2.8l-.45 2.91h-2.35V22c4.79-.8 8.59-4.92 8.59-9.93z"/></svg>
-                </a>
-                <a href="#" aria-label="LinkedIn" class="p-2 rounded-lg bg-white/10 border border-white/20 hover:bg-white/20 transition">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0zM8 8h4.8v2.2h.1c.67-1.2 2.3-2.46 4.73-2.46 5.05 0 5.98 3.32 5.98 7.63V24h-5v-7.2c0-1.72-.03-3.94-2.4-3.94-2.4 0-2.77 1.87-2.77 3.82V24H8z"/></svg>
-                </a>
-                </div>
-                <!-- tiny note -->
-                <p class="mt-4 text-[11px] text-white/80">Mon–Fri · 09:00–17:00 WIB</p>
-            </div>
-            </div>
-
-            <!-- Bottom bar -->
-            <div class="mt-10 border-t border-white/20 pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-[10px]">
-                <p>© <span id="pl-year">2025</span> PT Pranala Digital Transmaritim. All rights reserved.</p>
-            <div class="flex items-center gap-3">
-                <a href="#" class="hover:underline">Privacy Policy</a>
-                <span class="opacity-50">•</span>
-                <a href="#" class="hover:underline">Terms</a>
-                <span class="opacity-50">•</span>
-                <a href="#" class="hover:underline">Sitemap</a>
-            </div>
-            </div>
-        </div>
         </footer>
 
-        <script>
-        // auto year
-        (function(){ var y=document.getElementById('pl-year'); if(y) y.textContent=new Date().getFullYear(); })();
-        </script>
-
-
+        <!-- MARK: Animate on scroll -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
         </script>
+
+        <!-- External js -->
+        <script src="./index.js" defer></script>
     </body>
 </html>

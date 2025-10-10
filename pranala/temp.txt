@@ -1,0 +1,22 @@
+Landing page pranala
+
+Software house ternama di Indonesia antara lain Sagara Technology, Suitmedia, Mitrais, GITS Indonesia, dan Walden Global Services (WGS) karena rekam jejak dan portofolio proyek mereka yang mengesankan, termasuk untuk klien besar dan instansi pemerintah.l';ll
+
+Source:
+https://www.sagaratechnology.com/
+
+Isi navbar:
+    Services
+        Digital projects
+        Creative projects 
+        Web3 Services
+    About
+        About us
+        Contact us
+    Works
+    Leadership
+    Outsource
+    Foundation
+    Careers 
+    Brand 
+    Blog
