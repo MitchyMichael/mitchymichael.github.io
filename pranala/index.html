@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PT Pranala Digital Transmaritim</title>
+        
+        <!-- Tailwind CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            brand: '#8d225d',
+                            brand_light: '#b84b8d'
+                        },
+                        fontFamily: {
+                            sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol']
+                        }
+                    }
+                }
+            }
+        </script>
+        
+        <!-- Animate on scroll -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <!-- Logo -->
+        <link rel="icon" type="image/png" href="./assets/logo_pranala.png">
+
+        <!-- Google Fonts: Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- External CSS -->
+        <link rel="stylesheet" href="./index.css">
+    </head>
+
+    <body class="bg-gray-50 text-gray-800 font-sans">
+        <!-- MARK: Navbar -->
+        <nav id="navbar" class="fixed w-full top-0 z-50 bg-transparent transition-colors duration-500 text-white">
+            <div class="container mx-auto flex items-center justify-between py-3 sm:px-20 px-3">
+                <div class="flex items-center space-x-2">
+                    <img src="./assets/logo_pranala.png" alt="Logo" class="w-8 h-8">
+                    <h1 id="navbar_title" class="text-xl text-white font-bold transition-colors">Pranala</h1>
+                </div>
+
+                <!-- Menu -->
+                <ul class="hidden md:flex space-x-6">
+                    <li><a href="#about" class="hover:text-brand text-sm">About</a></li>
+                    <li><a href="#services" class="hover:text-brand text-sm">Services</a></li>
+                    <li><a href="#choose" class="hover:text-brand text-sm">Why Choose Us</a></li>
+                    <li><a href="#contact" class="hover:text-brand text-sm">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- MARK: Hero Section (enhanced) -->
+        <section class="relative text-white h-svh flex items-center overflow-hidden xl:bg-none bg-[url('./assets/hero/h2.jpg')] bg-cover bg-center">
+            <!-- Mobile overlays -->
+            <div class="xl:hidden absolute inset-0 bg-black/60"></div>
+            <div class="xl:hidden absolute inset-0 bg-brand/20"></div>
+            
+            <!-- MARK: Background -->
+            <div class="pointer-events-none absolute inset-0 hidden xl:block animate-bgMove">
+                <div class="absolute inset-0 bg-gradient-to-br from-black to-brand animate-gradient"></div>
+            </div>
+            
+            <!-- Content -->
+            <div class="relative container mx-auto sm:px-20 px-3 w-full">
+                <div class="grid xl:grid-cols-2 gap-10 items-center">
+                    
+                    <!-- Left -->
+                    <div data-aos="fade-up" class="relative z-10">
+                        <!-- badge -->
+                        <div class="inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 px-3 py-1 text-[10px] sm:text-xs font-semibold tracking-widest uppercase">
+                            <span class="h-1 w-1 rounded-full bg-white"></span> Maritime Technology
+                        </div>
+
+                        <!-- heading -->
+                        <h1 class="mt-4 sm:text-5xl text-3xl font-extrabold leading-tight">
+                            <span class="bg-gradient-to-r from-white via-white to-white/80 bg-clip-text text-transparent">
+                                Driving Innovation in Maritime Technology
+                            </span>
+                        </h1>
+
+                        <!-- subcopy with accent bar -->
+                        <div class="mt-5 flex items-start gap-4">
+                            <span class="hidden sm:block h-10 w-1 rounded bg-white/70 my-auto"></span>
+                            <p class="text-sm sm:text-base text-white/90 max-w-[56ch]">
+                                PT Pranala Digital Transmaritim delivers cutting-edge maritime solutions to modernize shipping,
+                                enhance safety, and optimize operations worldwide.
+                            </p>
+                        </div>
+
+                        <!-- highlights -->
+                        <div class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs">
+                            <div class="flex items-center gap-2 rounded-lg bg-white/10 border border-white/20 px-3 py-2 backdrop-blur-md">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>
+                                Safety-first
+                            </div>
+                            <div class="flex items-center gap-2 rounded-lg bg-white/10 border border-white/20 px-3 py-2 backdrop-blur-md">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>
+                                Compliance-ready
+                            </div>
+                            <div class="flex items-center gap-2 rounded-lg bg-white/10 border border-white/20 px-3 py-2 backdrop-blur-md">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>
+                                Optimized ops
+                            </div>
+                        </div>
+
+                        <!-- CTA -->
+                        <div class="mt-8 flex flex-wrap items-center gap-3">
+                            <a href="#about"
+                                class="inline-flex items-center gap-2 rounded-lg bg-white text-brand font-semibold text-sm px-5 py-3 shadow-sm hover:bg-brand_light hover:text-white transition">
+                                    Learn More
+                                <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 0 1 0-1.414L9.586 11H3a1 1 0 1 1 0-2h6.586L7.293 6.707A1 1 0 0 1 8.707 5.293l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414 0Z"/></svg>
+                            </a>
+                            <a href="#contact"
+                                class="inline-flex items-center gap-2 rounded-lg border border-white/30 bg-white/10 backdrop-blur-md text-white font-semibold text-sm px-5 py-3 hover:bg-white/20 transition">
+                                    Contact Us
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right (Mosaic) -->
+                    <div data-aos="fade-left" class="hidden xl:block">
+                        <div class="relative w-full h-[520px] [perspective:1200px]">
+                            <!-- glow -->
+                            <div class="absolute -bottom-10 -right-10 h-56 w-56 rounded-full bg-white/10 blur-2xl"></div>
+
+                            <div class="relative grid grid-cols-2 gap-3 h-full [transform-style:preserve-3d]">
+                                <!-- Col 1 -->
+                                <div class="grid grid-rows-[2fr_1fr] gap-3">
+                                    <div class="group relative overflow-hidden rounded-tl-[100px] rounded-br-[100px] rounded-tr-xl rounded-bl-xl ring-1 ring-white/20 shadow-2xl h-full [transform:rotateY(-8deg)_rotateX(2deg)] hover:[transform:rotateY(-5deg)_rotateX(0deg)] transition-transform duration-500">
+                                        <div class="absolute inset-0 bg-[url('./assets/hero/h2.jpg')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105"></div>
+                                        <div class="absolute inset-0 bg-brand/20"></div>
+                                    </div>
+                                    <div class="pl-16 pb-10">
+                                        <div class="group relative overflow-hidden rounded-[100px] ring-1 ring-white/20 shadow-xl h-full [transform:rotateY(-8deg)] hover:[transform:rotateY(-5deg)] transition-transform duration-500">
+                                        <div class="absolute inset-0 bg-[url('./assets/hero/h1.jpg')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105"></div>
+                                        <div class="absolute inset-0 bg-brand/20"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Col 2 -->
+                                <div class="grid grid-rows-[1fr_2fr] gap-3">
+                                    <div class="pr-16 pt-10">
+                                        <div class="group relative overflow-hidden rounded-[100px] ring-1 ring-white/20 shadow-xl h-full [transform:rotateY(8deg)] hover:[transform:rotateY(5deg)] transition-transform duration-500">
+                                            <div class="absolute inset-0 bg-[url('./assets/hero/h3.jpg')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105"></div>
+                                            <div class="absolute inset-0 bg-brand/20"></div>
+                                        </div>
+                                    </div>
+                                    <div class="group relative overflow-hidden rounded-tl-[100px] rounded-br-[100px] rounded-tr-xl rounded-bl-xl ring-1 ring-white/20 shadow-2xl h-full [transform:rotateY(8deg)_rotateX(2deg)] hover:[transform:rotateY(5deg)_rotateX(0deg)] transition-transform duration-500">
+                                        <div class="absolute inset-0 bg-[url('./assets/hero/h4.jpg')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105"></div>
+                                        <div class="absolute inset-0 bg-brand/20"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MARK: About Section (enhanced) -->
+        <section id="about" class="py-20 bg-gray-100">
+            <div class="container mx-auto">
+                <!-- Heading -->
+                <div class="text-center sm:text-left sm:ml-20 ml-3 sm:mr-20 mr-3" data-aos="fade-up">
+                    <div class="inline-flex items-center gap-2 rounded-full bg-brand/10 px-3 py-1 text-[10px] sm:text-xs font-semibold text-brand tracking-widest uppercase">
+                        <span class="h-1 w-1 rounded-full bg-brand"></span> About Us
+                    </div>
+                    <h2 class="mt-3 sm:text-4xl text-2xl font-extrabold leading-tight">
+                        <span class="bg-gradient-to-r from-brand to-brand_light bg-clip-text text-transparent">
+                        We are more than Digital Agency
+                        </span>
+                    </h2>
+                </div>
+
+                <!-- Image Mosaic -->
+                <div class="grid sm:grid-cols-2 gap-6 sm:ml-20 ml-3 sm:mr-20 mr-3 mt-10">
+                    <!-- Big image -->
+                    <div data-aos="fade-up" class="relative group h-[520px] sm:h-full rounded-2xl overflow-hidden shadow-2xl ring-1 ring-black/5">
+                        <div class="absolute inset-0 bg-[url('./assets/about/a1.jpg')] bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
+
+                        <!-- Floating chip -->
+                        <div class="absolute top-4 left-4">
+                            <span class="rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-white text-[10px] sm:text-xs px-3 py-1 font-semibold tracking-widest">
+                                Maritime Technology
+                            </span>
+                        </div>
+
+                        <!-- Bottom caption card -->
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <div class="rounded-xl bg-white/15 backdrop-blur-md border border-white/20 p-4 text-white">
+                                <p class="text-xs sm:text-sm opacity-90">
+                                Advancing safety, efficiency, and sustainability in global shipping through modern digital solutions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Two stacked images -->
+                    <div class="grid grid-rows-2 gap-6">
+                        <div data-aos="fade-up" class="relative group h-[340px] rounded-2xl overflow-hidden shadow-xl ring-1 ring-black/5">
+                            <div class="absolute inset-0 bg-[url('./assets/about/a2.jpg')] bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105 group-hover:rotate-[0.5deg]"></div>
+                            <div class="absolute inset-0 bg-brand/20"></div>
+                            <div class="absolute bottom-3 left-3">
+                                <span class="rounded-md bg-white/15 backdrop-blur-md border border-white/20 text-white text-[10px] px-2 py-1 font-semibold">
+                                Safety-First
+                                </span>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-up" class="relative group h-[340px] rounded-2xl overflow-hidden shadow-xl ring-1 ring-black/5">
+                            <div class="absolute inset-0 bg-[url('./assets/about/a3.jpg')] bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105 group-hover:-rotate-[0.5deg]"></div>
+                            <div class="absolute inset-0 bg-brand/20"></div>
+                            <div class="absolute bottom-3 left-3">
+                                <span class="rounded-md bg-white/15 backdrop-blur-md border border-white/20 text-white text-[10px] px-2 py-1 font-semibold">
+                                Compliance-Ready
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content blocks (enhanced) -->
+                <div class="grid xl:grid-cols-2 gap-10 sm:ml-20 ml-3 sm:mr-20 mr-3 mt-12">
+
+                    <!-- Who are we -->
+                    <div data-aos="fade-up" class="relative group p-[1px] rounded-2xl bg-gradient-to-br from-brand/40 via-brand/20 to-brand_light/40">
+                        <div class="rounded-2xl bg-white shadow-xl border border-black/5 p-6 sm:p-8 h-full transition-transform duration-300 group-hover:-translate-y-1">
+                            <!-- badge -->
+                            <div class="mb-3">
+                                <span class="inline-flex items-center gap-2 rounded-full bg-brand/10 text-brand px-3 py-1 text-[10px] sm:text-xs font-semibold tracking-widest uppercase">
+                                    <span class="h-1 w-1 rounded-full bg-brand"></span> About
+                                </span>
+                            </div>
+
+                            <!-- heading -->
+                            <h3 class="sm:text-3xl text-xl font-extrabold mb-3">
+                                <span class="bg-gradient-to-r from-brand to-brand_light bg-clip-text text-transparent">
+                                Who are we
+                                </span>
+                            </h3>
+
+                            <!-- copy -->
+                            <p class="text-sm text-gray-700 sm:max-w-[42ch] mb-6">
+                                PT Pranala Digital Transmaritim is a maritime technology company committed to advancing safety,
+                                efficiency, and sustainability in global shipping through innovative digital solutions.
+                            </p>
+
+                            <!-- highlights -->
+                            <div class="grid grid-cols-2 gap-3 mb-6">
+                                <div class="flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2">
+                                    <svg class="w-4 h-4 text-brand" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.17 4.83 12 3.41 13.41 9 19l12-12-1.41-1.41z"/></svg>
+                                    <span class="text-xs font-medium text-gray-800">Maritime-focused</span>
+                                </div>
+                                <div class="flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2">
+                                    <svg class="w-4 h-4 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 4.83 12 3.41 13.41 9 19l12-12-1.41-1.41z"/></svg>
+                                    <span class="text-xs font-medium text-gray-800">Safety-first mindset</span>
+                                </div>
+                                <div class="flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2">
+                                    <svg class="w-4 h-4 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 4.83 12 3.41 13.41 9 19l12-12-1.41-1.41z"/></svg>
+                                    <span class="text-xs font-medium text-gray-800">Compliance-driven</span>
+                                </div>
+                                <div class="flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2">
+                                    <svg class="w-4 h-4 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 4.83 12 3.41 13.41 9 19l12-12-1.41-1.41z"/></svg>
+                                    <span class="text-xs font-medium text-gray-800">Efficiency at scale</span>
+                                </div>
+                            </div>
+
+                            <!-- CTA -->
+                            <div class="flex flex-wrap items-center gap-3">
+                                <a href="#" class="inline-flex items-center gap-2 rounded-lg bg-brand text-white text-sm font-semibold px-4 py-2.5 shadow-sm hover:bg-brand_light transition">
+                                    Learn More
+                                    <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 0 1 0-1.414L9.586 11H3a1 1 0 1 1 0-2h6.586L7.293 6.707A1 1 0 0 1 8.707 5.293l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414 0Z"/></svg>
+                                </a>
+                                <a href="#contact" class="inline-flex items-center gap-2 rounded-lg border border-brand/30 text-brand text-sm font-semibold px-4 py-2.5 hover:bg-brand/5 transition">
+                                    Contact
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- What we do -->
+                    <div data-aos="fade-up" data-aos-delay="100" class="relative group p-[1px] rounded-2xl bg-gradient-to-br from-brand_light/40 via-brand/20 to-brand/40">
+                        <div class="rounded-2xl bg-white shadow-xl border border-black/5 p-6 sm:p-8 h-full transition-transform duration-300 group-hover:-translate-y-1">
+                            <!-- badge -->
+                            <div class="mb-3">
+                                <span class="inline-flex items-center gap-2 rounded-full bg-brand/10 text-brand px-3 py-1 text-[10px] sm:text-xs font-semibold tracking-widest uppercase">
+                                    <span class="h-1 w-1 rounded-full bg-brand"></span> Capabilities
+                                </span>
+                            </div>
+
+                            <!-- heading -->
+                            <h3 class="sm:text-3xl text-xl font-extrabold mb-3">
+                                <span class="bg-gradient-to-r from-brand to-brand_light bg-clip-text text-transparent">
+                                What we do
+                                </span>
+                            </h3>
+
+                            <!-- copy -->
+                            <p class="text-sm text-gray-700 sm:max-w-[52ch] mb-6">
+                                We develop smart maritime systems that modernize ship operations, from cargo planning and stability calculations
+                                to regulatory compliance and digital transformation — helping the industry achieve safer, smarter, and more sustainable shipping.
+                            </p>
+
+                            <!-- capabilities -->
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3 rounded-lg bg-gray-50 px-3 py-2">
+                                    <svg class="w-5 h-5 mt-0.5 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 2 7l10 5 10-5-10-5zm0 9L2 6v11l10 5 10-5V6l-10 5z"/></svg>
+                                    <span class="text-sm text-gray-800">Cargo planning & optimization</span>
+                                </li>
+                                <li class="flex items-start gap-3 rounded-lg bg-gray-50 px-3 py-2">
+                                    <svg class="w-5 h-5 mt-0.5 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7l5 10H7l5-10z"/></svg>
+                                    <span class="text-sm text-gray-800">Stability & trim calculations</span>
+                                </li>
+                                <li class="flex items-start gap-3 rounded-lg bg-gray-50 px-3 py-2">
+                                    <svg class="w-5 h-5 mt-0.5 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4h18v2H3zm0 6h12v2H3zm0 6h18v2H3z"/></svg>
+                                    <span class="text-sm text-gray-800">Digital logbooks & workflows</span>
+                                </li>
+                                <li class="flex items-start gap-3 rounded-lg bg-gray-50 px-3 py-2">
+                                    <svg class="w-5 h-5 mt-0.5 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13h2v-2H3v2zm4 0h14v-2H7v2zM3 17h2v-2H3v2zm4 0h14v-2H7v2zM3 9h2V7H3v2zm4 0h14V7H7v2z"/></svg>
+                                    <span class="text-sm text-gray-800">Compliance dashboards & reporting</span>
+                                </li>
+                            </ul>
+
+                            <!-- chips + CTA -->
+                            <div class="mt-6 flex flex-wrap items-center gap-3">
+                                <span class="rounded-full bg-brand/10 text-brand text-[11px] px-3 py-1 font-semibold">Fleet-scale</span>
+                                <span class="rounded-full bg-brand/10 text-brand text-[11px] px-3 py-1 font-semibold">ISO-ready</span>
+                                <span class="rounded-full bg-brand/10 text-brand text-[11px] px-3 py-1 font-semibold">Real-time</span>
+
+                                <a href="#" class="ml-auto inline-flex items-center gap-2 font-semibold text-brand text-sm hover:underline">
+                                    Learn More
+                                    <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 0 1 0-1.414L9.586 11H3a1 1 0 1 1 0-2h6.586L7.293 6.707A1 1 0 0 1 8.707 5.293l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414 0Z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MARK: Services (redesigned) -->
+        <section id="services" aria-labelledby="services-title" class="relative py-24 overflow-hidden">
+            <!-- Background image (parallax) -->
+            <div class="pointer-events-none absolute inset-0 -z-30">
+                <div class="absolute inset-0 bg-[url('./assets/cargo_air.jpg')] bg-cover bg-center md:bg-fixed"></div>
+                <div class="absolute inset-0 bg-brand/50"></div>
+                <!-- Dark gradient for readability -->
+                <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,12,24,.78)_0%,rgba(5,12,24,.62)_35%,rgba(5,12,24,.25)_100%)]"></div>
+            </div>
+
+            <!-- Subtle decor blobs -->
+            <div class="pointer-events-none absolute inset-0 -z-20 opacity-50">
+                <div class="absolute -top-32 -left-32 h-80 w-80 rounded-full bg-brand/25 blur-3xl"></div>
+                <div class="absolute -bottom-32 -right-32 h-80 w-80 rounded-full bg-brand_light/25 blur-3xl"></div>
+            </div>
+
+            <div class="container mx-auto sm:px-20 px-6 text-sm">
+                <!-- Heading -->
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <span class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-[10px] sm:text-xs font-semibold text-white ring-1 ring-white/15 tracking-widest uppercase">
+                        <span class="h-1 w-1 rounded-full bg-white"></span> Our Services
+                    </span>
+                    <h2 id="services-title" class="mt-4 sm:text-4xl text-2xl font-extrabold text-white leading-tight">
+                        From Ship to Shore, We Deliver Maritime Excellence
+                    </h2>
+                    <p class="mt-3 max-w-2xl mx-auto text-white/80">End-to-end maritime digital solutions — secure, efficient and future-proof.</p>
+                    <div class="h-1 w-12 bg-white/20 mx-auto mt-5 rounded"></div>
+                </div>
+
+                <!-- MARK: Services -->
+                <div class="grid xl:grid-cols-3 gap-8">
+                    <article data-aos="fade-up" class="group relative p-0.5 rounded-3xl shadow-2xl backdrop-blur-xl">
+                        <div class="absolute inset-0.5 rounded-[1.4rem] bg-gradient-to-br from-brand/60 to-brand_light/60 opacity-20 group-hover:opacity-40 transition duration-500"></div>
+
+                        <div class="relative h-full rounded-3xl bg-black/50 border border-white/20 backdrop-blur-3xl p-8 shadow-xl transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.8),_0_0_20px_rgba(45,212,191,0.5)]">
+                            
+                            <span class="pointer-events-none absolute inset-0 rounded-[1.4rem] opacity-0 group-hover:opacity-100 transition duration-500 bg-[radial-gradient(circle_at_20%_10%,#ffffff33,transparent_70%)]"></span>
+                            
+                            <div class="relative z-10">
+                                <div class="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-brand_light/20 text-brand_light ring-2 ring-brand_light/50 transition-colors duration-500 group-hover:bg-brand_light group-hover:text-black group-hover:shadow-[0_0_15px_rgba(45,212,191,0.8)]">
+                                <svg class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a9 9 0 0 0-9 9 8.96 8.96 0 0 0 3.07 6.77 1 1 0 1 0 1.3-1.52A7 7 0 1 1 19 12a6.96 6.96 0 0 1-1.03 3.64 1 1 0 0 0 1.73 1.01A8.96 8.96 0 0 0 21 12a9 9 0 0 0-9-9Zm4.24 6.76-5.66 5.66a1.5 1.5 0 1 1-2.12-2.12l5.66-5.66a1.5 1.5 0 1 1 2.12 2.12Z"/></svg>
+                                </div>
+                                
+                                <h3 class="text-2xl font-extrabold mb-3 text-white group-hover:text-brand_light transition-colors">Loading Instrument & Stability Systems</h3>
+                                
+                                <p class="text-white/70 group-hover:text-white transition-colors">
+                                    Advanced tools for cargo planning, damage stability, and international regulatory compliance.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article data-aos="fade-up" data-aos-delay="50" class="group relative p-0.5 rounded-3xl shadow-2xl backdrop-blur-xl">
+                        <div class="absolute inset-0.5 rounded-[1.4rem] bg-gradient-to-br from-brand/60 to-brand_light/60 opacity-20 group-hover:opacity-40 transition duration-500"></div>
+                        <div class="relative h-full rounded-3xl bg-black/50 border border-white/20 backdrop-blur-3xl p-8 shadow-xl transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.8),_0_0_20px_rgba(45,212,191,0.5)]">
+                            <span class="pointer-events-none absolute inset-0 rounded-[1.4rem] opacity-0 group-hover:opacity-100 transition duration-500 bg-[radial-gradient(circle_at_20%_10%,#ffffff33,transparent_70%)]"></span>
+                            <div class="relative z-10">
+                                <div class="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-brand_light/20 text-brand_light ring-2 ring-brand_light/50 transition-colors duration-500 group-hover:bg-brand_light group-hover:text-black group-hover:shadow-[0_0_15px_rgba(45,212,191,0.8)]">
+                                <svg class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor"><path d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3H4V5Zm0 5h16v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9Zm4 2v2h6v-2H8Z"/></svg>
+                                </div>
+                                <h3 class="text-2xl font-extrabold mb-3 text-white group-hover:text-brand_light">Maritime Digital Platforms</h3>
+                                <p class="text-white/70 group-hover:text-white">Integrated desktop & web solution for digitalization of ship operations and fleet management.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article data-aos="fade-up" data-aos-delay="100" class="group relative p-0.5 rounded-3xl shadow-2xl backdrop-blur-xl">
+                        <div class="absolute inset-0.5 rounded-[1.4rem] bg-gradient-to-br from-brand/60 to-brand_light/60 opacity-20 group-hover:opacity-40 transition duration-500"></div>
+                        <div class="relative h-full rounded-3xl bg-black/50 border border-white/20 backdrop-blur-3xl p-8 shadow-xl transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.8),_0_0_20px_rgba(45,212,191,0.5)]">
+                            <span class="pointer-events-none absolute inset-0 rounded-[1.4rem] opacity-0 group-hover:opacity-100 transition duration-500 bg-[radial-gradient(circle_at_20%_10%,#ffffff33,transparent_70%)]"></span>
+                            <div class="relative z-10">
+                                <div class="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-brand_light/20 text-brand_light ring-2 ring-brand_light/50 transition-colors duration-500 group-hover:bg-brand_light group-hover:text-black group-hover:shadow-[0_0_15px_rgba(45,212,191,0.8)]">
+                                <svg class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm0 13.74L6 13v3.5C6 19.43 8.69 21 12 21s6-1.57 6-4.5V13l-6 3.74Z"/></svg>
+                                </div>
+                                <h3 class="text-2xl font-extrabold mb-3 text-white group-hover:text-brand_light">Training & Simulation</h3>
+                                <p class="text-white/70 group-hover:text-white">Interactive software for academies & professionals to learn safe & efficient ship operations.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- MARK: Service CTA -->
+                <div class="mt-16 flex flex-col sm:flex-row items-center justify-center gap-4" data-aos="fade-up">
+                    <a href="#contact"
+                        class="inline-flex items-center gap-2 rounded-full bg-brand_light px-8 py-4 text-white text-base font-bold shadow-[0_0_20px_rgba(45,212,191,0.6)] hover:bg-brand_light/90 transition duration-300 transform hover:scale-105 active:scale-95">
+                        Discuss Your Project
+                        <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 0 1 0-1.414L9.586 11H3a1 1 0 1 1 0-2h6.586L7.293 6.707A1 1 0 0 1 8.707 5.293l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414 0Z"/></svg>
+                    </a>
+
+                    <a href="#about"
+                        class="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 backdrop-blur-md text-white text-base px-8 py-4 font-semibold hover:bg-white/20 transition duration-300">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- MARK: Why choose us (enhanced) -->
+        <section id="choose" class="relative py-20 bg-gray-100 text-sm overflow-hidden">
+            <!-- subtle background decor -->
+            <div class="pointer-events-none absolute inset-0 -z-10 opacity-40">
+                <div class="absolute -top-24 -left-24 h-64 w-64 rounded-full bg-brand/15 blur-3xl"></div>
+                <div class="absolute -bottom-28 -right-20 h-72 w-72 rounded-full bg-brand_light/20 blur-3xl"></div>
+            </div>
+
+            <div class="container mx-auto sm:px-20 px-6">
+                <!-- Heading -->
+                <div class="text-center mb-10">
+                    <span data-aos="fade-up"
+                        class="inline-flex items-center gap-2 rounded-full bg-brand/10 px-3 py-1 text-[10px] sm:text-xs font-semibold text-brand tracking-widest uppercase">
+                        <span class="h-1 w-1 rounded-full bg-brand"></span> Why Choose Us
+                    </span>
+                    <h2 data-aos="fade-up" data-aos-delay="50"
+                        class="mt-3 sm:text-4xl text-2xl font-extrabold leading-tight">
+                        <span class="bg-gradient-to-r from-brand to-brand_light bg-clip-text text-transparent">
+                        Innovating Today, Securing Tomorrow’s Maritime Industry
+                        </span>
+                    </h2>
+                    <div class="h-1 w-10 bg-brand/30 mx-auto mt-3 rounded"></div>
+                </div>
+
+                <!-- Cards -->
+                <div class="grid xl:grid-cols-3 gap-6">
+                    <!-- EXPERTISE -->
+                    <div data-aos="fade-up" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-brand/30 via-brand/10 to-brand_light/30">
+                        <div class="h-full rounded-2xl bg-white p-6 shadow-lg border border-black/5 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
+                        <div class="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-brand/10 text-brand ring-1 ring-brand/20">
+                            <!-- your original icon -->
+                            <svg viewBox="0 0 57.27 55.45" class="h-10 w-10" fill="currentColor" aria-hidden="true"><g><g><g><rect x="24.5" y="52.33" width="8.87" height="3.13"/><path d="M34.58,55.45H47.79a8.33,8.33,0,0,0,6.45-3.12H34.58Z"/><rect x="5.65" y="39.72" width="45.97" height="2.52"/><path d="M9.48,55.45H23.29V52.33H3A8.37,8.37,0,0,0,9.48,55.45Z"/><path d="M28.73,25.81h0l-.1-.1c-.1-.1.41.4-5.95-6.55a8.84,8.84,0,1,0,15.23,6.75H29.14A1.68,1.68,0,0,0,28.73,25.81Z"/><path d="M51.62,15.12a4.47,4.47,0,0,0-4.44-4.43H10.08a4.46,4.46,0,0,0-4.43,4.43V38.41h46Zm-34,19.56H10.08a.65.65,0,0,1-.6-.6.65.65,0,0,1,.6-.61h7.56a.66.66,0,0,1,.61.61A.65.65,0,0,1,17.64,34.68Zm0-3.12H10.08a.65.65,0,0,1-.6-.61.65.65,0,0,1,.6-.6h7.56a.66.66,0,0,1,.61.6A.66.66,0,0,1,17.64,31.56Zm11.3,3.73A10.09,10.09,0,1,1,39,25.21,10.12,10.12,0,0,1,28.94,35.29Zm19-.61H40.33a.65.65,0,0,1-.61-.6.66.66,0,0,1,.61-.61h7.56a.66.66,0,0,1,.61.61A.65.65,0,0,1,47.89,34.68Zm0-3.12H40.33a.66.66,0,0,1-.61-.61.65.65,0,0,1,.61-.6h7.56a.66.66,0,0,1,.61.6A.66.66,0,0,1,47.89,31.56Z"/><path d="M29.54,16.43V24.6h8.17A8.71,8.71,0,0,0,29.54,16.43Z"/><path d="M5.44,43.45,2.72,51H54.54l-2.72-7.57Zm19.77,1.92h1.31a.61.61,0,0,1,0,1.21H25.21A.65.65,0,0,1,24.6,46C24.5,45.67,24.8,45.37,25.21,45.37Zm-5.05,0h1.32a.61.61,0,0,1,0,1.21H20.16a.65.65,0,0,1-.6-.61C19.46,45.67,19.76,45.37,20.16,45.37ZM11.29,49.2H10A.61.61,0,0,1,10,48h1.31a.66.66,0,0,1,.61.61A.58.58,0,0,1,11.29,49.2Zm0-2.52H10a.61.61,0,0,1,0-1.21h1.31a.66.66,0,0,1,.61.61A.58.58,0,0,1,11.29,46.68Zm5,2.52H15A.61.61,0,0,1,15,48h1.31a.65.65,0,0,1,.61.61A.58.58,0,0,1,16.33,49.2Zm0-2.52H15a.61.61,0,0,1,0-1.21h1.31a.65.65,0,0,1,.61.61A.58.58,0,0,1,16.33,46.68ZM31.46,49.2H20.16a.61.61,0,0,1,0-1.21h11.4a.65.65,0,0,1,.6.61A.75.75,0,0,1,31.46,49.2Zm0-2.52H30.15a.61.61,0,1,1,0-1.21h1.31a.65.65,0,0,1,.6.61A.58.58,0,0,1,31.46,46.68Zm5,2.52H35.19a.61.61,0,1,1,0-1.21H36.5a.65.65,0,0,1,.6.61A.58.58,0,0,1,36.5,49.2Zm0-2.52H35.19a.61.61,0,1,1,0-1.21H36.5a.65.65,0,0,1,.6.61A.58.58,0,0,1,36.5,46.68Zm5,2.52H40.23a.61.61,0,1,1,0-1.21h1.31a.65.65,0,0,1,.6.61A.58.58,0,0,1,41.54,49.2Zm0-2.52H40.23a.61.61,0,1,1,0-1.21h1.31a.65.65,0,0,1,.6.61A.58.58,0,0,1,41.54,46.68Zm5,2.52H45.27a.61.61,0,1,1,0-1.21h1.31a.65.65,0,0,1,.6.61A.58.58,0,0,1,46.58,49.2Zm0-2.52H45.27a.61.61,0,1,1,0-1.21h1.31a.65.65,0,0,1,.6.61A.58.58,0,0,1,46.58,46.68Z"/></g></g></g></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-brand text-center">EXPERTISE</h3>
+                        <div class="h-1 w-12 bg-brand/20 mx-auto my-3 rounded"></div>
+                        <p class="text-gray-700 text-center">
+                            Our team brings years of maritime experience combined with advanced digital engineering. We understand the unique challenges faced by shipowners, operators, and academies—so our solutions are innovative, practical, and trusted in real operations.
+                        </p>
+                        </div>
+                    </div>
+
+                    <!-- SAFETY -->
+                    <div data-aos="fade-up" data-aos-delay="50" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-brand/30 via-brand/10 to-brand_light/30">
+                        <div class="h-full rounded-2xl bg-white p-6 shadow-lg border border-black/5 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
+                        <div class="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-brand/10 text-brand ring-1 ring-brand/20">
+                            <svg viewBox="0 0 52.83 50.49" class="h-10 w-10" fill="currentColor" aria-hidden="true"><g><g><g><path d="M26.42,34.08a2.52,2.52,0,1,0,2.52,2.52A2.5,2.5,0,0,0,26.42,34.08Z"/><path d="M6.25,44.16a2.52,2.52,0,1,0,2.52,2.52A2.5,2.5,0,0,0,6.25,44.16Z"/><path d="M22.68,16.23l1.52,12a2.24,2.24,0,0,0,4.43,0l1.52-12a3.75,3.75,0,0,0-6.56-3A4,4,0,0,0,22.68,16.23Z"/><path d="M48.5,7a3.13,3.13,0,1,0-3.13-3.13A3.14,3.14,0,0,0,48.5,7Z"/><path d="M48.09,13.81a5.74,5.74,0,0,1-1.81.31A6.29,6.29,0,0,1,40,7.86a.68.68,0,0,0-.41-.6l-13-4.74h-.41l-13,4.64a.68.68,0,0,0-.41.6A6.28,6.28,0,0,1,6.55,14a8.91,8.91,0,0,1-1.71-.2.63.63,0,0,0-.81.51A30.9,30.9,0,0,0,9.88,37.71a38.68,38.68,0,0,0,16.33,12.7.47.47,0,0,0,.51,0,39.48,39.48,0,0,0,16.33-12.7A30.5,30.5,0,0,0,48.9,14.32.62.62,0,0,0,48.09,13.81ZM26.72,46.08a.46.46,0,0,1-.51,0A33.88,33.88,0,0,1,13,35.29,27.46,27.46,0,0,1,7.46,19.06a.65.65,0,0,1,.61-.61.65.65,0,0,1,.6.61A25.4,25.4,0,0,0,14,34.48,34,34,0,0,0,26.42,44.66a33.25,33.25,0,0,0,12.4-10.18,26.52,26.52,0,0,0,5.34-15.42.61.61,0,1,1,1.21,0,27.46,27.46,0,0,1-5.55,16.23A34.29,34.29,0,0,1,26.72,46.08ZM30.25,12.4a5.27,5.27,0,0,1,1.21,4l-1.52,12a3.45,3.45,0,0,1-6.85,0l-1.51-12a4.63,4.63,0,0,1,1.21-3.93,4.87,4.87,0,0,1,3.83-1.71A4.64,4.64,0,0,1,30.25,12.4Zm0,24.2a3.84,3.84,0,1,1-3.83-3.83A3.83,3.83,0,0,1,30.25,36.6Z"/></g></g></g></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-brand text-center">SAFETY</h3>
+                        <div class="h-1 w-12 bg-brand/20 mx-auto my-3 rounded"></div>
+                        <p class="text-gray-700 text-center">
+                            Safety is at our core. We build to meet and exceed IMO, SOLAS, and SIRE 2.0—so your crews, vessels, and operations stay protected with full regulatory compliance.
+                        </p>
+                        </div>
+                    </div>
+
+                    <!-- INNOVATION -->
+                    <div data-aos="fade-up" data-aos-delay="100" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-brand/30 via-brand/10 to-brand_light/30">
+                        <div class="h-full rounded-2xl bg-white p-6 shadow-lg border border-black/5 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
+                        <div class="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-brand/10 text-brand ring-1 ring-brand/20">
+                            <svg viewBox="0 0 50.41 51.02" class="h-10 w-10" fill="currentColor" aria-hidden="true"><g><g><g><path d="M17.64,38.31v3.93H31.56V38.31A18.43,18.43,0,0,1,17.64,38.31Z"/><path d="M26.52,38.31V22.68H22.69V38.31A24.49,24.49,0,0,0,26.52,38.31Z"/><path d="M24.6,4.44a17,17,0,0,0-3.12,33.77V22.68H19.56a.65.65,0,0,1-.61-.6.66.66,0,0,1,.61-.61H29.64a.66.66,0,0,1,.61.61.65.65,0,0,1-.61.6H27.73V38.11A17,17,0,0,0,24.6,4.44ZM37.2,22.08a.65.65,0,0,1-.6-.61,12,12,0,0,0-24-.1A.65.65,0,0,1,12,22a.66.66,0,0,1-.61-.61,13.21,13.21,0,0,1,26.42,0A.67.67,0,0,1,37.2,22.08Z"/></g></g></g></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-brand text-center">INNOVATION</h3>
+                        <div class="h-1 w-12 bg-brand/20 mx-auto my-3 rounded"></div>
+                        <p class="text-gray-700 text-center">
+                            We solve today’s problems while preparing you for tomorrow—optimizing efficiency, reducing risk, and supporting greener, future-ready operations.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- optional CTA -->
+                <div class="mt-10 flex justify-center gap-3" data-aos="fade-up">
+                    <a href="#contact" class="inline-flex items-center gap-2 rounded-lg sm:text-base text-xs bg-brand px-5 py-3 text-white font-semibold shadow-sm hover:bg-brand_light transition">
+                        Talk to Our Team
+                        <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 0 1 0-1.414L9.586 11H3a1 1 0 1 1 0-2h6.586L7.293 6.707A1 1 0 0 1 8.707 5.293l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414 0Z"/></svg>
+                    </a>
+                    <a href="#services" class="inline-flex items-center gap-2 rounded-lg sm:text-base text-xs border border-brand/30 text-brand px-5 py-3 font-semibold hover:bg-brand/5 transition">
+                        See All Services
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- MARK: Contact us (enhanced) -->
+        <section id="contact" class="relative py-20 overflow-hidden bg-gray-50">
+        <!-- soft background blobs -->
+        <div class="pointer-events-none absolute inset-0 -z-10 opacity-40">
+            <div class="absolute -top-24 -left-24 h-64 w-64 rounded-full bg-brand/15 blur-3xl"></div>
+            <div class="absolute -bottom-28 -right-20 h-72 w-72 rounded-full bg-brand_light/20 blur-3xl"></div>
+        </div>
+
+        <div class="container mx-auto sm:px-20 px-6">
+            <div class="grid xl:grid-cols-2 gap-10 items-start">
+            <!-- Left copy -->
+            <div>
+                <!-- eyebrow + title -->
+                <div class="text-center md:text-left">
+                <span data-aos="fade-up"
+                    class="inline-flex items-center gap-2 rounded-full bg-brand/10 px-3 py-1 text-[10px] sm:text-xs font-semibold text-brand tracking-widest uppercase">
+                    <span class="h-1 w-1 rounded-full bg-brand"></span> Contact us
+                </span>
+                <h3 data-aos="fade-up" data-aos-delay="50"
+                    class="mt-3 font-extrabold text-brand sm:text-4xl text-2xl">
+                    Let’s Navigate the Future Together
+                </h3>
+                </div>
+
+                <!-- sub copy -->
+                <p data-aos="fade-up" data-aos-delay="100"
+                class="mt-6 text-gray-700 text-sm leading-relaxed md:text-justify">
+                Ready to explore how digital innovation can transform your maritime operations?
+                In today’s competitive and highly regulated industry, technology is essential.
+                We combine maritime expertise with modern software to unlock efficiency, elevate safety,
+                and keep you ahead of evolving global regulations.
+                </p>
+
+                <!-- bullets -->
+                <ul data-aos="fade-up" data-aos-delay="150" class="mt-6 grid sm:grid-cols-2 gap-3">
+                <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 mt-0.5 text-brand" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.17 5.12 12.3 3.71 13.7 9 19l12-12-1.41-1.41z"/></svg>
+                    <span class="text-sm text-gray-800">Cargo planning & stability optimization</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 mt-0.5 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 5.12 12.3 3.71 13.7 9 19l12-12-1.41-1.41z"/></svg>
+                    <span class="text-sm text-gray-800">Compliance-ready (IMO, SOLAS, SIRE 2.0)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 mt-0.5 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 5.12 12.3 3.71 13.7 9 19l12-12-1.41-1.41z"/></svg>
+                    <span class="text-sm text-gray-800">Desktop & cloud maritime platforms</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 mt-0.5 text-brand" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 5.12 12.3 3.71 13.7 9 19l12-12-1.41-1.41z"/></svg>
+                    <span class="text-sm text-gray-800">Training, simulation, & advisory</span>
+                </li>
+                </ul>
+
+                <!-- CTAs -->
+                <div data-aos="fade-up" data-aos-delay="200" class="mt-8 flex flex-wrap gap-3 justify-center md:justify-start">
+                <a href="#contact-form"
+                    class="inline-flex items-center gap-2 rounded-lg bg-brand px-5 py-3 text-white font-semibold shadow-sm hover:bg-brand_light transition">
+                    Schedule a Consultation
+                    <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 0 1 0-1.414L9.586 11H3a1 1 0 1 1 0-2h6.586L7.293 6.707A1 1 0 0 1 8.707 5.293l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414 0Z"/></svg>
+                </a>
+                <a href="#contact-options"
+                    class="inline-flex items-center gap-2 rounded-lg border border-brand/30 text-brand px-5 py-3 font-semibold hover:bg-brand/5 transition">
+                    See Contact Options
+                </a>
+                </div>
+            </div>
+
+            <!-- Right card: quick form + direct contacts -->
+            <div id="contact-options" data-aos="fade-up" class="group relative p-[1px] rounded-2xl bg-gradient-to-br from-brand/30 via-brand/10 to-brand_light/30">
+                <div class="rounded-2xl bg-white p-6 sm:p-8 shadow-xl border border-black/5">
+                <!-- quick buttons -->
+                <div class="grid sm:grid-cols-2 gap-3">
+                    <!-- Whatsapp -->
+                    <a href="https://wa.me/6285853439679" 
+                        target="_blank" rel="noopener"
+                        class="flex items-center justify-center gap-2 rounded-lg bg-brand/10 text-brand px-4 py-3 font-semibold hover:bg-brand/15">
+                        <svg class="w-5 h-5" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M26.576 5.363C23.886 2.673 20.17 1.009 16.065 1.009 7.856 1.009 1.2 7.664 1.2 15.874c0 2.732.737 5.291 2.022 7.491l-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809 8.209-.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507z"/></svg>
+                        WhatsApp
+                    </a>
+
+                    <!-- Email -->
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tam@pranala-dt.co.id" target="_blank" 
+                        class="flex items-center justify-center gap-2 rounded-lg bg-brand/10 text-brand px-4 py-3 font-semibold hover:bg-brand/15">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v.4l10 6.25L22 6.4V6a2 2 0 00-2-2zm0 4.35l-7.55 4.71a2 2 0 01-1.9 0L3 8.35V18a2 2 0 002 2h14a2 2 0 002-2V8.35z"/></svg>
+                        Email
+                    </a>
+                </div>
+
+                <!-- divider -->
+                <div class="my-6 flex items-center gap-3">
+                    <span class="h-px flex-1 bg-gray-200"></span>
+                    <span class="text-[10px] uppercase tracking-widest text-gray-500 font-semibold">or send a message</span>
+                    <span class="h-px flex-1 bg-gray-200"></span>
+                </div>
+
+                <!-- MARK: quick form -->
+                <form id="contact-form" class="grid gap-4"
+                        action="https://formspree.io/f/your-id" method="POST">
+                    <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-medium text-gray-600 mb-1" for="name">Name</label>
+                        <input id="name" name="name" type="text" required
+                            class="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm focus:ring-2 focus:ring-brand focus:outline-none"
+                            placeholder="Your name">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-gray-600 mb-1" for="email">Email</label>
+                        <input id="email" name="email" type="email" required
+                            class="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm focus:ring-2 focus:ring-brand focus:outline-none"
+                            placeholder="you@company.com">
+                    </div>
+                    </div>
+
+                    <div>
+                    <label class="block text-xs font-medium text-gray-600 mb-1" for="company">Company (optional)</label>
+                    <input id="company" name="company" type="text"
+                            class="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm focus:ring-2 focus:ring-brand focus:outline-none"
+                            placeholder="Company name">
+                    </div>
+
+                    <div>
+                    <label class="block text-xs font-medium text-gray-600 mb-1" for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required
+                                class="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm focus:ring-2 focus:ring-brand focus:outline-none"
+                                placeholder="Tell us about your use case…"></textarea>
+                    </div>
+
+                    <div class="flex items-center justify-between gap-3">
+                    <div class="text-[11px] text-gray-500">
+                        By submitting, you agree to be contacted about your inquiry.
+                    </div>
+                    <button type="submit"
+                            class="inline-flex items-center gap-2 rounded-lg bg-brand px-5 py-2.5 text-white text-sm font-semibold shadow-sm hover:bg-brand_light transition">
+                        Send Message
+                        <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M2.94 2.94a1.5 1.5 0 0 0-.41 1.43l1.07 4.3a1.5 1.5 0 0 0 1.08 1.08l4.3 1.07a1.5 1.5 0 0 0 1.43-.41l6.36-6.36a1 1 0 0 0-1.41-1.41L9.99 9.18 8.34 8.76 7.92 7.11l6.33-6.33A1 1 0 1 0 12.84-.63L6.48 5.73a1.5 1.5 0 0 0-.41 1.43l.42 1.65-1.65-.42A1.5 1.5 0 0 0 3.76 7L2.69 2.7a1.5 1.5 0 0 0-1.43-.41l1.68.65z"/></svg>
+                    </button>
+                    </div>
+                </form>
+
+                <!-- MARK: meta info -->
+                <div class="mt-6 grid sm:grid-cols-3 gap-4 text-xs text-gray-600">
+                    <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+                    <a href="https://maps.app.goo.gl/NdCRHJ6LqYCXaZvp9" target="_blank" rel="noopener" class="hover:underline">
+                        Surabaya, Indonesia (Open in Maps)
+                    </a>
+                    </div>
+                    <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4h18v2H3zm0 6h12v2H3zm0 6h18v2H3z"/></svg>
+                    Mon–Fri, 09:00–17:00 WIB
+                    </div>
+                    <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7l5 10H7l5-10z"/></svg>
+                    Avg. response: &lt; 1 business day
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+
+        <!-- MARK: Footer (enhanced) -->
+        <footer class="relative text-white bg-[linear-gradient(135deg,#8d225d_0%,#8d225d_70%,#b84b8d_70%,#b84b8d_100%)]" data-aos="fade-up">
+            <!-- subtle glow layers -->
+            <div class="absolute inset-0 -z-10 opacity-20 bg-[radial-gradient(60%_60%_at_30%_20%,white_0,transparent_60%)]"></div>
+            <div class="absolute inset-0 -z-10 opacity-10 bg-[radial-gradient(40%_40%_at_80%_80%,white_0,transparent_60%)]"></div>
+
+            <div class="container mx-auto sm:px-20 px-6 py-12">
+                <!-- Top CTA strip -->
+                <div class="rounded-2xl bg-white/10 border border-white/20 backdrop-blur-md p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-4" data-aos="fade-up">
+                <div class="flex items-center gap-3 text-center md:text-left">
+                    <div>
+                    <p class="text-xs sm:text-sm opacity-90">Looking for a reliable maritime tech partner?</p>
+                    <h3 class="text-lg sm:text-xl font-semibold">Let’s build safer, smarter, and sustainable shipping.</h3>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                    <a href="https://wa.me/6285853439679" target="_blank"
+                    class="group flex items-center px-4 py-2 rounded-md text-xs sm:text-sm bg-white text-[#8d225d] hover:bg-black/10 hover:text-white border border-white/20 transition">
+                    Contact Us
+                    <svg class="h-4 w-4 ml-2 transition-transform group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 0 1 0-1.414L9.586 11H3a1 1 0 1 1 0-2h6.586L7.293 6.707A1 1 0 0 1 8.707 5.293l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414 0Z"/></svg>
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tam@pranala-dt.co.id" target="_blank" 
+                    class="flex items-center px-4 py-2 rounded-md text-xs sm:text-sm bg-white/10 text-white hover:bg-white/20 border border-white/20 transition">
+                    Email Us
+                    </a>
+                </div>
+                </div>
+
+                <!-- Main grid -->
+                <div class="grid xl:grid-cols-4 md:grid-cols-2 gap-10 mt-10">
+                    <!-- Brand -->
+                    <div data-aos="fade-up">
+                        <div class="flex items-center gap-2 mb-4 justify-center xl:justify-start">
+                        <h1 class="text-2xl font-bold">Pranala</h1>
+                        </div>
+                        <p class="text-white/90 text-xs leading-relaxed text-center xl:text-left">
+                        Driving Innovation in Maritime Technology.<br>Safer, Smarter, and Sustainable Shipping.
+                        </p>
+
+                        <!-- small badges -->
+                        <div class="mt-4 flex flex-wrap items-center justify-center xl:justify-start gap-2">
+                        <span class="text-[10px] px-2 py-1 rounded bg-white/10 border border-white/20">Made in Indonesia</span>
+                        <span class="text-[10px] px-2 py-1 rounded bg-white/10 border border-white/20">Compliance-ready</span>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div data-aos="fade-up" data-aos-delay="50" class="text-center xl:text-left">
+                        <h2 class="font-semibold mb-3">Quick Links</h2>
+                        <ul class="space-y-2 text-sm">
+                        <li><a href="#about" class="hover:underline">About</a></li>
+                        <li><a href="#services" class="hover:underline">Services</a></li>
+                        <li><a href="#choose" class="hover:underline">Why Choose Us</a></li>
+                        <li><a href="#contact" class="hover:underline">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div data-aos="fade-up" data-aos-delay="100" class="text-center xl:text-left">
+                        <h2 class="font-semibold mb-3">Contact</h2>
+                        <ul class="space-y-2 text-sm">
+                            <!-- Email -->
+                            <li class="flex items-center justify-center xl:justify-start gap-2">
+                                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 00-2 2v.4l10 6.25L22 6.4V6a2 2 0 00-2-2zM4 8.35V18a2 2 0 002 2h12a2 2 0 002-2V8.35l-7.55 4.71a2 2 0 01-1.9 0L4 8.35z"/></svg>
+                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tam@pranala-dt.co.id" 
+                                    target="_blank" 
+                                    class="hover:underline">
+                                        tam@pranala-dt.co.id
+                                    </a>
+                            </li>
+
+                            <!-- Whatsapp -->
+                            <li class="flex items-center justify-center xl:justify-start gap-2">
+                                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.1.37 2.28.57 3.5.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.22.2 2.4.57 3.5a1 1 0 01-.24 1.01l-2.2 2.28z"/></svg>
+                                <a href="https://wa.me/6285853439679" 
+                                    target="_blank" 
+                                    class="hover:underline">
+                                        +62 858-5343-9679
+                                </a>
+                            </li>
+                            <li class="flex items-center justify-center xl:justify-start gap-2">
+                                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7z"/></svg>
+                                <a href="https://maps.app.goo.gl/NdCRHJ6LqYCXaZvp9" target="_blank" rel="noopener" class="hover:underline">Surabaya, Indonesia</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Social / Newsletter -->
+                    <div data-aos="fade-up" data-aos-delay="150" class="text-center xl:text-left">
+                        <h2 class="font-semibold mb-3">Follow Us</h2>
+                        <div class="flex space-x-4 justify-center xl:justify-start">
+                            <!-- X Platform -->
+                            <a href="https://x.com/dtpranala" target="_blank" aria-label="X / Twitter" class="p-2 rounded-lg bg-white/10 border border-white/20 hover:bg-white/20 transition">
+                                <svg class="w-5 h-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1187.92 1215.59"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M1102.6,1091.59l-398-578.26-45-65.4L374.83,34.28,351.24,0H1.37L86.69,124,465.27,674.05l45,65.33,304.19,442,23.59,34.25h349.87Zm-223,44.86-316-459.16-45-65.36L151.91,79.14H309.65L606.21,510l45,65.36,386.17,561.07Z"/><polygon class="cls-1" points="518.62 611.93 563.62 677.29 510.27 739.38 100.94 1215.59 0 1215.59 465.27 674.05 518.62 611.93"/><polygon class="cls-1" points="1145.8 0 704.56 513.33 651.21 575.38 606.21 510.02 659.56 447.93 958.45 100.04 1044.86 0 1145.8 0"/></g></g></svg>
+                            </a>
+
+                            <!-- Linkedin -->
+                            <a href="https://www.linkedin.com/company/pt-pranala-digital-transmaritim/" target="_blank" aria-label="LinkedIn" class="p-2 rounded-lg bg-white/10 border border-white/20 hover:bg-white/20 transition">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0zM8 8h4.8v2.2h.1c.67-1.2 2.3-2.46 4.73-2.46 5.05 0 5.98 3.32 5.98 7.63V24h-5v-7.2c0-1.72-.03-3.94-2.4-3.94-2.4 0-2.77 1.87-2.77 3.82V24H8z"/></svg>
+                            </a>
+                        </div>
+                        <!-- tiny note -->
+                        <p class="mt-4 text-[11px] text-white/80">Mon–Fri · 09:00–17:00 WIB</p>
+                    </div>
+                </div>
+
+                <!-- Bottom bar -->
+                <div class="mt-10 border-t border-white/20 pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-[10px]">
+                    <p>© <span id="pl-year">2025</span> PT Pranala Digital Transmaritim. All rights reserved.</p>
+                <div class="flex items-center gap-3">
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                    <span class="opacity-50">•</span>
+                    <a href="#" class="hover:underline">Terms</a>
+                    <span class="opacity-50">•</span>
+                    <a href="#" class="hover:underline">Sitemap</a>
+                </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- MARK: Animate on scroll -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+        <!-- External js -->
+        <script src="./index.js" defer></script>
+    </body>
+</html>
