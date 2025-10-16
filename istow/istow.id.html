@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://istow.id/istow-loading-instrument-for-tanker/ -->
+<html lang="en"><head><meta http-equiv="Content-Type"
+            content="text/html; charset=UTF-8"><meta name="viewport"
+            content="width=device-width,initial-scale=1"><meta
+            name="HandheldFriendly" content="true"><title></title><style>
+        .animated-lightbox {
+          transition: visibility 0.5s, opacity 0.5s;
+          visibility: hidden;
+          opacity: 0;
+        }
+
+        .show-lightbox {
+          opacity: 1;
+          display: block !important;
+          visibility: visible;
+        }
+    </style><link rel="preconnect"
+            href="https://styles.assets-landingi.com/"><link rel="preconnect"
+            href="https://old.assets-landingi.com/"><link rel="preconnect"
+            href="https://fonts.googleapis.com/"><link rel="preconnect"
+            href="https://images.assets-landingi.com/"><link rel="preconnect"
+            href="https://cdn.lugc.link/">
+        <script>
+const verifyRecaptchaOnSubmit = function (e) {
+  e.preventDefault();
+  showButtonSpinner($(this));
+  const recaptchaAction = 'landing_form_submit';
+  let that = this;
+  grecaptcha.execute('6LdKrHsjAAAAABdQ3WpMFH24cXPVkm1YA-KQWjW-', {action: recaptchaAction})
+    .then(function (token) {
+        $(that).parents('form').prepend('<input type="hidden" name="g-recaptchav3-token" value="' + token + '">');
+        hideButtonSpinner($(that));
+        $(that).unbind('click', verifyRecaptchaOnSubmit).click();
+      }
+    );
+}
+
+const showButtonSpinner = function (button) {
+  let overlay = button.find('.widget-overlay');
+  overlay.css('color', button.css('color'))
+    .append('<i class="fa fa-spinner fa-spin"></i>');
+  button.css('color', 'transparent');
+}
+
+const hideButtonSpinner = function (button) {
+  let overlay = button.find('.widget-overlay');
+  button.css('color', '');
+  overlay.empty();
+}
+
+const injectRecaptchaScript = function () {
+  if (window.isRecaptchaScriptInjected) {
+    return;
+  }
+  
+  window.isRecaptchaScriptInjected = true;
+  let recaptchaScriptTag = document.createElement("script");
+  recaptchaScriptTag.type = "text/javascript";
+  recaptchaScriptTag.src = "https://www.google.com/recaptcha/api.js?render=6LdKrHsjAAAAABdQ3WpMFH24cXPVkm1YA-KQWjW-";
+  $("head").append(recaptchaScriptTag);
+}
+
+function initRecaptchaOnFormSubmit(formSelector) {  
+  let forms = $(formSelector).filter(function () {
+    return $('.g-recaptcha', this).length === 0;
+  });
+
+  if (forms.length > 0) {
+    injectRecaptchaScript();
+    forms.each(function () {
+      $('button[type="submit"]', this).click(verifyRecaptchaOnSubmit);
+    });
+  }
+}
+
+function initRecaptchaOnEvent(event) {
+  event.currentTarget.removeEventListener(event.type, initRecaptchaOnEvent);
+    
+  if (window.isRecaptchaInitialized) {
+    return;
+  }
+
+  window.isRecaptchaInitialized = true;
+  initRecaptchaOnFormSubmit('.widget-section form, .widget-smartsection form');
+}
+
+function waitForJQuery(method) {
+    if (window.jQuery) {
+        method(); 
+    } else {
+        setTimeout(function() { waitForJQuery(method) }, 100);
+    }
+}
+
+waitForJQuery(function () {
+  $('head').on('lightboxes-ready', function () {
+    if (window.isRecaptchaInitialized && !window.isRecaptchaInitializedForLightboxes) {
+      window.isRecaptchaInitializedForLightboxes = true;
+      initRecaptchaOnFormSubmit('.landingi-popup form');
+    } /* no else here, selector ".widget-section form" will bind forms from lightboxes on event */
+  });
+
+  document.addEventListener('scroll', initRecaptchaOnEvent);
+  document.addEventListener('mousemove', initRecaptchaOnEvent);
+  document.addEventListener('touchstart', initRecaptchaOnEvent);
+});
+</script><style>
+.grecaptcha-badge {
+    width: 70px !important;
+    overflow: hidden !important;
+    transition: all 0.3s ease !important;
+    left: -7px !important;
+    bottom: 10px !important;
+    transform: scale(0.8) !important;
+    z-index: 1000000 !important;
+}
+.grecaptcha-badge:hover {
+    width: 256px !important;
+    left: -2px !important;
+    transform: scale(1) !important;
+}
+
+@media (max-width:764px) {
+    .grecaptcha-badge {
+        width: 62px !important;
+        height: 55px !important;
+        bottom: 1px !important;
+    }
+}
+</style><script fetchpriority="high">
+   (function(src, cb) {
+    var s = document.createElement('script'); s.setAttribute('src', src); s.setAttribute('fetchpriority', 'high');
+    s.onload = cb; (document.head || document.body).appendChild(s);
+  })('https://ucarecdn.com/libs/blinkloader/3.x/blinkloader.min.js', function() {
+    window.Blinkloader.optimize({
+      fadeIn:false,
+      lazyload:true,
+      smartCompression:true,
+      responsive:true,
+      retina:true,
+      webp:true,
+      pubkey:'ca6af56c901b93c58ffa',
+      cdnBase:'https://cdn.lugc.link'
+    });
+    
+    if (window.location !== window.parent.location) {
+        window.onload = function() {
+            setTimeout(function () {
+                window.dispatchEvent(new CustomEvent('scroll'))
+            }, 500);
+        };
+    }
+  })
+</script><script src="./istow.id_files/blinkloader.min.js.download"
+            fetchpriority="high"></script>
+
+        <link href="./istow.id_files/css" type="text/css" rel="stylesheet"
+            as="style" fetchpriority="high"
+            onload="this.onload=null;this.rel=&#39;stylesheet&#39;"><link
+            href="./istow.id_files/170325-landend-base.css" type="text/css"
+            rel="stylesheet" as="style"
+            onload="this.onload=null;this.rel=&#39;stylesheet&#39;"><link
+            href="./istow.id_files/base.css" type="text/css"
+            rel="stylesheet"><script
+            src="./istow.id_files/lightbox-handler.min.js.download"></script><script>if (typeof Lightbox !== 'undefined') {
+    Lightbox.init({
+        exportUrl: 'https://www.landingiexport.com',
+        hash: 'd2fecb6b9094b4ababf4',
+        tid: 'd2fecb6b9094b4ababf4',
+        redirectUrl: 'https://istow.id/istow-loading-instrument-for-tanker'
+    });
+    Lightbox.register();
+}</script><script>
+    var landingiInternalDetails = {
+        'landing_id': '1907100',
+        'landing_hash': 'd2fecb6b9094b4ababf4',
+        'landing_variant_hash': '',
+        'landing_name': 'iStow+Loading+Instrument+for+Tanker+-+Main',
+        'landing_lang': 'en',
+        'account_uuid': '1f068595-673d-6818-841d-579138d6e0e7',
+        'apikey': 'f335f640-f3dd-46dd-bc11-3839622db555'
+   }
+</script><script>
+    var landingiExportDetails = {
+        exportUrl: 'https://www.landingiexport.com',
+        hash: 'd2fecb6b9094b4ababf4',
+        tid: 'd2fecb6b9094b4ababf4'
+   }
+</script><script>
+(async function (w, d) {
+    try {
+        const response = await w.fetch(
+            'https://' + 'tagmanager.landingi.io' + '/account/' + '1f068595-673d-6818-841d-579138d6e0e7'
+        );
+        const gtm = await response.json();
+
+        if (gtm) {
+            const script = d.head.getElementsByTagName('script')[0];
+            const tmpl = d.createElement('template');
+            tmpl.innerHTML = gtm;
+            tmpl.content.childNodes.forEach((node) => {
+                let elem = node;
+
+                if ('SCRIPT' === node.nodeName) {
+                    elem = d.createElement('script');
+
+                    if (node.textContent) {
+                        elem.textContent = node.textContent;
+                    }
+
+                    if (node.src) {
+                        elem.src = node.src;
+                        elem.type = node.type;
+                    }
+
+                    script.parentNode.insertBefore(elem, script);
+                }
+
+                if ('STYLE' === node.nodeName) {
+                    elem = d.createElement('style');
+
+                    if (node.textContent) {
+                        elem.textContent = node.textContent;
+                    }
+
+                    script.parentNode.insertBefore(elem, script);
+                }
+            })
+        }
+    } catch (err) {
+        console.log(err);
+    }
+})(window, document);
+</script><script defer fetchpriority="low"
+            src="./istow.id_files/lightbox-render.js.download"></script><script>
+window.addEventListener('load', function () {
+    LightboxRender.init({
+        useAaf: false
+    })
+});
+</script></head><body id="Zcc579e32ab7c2c234c287cbcbc03f3a7639f9f1">
+        <div id="ryacaUlIEBzI1HhbGTdvV4xtlH0n6ghx"
+            class="widget widget-section ">
+            <div class="row">
+
+                <div class="container ">
+
+                    <a
+                        href="https://istow.id/istow-loading-instrument-for-tanker/#QeAiNy0p1yPT50bVl8H8178T9AmTvd6F"
+                        id="rP690SUEwVe7WoDbwTnFOT2ZAxyDTbbu"
+                        class="widget widget-image landingi-mockup"
+                        aria-label="Image" subtype="anchor">
+                        <img alt="Image" width="144" height="67"
+                            src="./istow.id_files/saved_resource">
+                    </a>
+                    <a
+                        href="https://api.whatsapp.com/send/?phone=6282260260607&amp;text=Halo+iStow%2C+saya+baru+saja+mengunjungi+halaman+Anda+dan+ingin+mengetahui+lebih+banyak+tentang+iStow+Loading+Instrument+untuk+Tanker.+Bisakah+Anda+memberikan+detail+lebih+lanjut%3F+Terima+kasih%21&amp;type=phone_number&amp;app_absent=0&amp;utm_campaign=hubungi1"
+                        id="uzHFiEEQXWEKu33uqLMqqaoTaksdXPbZ"
+                        class="widget widget-button" version="3"
+                        subtype="redirect" target="_blank"
+                        rel="noopener noreferrer"
+                        data-origin-label="Hubungi kami"
+                        aria-labelledby="rVzgignVeFb79Ns7tbrrVTeL6ySt7kxQ">
+                        <div class="widget-overlay" aria-hidden="true"></div>
+                        <div id="rVzgignVeFb79Ns7tbrrVTeL6ySt7kxQ"
+                            class="widget widget-text"
+                            aria-hidden="true">Hubungi kami</div>
+                    </a><a
+                        href="https://istow.id/istow-loading-instrument-for-tanker/#p6GV9esCemCugqpy3gHE4DFeBtH4htbo"
+                        id="PLJvNClmUT470AHsTl0N2OU4bN2FcA3D"
+                        class="widget widget-button" version="3"
+                        subtype="anchor" rel="noopener noreferrer"
+                        data-origin-label="Testimoni"
+                        aria-labelledby="l835FnLJbokwFLNxMRz6Cfp3TpH5OnqL"
+                        role="button">
+                        <div class="widget-overlay" aria-hidden="true"></div>
+                        <div id="l835FnLJbokwFLNxMRz6Cfp3TpH5OnqL"
+                            class="widget widget-text"
+                            aria-hidden="true">Testimoni</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="T2ko7uIDLC7l4HMfR66H7qUS2PqlSlNi"
+            class="widget widget-section adaptive-delivery-prevent-bg"
+            style="background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url(&quot;https://cdn.lugc.link/60c9be8e-686d-4eae-81e8-382f03a5c887/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/resize/1601x/&quot;);">
+            <div class="row">
+
+                <div class="container ">
+
+                    <div id="QRzRX4TJD4wB1WPaKVdH4cvNBkACwDd8"
+                        class="widget widget-text"><h1>Hindari temuan inspeksi
+                            (NC) karena kapal tidak dilengkapi Loading
+                            Instrument</h1></div><div
+                        id="Os67B6FHCX9QPKXzuxAOTmWkOTuKvady"
+                        class="widget widget-box"></div><div
+                        id="WbsZZ1HqsN8rWTLGMEHI39xExKl7215q"
+                        class="widget widget-box"></div><div
+                        id="ZfDtkqhuKvvKRz6XnvwbtiZc4187urL4"
+                        class="widget widget-box"></div><div
+                        id="xEHomNPruACwtG8xv5sSu0r7O2SEmPNL"
+                        class="widget widget-box"></div><img
+                        id="WpSJzb0FRvBXKExecS3NPs83DkFG2vvy" width="619"
+                        height="456"
+                        data-original="https://images.assets-landingi.com/uc/32ccedb6-5b6a-4906-800b-9a0fbb58ab0a/V2.png"
+                        class="widget widget-image" alt="Image"
+                        fetchpriority="high"
+                        src="./istow.id_files/saved_resource(1)">
+                    <div id="iuF8rTBDa7kOIQoTU1fawp0Q31rTImq0"
+                        class="widget widget-text"><h1>Kami bantu kapal tanker
+                            Anda lolos inspeksi SIRE 2.0, Pertamina Safety
+                            Approval (PSA), atau survey class dengan loading
+                            instrument bersertifikasi
+                            internasional.</h1></div><a
+                        href="https://api.whatsapp.com/send/?phone=6282260260607&amp;text=Halo+iStow%2C+saya+baru+saja+mengunjungi+halaman+Anda+dan+ingin+mengetahui+lebih+banyak+tentang+iStow+Loading+Instrument+untuk+Tanker.+Bisakah+Anda+memberikan+detail+lebih+lanjut%3F+Terima+kasih%21&amp;type=phone_number&amp;app_absent=0&amp;utm_campaign=konsultasi1"
+                        id="o1J6n9NtO9HFsuw9MmtPOaIAOQdTo2QE"
+                        class="widget widget-button" version="3"
+                        subtype="redirect" target="_blank"
+                        rel="noopener noreferrer"
+                        data-origin-label="Konsultasi gratis sekarang"
+                        aria-labelledby="vgzqrUWRaCRtRmvAqiVmzRxknAAHQPZs">
+                        <div class="widget-overlay" aria-hidden="true"></div>
+                        <div id="vgzqrUWRaCRtRmvAqiVmzRxknAAHQPZs"
+                            class="widget widget-text"
+                            aria-hidden="true">Konsultasi gratis sekarang</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="b9wBIWIfz1VGUDpI3F6XmtHGfGroPVul"
+            class="widget widget-section featurelist eventsignup productsale ebook mobileapp webinarsignup servicesale coupondownload comingsoon appregristration ">
+            <div class="row">
+
+                <div class="container ">
+
+                    <div id="Mxk37O88TA8SHyzTIP87zA8ZOkP0JmAU"
+                        class="widget widget-text"><p>ref: IACS UR S1 Rev.7
+                            (2010); MARPOL Annex I, Reg. 28 (updates under MEPC
+                            248(66)).</p></div><div
+                        id="tQ2ynmKtEFbcSZOzMTxru8U3y4yMwVLG"
+                        class="widget widget-text"><h3>Sesuai regulasi maritim,
+                            kapal Tanker dengan LOA &gt; 65m
+                            <b>wajib<br></b>dilengkapi dengan loading instrument
+                            tersertifikasi class</h3></div><div
+                        id="tBlQgRkRlpld0845Ro4tUxeenDTUS1wd"
+                        class="widget widget-box"></div><div
+                        id="AepdMqpLpNqHypqt3q5crTGRukIrnSct"
+                        class="widget widget-box"></div><div
+                        id="aafxIVOsfdhXwot6D1pJ1BgnkvFmbJNQ"
+                        class="widget widget-box"></div><div
+                        id="DmJsDDqz758MlVKe8erNpEGIiFd8Km55"
+                        class="widget widget-box"></div><img
+                        id="AWxeQZFH2hqFtBoKPryXahoP8Z98ndza" width="164"
+                        height="58"
+                        data-original="https://images.assets-landingi.com/uc/b0c263e4-706c-4a1e-8d46-fb56c26ce674/IACS.crop_1892x715_358,364.png"
+                        class="widget widget-image" alt fetchpriority="high"
+                        src="./istow.id_files/saved_resource(2)">
+                    <img id="vx54QfzeTKMuRXiT2zaXCb5Hh9OokZ8P" width="163"
+                        height="58"
+                        data-original="https://images.assets-landingi.com/uc/98a67a93-392c-49ff-8a9b-f958fe63a91d/IMO.crop_1892x715_299,358.png"
+                        class="widget widget-image" alt fetchpriority="high"
+                        src="./istow.id_files/saved_resource(3)">
+                    <div id="quAH90X4mTM3Jbc7hQkQmXDfQmETo7T6"
+                        class="widget widget-text"><h3>Program SIRE telah
+                            membuka era transparansi dan memperkuat standar
+                            keselamatan pelayaran di industri minyak &amp; gas
+                            (tanker). Kini, <i>charterer</i> menilai kapal
+                            berdasarkan rekam jejaknya di database SIRE
+                            (OCIMF).<br><br>Setiap temuan inspeksi
+                            '<i>non-conformity</i> (NC)' akibat ketiadaan
+                            Loading Instrument dapat <b>menurunkan nilai
+                                kompetitif kapal Anda di mata calon
+                                <i>charterer</i>.</b></h3></div><div
+                        id="QI84VnlblkUvNotA5TwhrndXCluA63fP"
+                        class="widget widget-box"></div><img
+                        id="C0H7XBz4cU4nfUazawgUdLqsscPKGIqL" width="664"
+                        height="373"
+                        data-original="https://images.assets-landingi.com/uc/f9cda8ee-16c2-4f60-85fd-8843a5b21f0a/SIRE.png"
+                        class="widget widget-image" alt fetchpriority="high"
+                        src="./istow.id_files/saved_resource(4)">
+
+                </div>
+            </div>
+        </div>
+        <div id="QeAiNy0p1yPT50bVl8H8178T9AmTvd6F"
+            class="widget widget-section ">
+            <div class="row">
+
+                <div class="container ">
+
+                    <div id="Gep5DaCeEkxpis4dfkZUgKTpWd6eGGwd"
+                        class="widget widget-box"></div><div
+                        id="Hsxxr5CV7Uzn6eXsBSfaGiibtQ1tKAws"
+                        class="widget widget-box"></div><div
+                        id="aJoGqTOktKKWMpXc9Wl4ZBbKhRlQTV2a"
+                        class="widget widget-box"></div><div
+                        id="o0JpE7XLDQAGpnf9GH8tWssLf474RSQC"
+                        class="widget widget-box"></div><div
+                        id="r3qzH3ZzTkcENZtc1gtLGfEXrefq6btP"
+                        class="widget widget-text"><p>mengapa Loading Instrument
+                            <b>penting</b> ?</p></div><div
+                        id="JT8myf70ozSth6nzTVwGvBhkT3mh3eW4"
+                        class="widget widget-box"></div><div
+                        id="fTh2v9oZ4gPb4Tn2z2RqmKffLXWLIC0q"
+                        class="widget widget-box"></div><div
+                        id="Lpwoutg8pUpzlSAVPaR8QTMf23N2k8xo"
+                        class="widget widget-box"></div><div
+                        id="TsJeVKJFy9QE3B0rHeblmKblMpaGAXNw"
+                        class="widget widget-text"><p>Jaminan keamanan struktur
+                            kapal</p></div><div
+                        id="dILi3a4XTTh5HMWpHrCilnav1PV1Ekyo"
+                        class="widget widget-text"><p>Kemudahan operasional kru
+                            kapal</p></div><img
+                        src="./istow.id_files/icon_331cad59f77bedbce7260863778d81529c133731.svg"
+                        id="pU6yLCNoDWLnTNKNsAoNxAeQ47R3Door"
+                        class="widget widget-svgicon" alt><img
+                        src="./istow.id_files/icon_97cece05805789c080ec4952f66423d55a43c8cf.svg"
+                        id="DLh5JaurHeZObsR1ohQ2B9zPn5bdrA7C"
+                        class="widget widget-svgicon" alt><div
+                        id="rlmKyULWt8R61NxDScm4WEeOXZAMoPLP"
+                        class="widget widget-box"></div><img
+                        src="./istow.id_files/icon_956ced3ec77cbf1eb7db66c312718d301d2407cf.svg"
+                        id="ATNTrwPbz5JWQZgcg3g9KEnSuLDTxIIC"
+                        class="widget widget-svgicon" alt><div
+                        id="nauwGHBEUoxBsUon9mVx87JJTEHgTohb"
+                        class="widget widget-text"><p>Loading instrument
+                            menyajikan data <i>shear forces</i> dan <i>bending
+                                moment</i> kapal secara real time, membantu kru
+                            memastikan beban muatan terdistribusi merata dan
+                            tidak melebihi batas aman kekuatan
+                            struktur.</p></div><div
+                        id="hiNNhgiqJsy0mw11VkqCeFvsAeFuCtBh"
+                        class="widget widget-text"><p>Membantu pembuatan loading
+                            plan<span style="letter-spacing: 0px;">, validasi
+                                loading sequence, perencanaan trim, ballasting,
+                                pemuatan untuk multiport voyage; semuanya lebih
+                                mudah dan efisien dibandingkan dengan metode
+                                manual.</span></p></div><div
+                        id="OzKExm01J1rhXzlJd9GwnFxaUVVZvT73"
+                        class="widget widget-text"><p>Verifikasi perhitungan
+                            stabilitas (baik <i>intact stability </i>dan
+                            <i>damage stability</i>), tank sounding, koreksi
+                            trim, semuanya lebih akurat. Akurasi perhitungan
+                            dijamin oleh <i>approval</i> class.</p></div><div
+                        id="aBPVDqpHMopwlH7uD3RSLvoFepK1IT2E"
+                        class="widget widget-text"><p>Perhitungan presisi
+                            tinggi</p></div><img
+                        id="ViTgsS6BFxKNu590y3h8Dezxgx8T3LmC" width="770"
+                        height="375"
+                        data-original="https://images.assets-landingi.com/uc/0ae3e156-13c8-4f4e-8a8f-736252e1a7c7/Longstrengthnew.crop_4675x2288_163,225.png"
+                        class="widget widget-image" alt decoding="async"
+                        src="./istow.id_files/saved_resource(5)">
+                    <img id="bQWnQHefgdoziT6c98lBZoztmIFSIaLt" width="708"
+                        height="376"
+                        data-original="https://images.assets-landingi.com/uc/99a81a3b-f8d4-430e-8ffb-23977608dacc/damagestability.crop_4063x2188_463,313.png"
+                        class="widget widget-image" alt decoding="async"
+                        src="./istow.id_files/saved_resource(6)">
+                    <div id="hcSOMmHfvo10epmifygvWkW0ScpWlaLM"
+                        class="widget widget-text"><p>Kalkulasi otomatis diagram
+                            <i>Shear Forces </i>dan <i>Bending Moment</i>
+                            kapal</p></div><div
+                        id="x7Xf0fTmPk785MuCH8aNvApJPXPuoORM"
+                        class="widget widget-box"></div><div
+                        id="l4vROebbleNtHhTlOHoZwmZUUwmtgOpV"
+                        class="widget widget-box"></div><div
+                        id="yEIUCP7eAxohy8Mr481hTvVrxbG2VTTo"
+                        class="widget widget-box"></div><div
+                        id="UHz5PT87NMnU0CJRZRxDhELWO2ocMznP"
+                        class="widget widget-text"><p>Simulasi kebocoran kapal
+                            (<i>damage stability</i>) akurat dan
+                            cepat</p></div><div
+                        id="xe1dekHxO2ql05yTrITsgsvZ5bxTytnG"
+                        class="widget widget-box"></div><img
+                        id="tPiAGGy4dNNCIa1HthWHzpWaw5dBVvF6" width="573"
+                        height="316"
+                        data-original="https://images.assets-landingi.com/uc/0aacd237-8382-45c7-b4d3-16895ad6143f/damages.png"
+                        class="widget widget-image" alt decoding="async"
+                        src="./istow.id_files/saved_resource(7)">
+
+                </div>
+            </div>
+        </div>
+        <div id="XQSDbOeyncGTJVERNRZmr2DJ8nasKVSb"
+            class="widget widget-section ">
+            <div class="row">
+
+                <div class="container ">
+
+                    <div id="oMST6l7E71BeuvQNNvpTNrfLMKPyzl3k"
+                        class="widget widget-text"><p>KAMI
+                            PERKENALKAN</p></div><div
+                        id="NKDZ0iODnC4fyXqQJBEi1KrkDt2itQ2A"
+                        class="widget widget-text"><h3>iStow Loading
+                            Instrument</h3></div><div
+                        id="PSw5PzEz4FAoaTFrGCZvqqhl19IROM5w"
+                        class="widget widget-box"></div><div
+                        id="dsfuEyurmRFez2mTMg8VMduB72Jm5UA9"
+                        class="widget widget-box"></div><div
+                        id="imIIC8FJFdJHfFSl7J2ZgrqafJ682WnL"
+                        class="widget widget-box"></div><div
+                        id="LBJaZPKi2PTbc0FOiJ9IC20CxtXqTWFk"
+                        class="widget widget-box"></div><div
+                        id="bslva51g0FG5nvcPyiP96Vm4SGDqu4Sq"
+                        class="widget widget-text"><p>loading instrument
+                            tersertifikasi nasional dan internasional (IACS
+                            class members)</p></div><div
+                        id="MThtSTOo4oqW54esGpMLfAxpRbpPoTJ8"
+                        class="widget widget-text"><p>for tankers</p></div><img
+                        id="oPAoveZ9FkrKiJ2ncH1DAseDThICGPZq" width="589"
+                        height="99"
+                        data-original="https://images.assets-landingi.com/uc/b8260ca4-1818-4f49-b56b-88b82be0deb2/sertifikasinew.crop_1596x300_0,324.png"
+                        class="widget widget-image" alt decoding="async"
+                        src="./istow.id_files/saved_resource(8)">
+                    <img id="z5sbxaemQcLAhdBI0Dqe8WccA4ZbGVuT" width="403"
+                        height="468"
+                        data-original="https://images.assets-landingi.com/uc/06f11daa-b4b4-4ddb-b5b6-35c1d8e9088f/abb.png"
+                        class="widget widget-image" alt="Image" decoding="async"
+                        src="./istow.id_files/saved_resource(9)">
+                    <img id="yfMFxaecWp0W8zLJPuklaqorQgsW6PSQ" width="699"
+                        height="595"
+                        data-original="https://images.assets-landingi.com/uc/c76b9137-086a-4afc-be8c-2de154277de2/pici.crop_1637x1395_0,355.png"
+                        class="widget widget-image" alt decoding="async"
+                        src="./istow.id_files/saved_resource(10)">
+                    <div id="nT4r0vhTRxwd8s74l6Ti2LThZVMaIuff"
+                        class="widget widget-box"></div><div
+                        id="kUGb7AEVvCwWvilK2rAeTDAAps0N3PCv"
+                        class="widget widget-text"><h3>Dilengkapi berbagai fitur
+                            canggih untuk memperkuat keselamatan kapal anda dan
+                            meningkatkan efisiensi operasional - </h3></div><div
+                        id="IT7OOWzHBkfOwHmrsRiFvGBKnxbeo7Uw"
+                        class="widget widget-text"><ul><li>Modul <i>Intact
+                                    stability, Damage stability, Longitudinal
+                                    strength</i> dengan perhitungan otomatis dan
+                                real time</li><li>Modul <i>Draught survey</i>
+                                terintegrasi</li><li>Interface 2D dan
+                                3D</li><li>Alarm visual dan
+                                audio</li><li>Perhitungan <i>Compartement Log
+                                    Sheet </i>(COMLOG)</li><li>Auto generate
+                                file laporan (loading plan, tank summary, NOR,
+                                dsb) untuk administrasi dan <i>ship
+                                    clearance</i></li><li><i>Collaborative
+                                    Planning mode</i>, sinkronisasi data kapal
+                                dan kantor secara real time</li><li>Integrasi
+                                dengan <i>Tank Level Sensor</i></li><li>dan lain
+                                lain</li></ul></div><div
+                        id="q5fQe5eKhsy3e40v93dVr9olG3COwU2P"
+                        class="widget widget-box"></div><a
+                        href="https://api.whatsapp.com/send/?phone=6282260260607&amp;text=Halo+iStow%2C+saya+baru+saja+mengunjungi+halaman+Anda+dan+ingin+mengetahui+lebih+banyak+tentang+iStow+Loading+Instrument+untuk+Tanker.+Bisakah+Anda+memberikan+detail+lebih+lanjut%3F+Terima+kasih%21&amp;type=phone_number&amp;app_absent=0&amp;utm_campaign=jelajahi1"
+                        id="EyLymTIkl9gefP8cC9TkcPg2RsMSVoNl"
+                        class="widget widget-button" version="3"
+                        subtype="redirect" target="_blank"
+                        rel="noopener noreferrer"
+                        data-origin-label="Jelajahi fitur iStow"
+                        aria-labelledby="FwHMXwwBE8f1dvqLHPXc5DkB2NSXby9V">
+                        <div class="widget-overlay" aria-hidden="true"></div>
+                        <div id="FwHMXwwBE8f1dvqLHPXc5DkB2NSXby9V"
+                            class="widget widget-text"
+                            aria-hidden="true">Jelajahi fitur iStow</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="Gkd59o855irQvG2yGQotpHIOCsNBKtOG"
+            class="widget widget-section ">
+            <div class="row">
+
+                <div class="container ">
+
+                    <div id="wTM6UOdOG17pvaHLlkZQq78f1cvL01pV"
+                        class="widget widget-box"></div><div
+                        id="gm8i5n9nZJKgM2BzVQXDGeoZ9KTdn4pG"
+                        class="widget widget-box"></div><div
+                        id="LcJzEuiQ7RH1eE0QHbNwbOf0hsu8MXhw"
+                        class="widget widget-box"></div><div
+                        id="d85ZGknHnAmTum0kEEzQZMaCWnTWK1uJ"
+                        class="widget widget-box"></div><img
+                        id="tn4pzlcHrUg2ZtdKn9StXRehGHGIF8ao" width="1152"
+                        height="461"
+                        data-original="https://images.assets-landingi.com/uc/948d3630-eddf-439b-96a8-52210b8a860b/PranalaTankerXEdited.crop_4788x1932_0,384.png"
+                        class="widget widget-image" alt decoding="async"
+                        src="./istow.id_files/saved_resource(11)">
+                    <div id="KAA6X5hakwDvD7dbta8RvvrrHIHzSefb"
+                        class="widget widget-text"><h3>Teknologi digital twin
+                            pada iStow terbukti membantu operasional tanker
+                            lebih efisien dan andal -</h3></div><div
+                        id="HDOeHlJITAoo3ExBXa4ILfUICKZWoym7"
+                        class="widget widget-box"></div><div
+                        id="c1gMvyOTSq4HuVcZk6XvpozsMxTJAJQ5"
+                        class="widget widget-text"><p>apa yang bisa dilakukan
+                            dengan <b>iStow</b> ?</p></div><div
+                        id="RFl1Bzg9y8gceCPf0zbhWy3LLLt4TDPa"
+                        class="widget widget-text"><p>3D digital twin of MT.
+                            Pranala Tanker X</p></div><div
+                        id="dhUtb6q6kw58lps9aaihUuzxtCfK9S8l"
+                        class="widget widget-text"><ul><li>Pembuatan stowage
+                                plan (konfigurasi tangki) untuk muatan
+                                <i>single-grade</i> maupun
+                                <i>multi-grade</i></li><li>Simulasi perencanaan
+                                muat untuk pelayaran<i> port-to-port, </i>STS,
+                                dan<i> multi-port</i></li><li>Pembuatan<i>
+                                    Loading Plan</i>, hingga simulasi <i>loading
+                                    sequence</i> dan <i>unloading
+                                    sequence</i></li><li>Perencanaan operasi
+                                ballast &amp; deballasting</li><li>Perencanaan
+                                trim dan draft kapal</li><li>Perhitungan tank
+                                sounding, didukung algoritma 'koreksi trim'
+                                otomatis</li><li>Koreksi volume muatan (minyak)
+                                sesuai tabel ASTM secara
+                                otomatis</li><li>Perencanaan konfigurasi tangki
+                                untuk minimalisir <i>free surface effect </i>dan
+                                distribusi beban optimal</li></ul></div>
+                </div>
+            </div>
+        </div>
+        <div id="KxNXnm2w9PxMw3AlQfU0L8WzxK2llCtm"
+            class="widget widget-section ">
+            <div class="row">
+
+                <div class="container ">
+
+                    <div id="olsWgCtVy5yoThKRNoOEbhft5BlpU0RQ"
+                        class="widget widget-text"><h3><i>Compliant</i>,
+                            <i>safe</i>, dan efisien</h3></div><div
+                        id="oyc3X4bOrXN2EEheDvEAex1gK2SIJoPR"
+                        class="widget widget-box adaptive-delivery-prevent-bg"
+                        style="background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url(&quot;https://cdn.lugc.link/2f4eb29e-09fc-4e55-b89d-09af6b31f3a5/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/resize/x900/&quot;);"></div><div
+                        id="U4zXRZU7xXC8p1Mkyo8IK5Ps7aQfiiaQ"
+                        class="widget widget-text"><p>iStow Loading Instrument
+                            mengoptimalkan distribusi muatan, memastikan
+                            stabilitas kapal terjaga, sekaligus menurunkan biaya
+                            operasional kapal tanker Anda</p></div><div
+                        id="XA086S4RaEcihTVdq7t4znTZ5CyUw9B8"
+                        class="widget widget-box"></div><img
+                        src="./istow.id_files/icon_d4b46af7982d55bc6b700d02eb81884425baee30.svg"
+                        id="C96gSVHm27tQEbFRRsxGcIOWkJhQ4SRW"
+                        class="widget widget-svgicon" alt><div
+                        id="Hno3VIrW0nADUdqoU1xJ1z1ewotXvbqp"
+                        class="widget widget-text"><p>Compliance dengan regulasi
+                            Internasional</p></div><div
+                        id="OFmaPuOtSZhQ8ThbGENkndqVQLVbUC6s"
+                        class="widget widget-text"><p>Tidak perlu lagi was was..
+                            Kapal anda siap berlayar kemanapun di seluruh dunia,
+                            jaminan comply dengan regulasi maritim
+                            internasional.</p></div><div
+                        id="nNI2ZgAkUXyUamEE4Z19xO8pvTZ8swPa"
+                        class="widget widget-box"></div><img
+                        src="./istow.id_files/icon_d4b46af7982d55bc6b700d02eb81884425baee30.svg"
+                        id="gJcKBZWIn6yHHAa54eok1N7f23o9LW0T"
+                        class="widget widget-svgicon" alt><div
+                        id="bpgNCGTwcRnQ65EM0JF9la6l6pGkr9lV"
+                        class="widget widget-text"><p>Kurangi risiko insiden
+                            terkait stabilitas, sekaligus melindungi keselamatan
+                            kru dan integritas muatan</p></div><div
+                        id="ITLdrKk3FP3TQa7bmGfzP2kK0ChfcTAX"
+                        class="widget widget-box"></div><div
+                        id="Q9AfgnRZsArhdxQGZypse2LxCduLGLEQ"
+                        class="widget widget-text"><p>Dapatkan data kondisi
+                            muatan secara real-time untuk mendukung pengambilan
+                            keputusan tepat.</p></div><img
+                        src="./istow.id_files/icon_d4b46af7982d55bc6b700d02eb81884425baee30.svg"
+                        id="gNQHvO0dxtTxyvw9WQbsEpUQa0z2OIX4"
+                        class="widget widget-svgicon" alt><div
+                        id="WkQB4fpv1wzosUOO6hrZ7VPRHaZkN52P"
+                        class="widget widget-text"><p><i>Data
+                                Driven</i></p></div>
+                </div>
+            </div>
+        </div>
+        <div id="gDuuuIkdwvMpLOC5UriZsAeaixdB4A5T"
+            class="widget widget-section ">
+            <div class="row">
+
+                <div class="container ">
+
+                    <div id="J50TtqXw6AVEAyGKfMNB9B2cHMh39yru"
+                        class="widget widget-box"></div><div
+                        id="rITShX8UEyUI1cF2y5THRgDnRTRtp5C8"
+                        class="widget widget-text"><p>01</p></div><div
+                        id="CX2xBwa5T989ETIEvyvyhVGkmIFUKI3Z"
+                        class="widget widget-text"><p>Hubungi kami</p></div><div
+                        id="FlUyrcFa0Z5u81fCgUJmKSoZJDaTv00H"
+                        class="widget widget-text"><p>Tim kami siap mendampingi
+                            dan memberikan konsultasi penuh untuk kebutuhan
+                            spesifik Anda</p></div><div
+                        id="DT6Sdt1LkogXaKnDsX7K0wfqWole7eTC"
+                        class="widget widget-box"></div><div
+                        id="QRg3AhpoFGwTeSCZ5qZJTh37b8k3OgHw"
+                        class="widget widget-text"><p>Cek data
+                            kapal</p></div><div
+                        id="osmdqr1QpK9AgBo3QzCb5pnPtzD06PVd"
+                        class="widget widget-text"><p>Kami akan melakukan
+                            pengecekan kelengkapan data kapal Anda. Untuk
+                            memastikan setiap tahap berikutnya berjalan
+                            lancar</p></div><div
+                        id="QFfnKTKzi4Reiby2XrMSQ5tOPLvZCuiM"
+                        class="widget widget-text"><p>02</p></div><div
+                        id="EiMnLR6dw1kun1wvGT6XT5t15WJgzq2b"
+                        class="widget widget-text"><p>Anda akan menerima
+                            penawaran resmi sesuai kebutuhan spesifik dengan
+                            harga kompetitif</p></div><div
+                        id="Ed5fVsCD3axq6TXGnb8Eyql86cmVzpJW"
+                        class="widget widget-text"><p>Deal! kami akan produksi
+                            digital twin kapal Anda. Dalam 30 hari, iStow
+                            Loading Instrument siap untuk dipakai di
+                            kapal</p></div><div
+                        id="GJn3q1QhT8fmD08cZe2ufmPEGk01z7qw"
+                        class="widget widget-box"></div><div
+                        id="VVJeCV3U5458M2Ty5JUDa1zqLObWSws5"
+                        class="widget widget-text"><p>Dapatkan
+                            penawaran</p></div><div
+                        id="lmR0cOgIRHZM2uu7NlHoMFefNFsbuKIa"
+                        class="widget widget-box"></div><div
+                        id="pUhhqVci50rtQsqTORPBhiQ7iGTI5TZH"
+                        class="widget widget-text"><p>Instalasi</p></div><div
+                        id="Tk0kJIWcyaLtKyxJXC0TeGWmQmEr0G2W"
+                        class="widget widget-text"><p>03</p></div><div
+                        id="InKsOGx490rmuTztUrQvhMQ1aKFtan5o"
+                        class="widget widget-text"><p>04</p></div><div
+                        id="xNZ4dCixnmXWebFTssqulIHLqWnX7WcQ"
+                        class="widget widget-text"><p>BAGAIMANA CARA MENDAPATKAN
+                            ISTOW UNTUK KAPAL TANKER ANDA ?</p></div><div
+                        id="lTrDNKVlNUsiUwwnTVDkC9B1cAwoOJln"
+                        class="widget widget-text"><h3>4 Langkah
+                            Mudah</h3></div><div
+                        id="vKDTZTKqQ4ot5dnvQEJLCyO2deFAgGrs"
+                        class="widget widget-box"></div><div
+                        id="ZrwQbTMK4Ig9XtLSf6f4pXFNluScqBMG"
+                        class="widget widget-box"></div><div
+                        id="GD2ST7VLWaCZNIoCa7OrivIHtRDXSkMM"
+                        class="widget widget-box"></div><a
+                        href="https://api.whatsapp.com/send/?phone=6282260260607&amp;text=Halo+iStow%2C+saya+baru+saja+mengunjungi+halaman+Anda+dan+ingin+mengetahui+lebih+banyak+tentang+iStow+Loading+Instrument+untuk+Tanker.+Bisakah+Anda+memberikan+detail+lebih+lanjut%3F+Terima+kasih%21&amp;type=phone_number&amp;app_absent=0&amp;utm_campaign=hubungi2"
+                        id="voEcDzVd35ezyycDZOqgqa3zGxFy1QH3"
+                        class="widget widget-button" version="3"
+                        subtype="redirect" target="_blank"
+                        rel="noopener noreferrer"
+                        data-origin-label="Hubungi tim kami"
+                        aria-labelledby="cPbPKT1dxGFox6QOon0Hl0upz1mtUaHR">
+                        <div class="widget-overlay" aria-hidden="true"></div>
+                        <div id="cPbPKT1dxGFox6QOon0Hl0upz1mtUaHR"
+                            class="widget widget-text"
+                            aria-hidden="true">Hubungi tim kami</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="TecaXCPSd9yckEM6czh363hTUvO84ZWl"
+            class="widget widget-section adaptive-delivery-prevent-bg"
+            style="background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url(&quot;https://cdn.lugc.link/60c9be8e-686d-4eae-81e8-382f03a5c887/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/resize/2000x1499/&quot;);">
+            <div class="row">
+
+                <div class="container ">
+
+                    <div id="nIFIFT6862Ry8Msb2BPoK4JkgvhWX78I"
+                        class="widget widget-text"><h2>Tailored
+                            Solutions</h2></div><div
+                        id="XocznqNNWT67GmBhfA8uVCxSeoODB3Xt"
+                        class="widget widget-text"><p>Loading Instrument kami
+                            dibuat khusus dan spesifik untuk kapal
+                            Anda.</p><p>dapatkan kustomisasi yang fleksibel
+                            sesuai kebutuhan operasional
+                            perusahaan.</p></div><div
+                        id="m9bFKeMWSwtyQPHKMbbOZba5xvvtFbiu"
+                        class="widget widget-box"></div><div
+                        id="GmdC8SdlqHACdEQeOiI8A3UsMTMlmSfQ"
+                        class="widget widget-box"></div><div
+                        id="fVziHV4wdlFf9P32UQKsCaWOCsFxOmkq"
+                        class="widget widget-box"></div><div
+                        id="RFD7sAMquCFPzueKz8KpgXa7RCHqvU6K"
+                        class="widget widget-box"></div><div
+                        id="MSop0sLOuQBM7b3wD38COU4IAz1U8RkQ"
+                        class="widget widget-box"></div><div
+                        id="BaiwUwyq0Ev03OK3D0UPgGOZqJZJCiGr"
+                        class="widget widget-box"></div><div
+                        id="vGva0KRKydzFk8JwscXHmGrOxgs53Ioc"
+                        class="widget widget-box"></div><div
+                        id="X9XZgdXPqSErqBLMSsnbdwce6X4gvdIJ"
+                        class="widget widget-box"></div>
+                </div>
+            </div>
+        </div>
+        <div id="QUpel2x186TaoRzsCoD5pZApKf1W9maz"
+            class="widget widget-section ">
+            <div class="row">
+
+                <div class="container ">
+
+                    <div id="ndkUVbcATrqT3n4sPITmcA6B9wO4LwMQ"
+                        class="widget widget-text"><h3><i>Proven
+                                impact</i></h3></div><div
+                        id="utwk3rea1wMHiH75qPDivEsrQppIAF83"
+                        class="widget widget-text"><p>iStow Loading Instrument
+                            telah diadopsi luas di industri pelayaran dan
+                            terbukti meningkatkan keselamatan dan efisiensi
+                            operasional.</p></div><div
+                        id="IqakgnrwftiIlSdUVxd60e2oATdx3sFi"
+                        class="widget widget-box"></div><div
+                        id="kOWdhhp27LE8RAqQ400mqxJdzRhMnSCt"
+                        class="widget widget-text"><p>4</p></div><div
+                        id="foRL1DNCCT2oqSNQPi3XrGxDePiQ8Dr5"
+                        class="widget widget-text"><p>negara telah mengadopsi
+                            iStow</p></div><div
+                        id="avTcAWwQuUR7oWfsK5MLTQvDXgbTt91h"
+                        class="widget widget-box"></div><div
+                        id="PgF5LplDeeW6rP0glKZTTUN49vlZ2n8t"
+                        class="widget widget-text"><p>instalasi di
+                            kapal</p></div><div
+                        id="Mi8NPZNvdA4UZ4MSsTfIW6sSq8x8UxUk"
+                        class="widget widget-text"><p>70+</p></div><div
+                        id="R73Bm0sFyZFZykm8QpaOp7Wa0cTdBvzc"
+                        class="widget widget-box"></div><div
+                        id="PBw1lSTfnsaq6lrrqi2JhBXQXtvp9kz2"
+                        class="widget widget-text"><p>99%++</p></div><div
+                        id="LtoBv4mmtR0aBdPEUfTwWBTfiiJ6cTsx"
+                        class="widget widget-text"><p>Akurasi
+                            perhitungan</p></div><div
+                        id="hPkxZO1Wlym8MWePHE0W7NGtWTWF2M2K"
+                        class="widget widget-box"></div><div
+                        id="H5ZVl003ZbcA8RMA2TJJdTrCb3o0Ol92"
+                        class="widget widget-text"><p>Penghematan
+                            waktu</p><p>operasional</p></div><div
+                        id="pDaPQUCeo7WqqHHm2LZOoLdnToa8bAD8"
+                        class="widget widget-text"><p>60%++</p></div>
+                </div>
+            </div>
+        </div>
+        <div id="p6GV9esCemCugqpy3gHE4DFeBtH4htbo"
+            class="widget widget-section ">
+            <div class="row">
+
+                <div class="container ">
+
+                    <div id="XaHE45gWAw1BRPUXiyQPO27Nx03fBwcC"
+                        class="widget widget-text"><p>DENGARKAN
+                            LANGSUNG</p></div><div
+                        id="T1Ibo5D91MxXfFBaipO2m8HSWkGIWoQH"
+                        class="widget widget-text"><h3>Testimoni
+                            user</h3></div><div
+                        id="oPFiV5xTQHwQEAPrweKL1cnuVpsvDSsU"
+                        class="widget widget-box"></div><div
+                        id="Az6uUTE3HUDcKBkfI4KTUcxaT1GedsaB"
+                        class="widget widget-box"></div><div
+                        id="f3Q5FdrT7nVyrBGOxlQTpxzedOVtKTqy"
+                        class="widget widget-box"></div><div
+                        id="RKnC7BhxEMJHz7HJJvvKpzp8LMp1XNbO"
+                        class="widget widget-box"></div><div
+                        id="TuusIC2C9BTdqeP95Pt2WlC2OhTErXID"
+                        class="widget widget-box"></div><div
+                        id="eSPkABlWzgGM4EtJXsK5T1QDeoFTxw13"
+                        class="widget widget-text"><p>“<b>Menghemat waktu
+                                signifikan</b> dalam membuat stowage plan,
+                            karena terkadang untuk 1 Voyage bisa sampai 20
+                            pelabuhan tujuan.”</p></div><div
+                        id="uVnouN7wyx39814K945I77ySrXzrl9la"
+                        class="widget widget-text"><p>Chief Wahyu, MT Patra
+                            Tanker 1</p></div><img
+                        src="./istow.id_files/icon_59966eb46802b39e5ab7f14fe9d223ca9a947db1.svg"
+                        id="FItSRb2a2uUz594s4aDMlopFF4h1CJRa"
+                        class="widget widget-svgicon" alt><div
+                        id="qcwAXiuTBsAwSGFcOTHKVldofMV26osc"
+                        class="widget widget-box"></div><div
+                        id="xVL9FgM4b0NAH67eqhEMJ4HUnVD2hO6v"
+                        class="widget widget-text"><p>“... <b>otomatisasi
+                            </b>iStow ini sangat diperlukan untuk <b>mengurangi
+                                error</b> dibandingkan kita input stability
+                            secara manual."</p></div><div
+                        id="BRTcrkg1MIiKbTT9Gtrg2ab0Tac0tPPh"
+                        class="widget widget-text"><p>Chief Sony Setyo, MT
+                            Ketaling</p></div><img
+                        src="./istow.id_files/icon_59966eb46802b39e5ab7f14fe9d223ca9a947db1.svg"
+                        id="hQQw2r9ZPmmxNCaWIFZvIStsH5qwI07a"
+                        class="widget widget-svgicon" alt><div
+                        id="aMhkrargNJJRfH4guVoaVyyi3PtoQQX8"
+                        class="widget widget-box"></div><div
+                        id="tsP3TEhhcpOXUwQuEiKbrADFutyyB2KL"
+                        class="widget widget-text"><p>Chief Imran, MT Patra
+                            Tanker 2</p></div><div
+                        id="TszqywRFVw4JROCi5evmhNIUx5K5Gh6Q"
+                        class="widget widget-text"><p>“iStow <b>sudah di-approve
+                                oleh class</b> BKI, sehingga bisa digunakan
+                            secara resmi di kapal untuk perencanaan muatan saat
+                            loading dan discharging.”</p></div><div
+                        id="IyWNooAap0LXTGuB0qGNTsgyOqvqyH3K"
+                        class="widget widget-box"></div><div
+                        id="ofvUoSpcdnIiSkziIUsr68WGinz55oGR"
+                        class="widget widget-text"><p><b>“Mempermudah monitoring
+                                stabilitas</b> kapal tiap waktu pada saat
+                            loading and discharge, tanpa harus menghitung
+                            manual.”</p></div><div
+                        id="SvXG1G1ZHE2OKqAcbwqXP1AZg1rO7HDp"
+                        class="widget widget-text"><p>Capt Mulyono, MT
+                            Balongan</p></div><img
+                        src="./istow.id_files/icon_59966eb46802b39e5ab7f14fe9d223ca9a947db1.svg"
+                        id="ebzd3kJN7ELLLwcJ7CAdte5kun3Mp2p9"
+                        class="widget widget-svgicon" alt><img
+                        src="./istow.id_files/icon_59966eb46802b39e5ab7f14fe9d223ca9a947db1.svg"
+                        id="t7LwGZe2wzIZdPSeVha82spSDoZUNIdK"
+                        class="widget widget-svgicon" alt>
+                </div>
+            </div>
+        </div>
+        <div id="C4CRVha1t27OTw4sm8mgDNR824E8zZZK"
+            class="widget widget-section badges contestsignup consultation eventsignup productsale ebook recruitment mobileapp webinarsignup servicesale coupondownload appregristration companypresentation ">
+            <div class="row">
+
+                <div class="container ">
+
+                    <div id="gL8oqgK0bCOc1LB8O3cUNKk3ysr48UmQ"
+                        class="widget widget-text"><p><i>RECOGNIZED BY INDUSTRY
+                                LEADER</i></p></div><div
+                        id="TNPKbqcwit7H4Ad5JTsDJl1JHaKlORVv"
+                        class="widget widget-text"><h3>iStow telah dipercaya
+                            sebagai mitra andalan</h3></div><img
+                        id="xFeVeo19GXGVxlTt2lHUq85cQoDF1UJn" width="170"
+                        height="93"
+                        data-original="https://images.assets-landingi.com/uc/f8f3fc4e-a184-4ae9-a15e-db97a0088d46/SCH.png"
+                        class="widget widget-image landingi-mockup" alt="Image"
+                        decoding="async"
+                        src="./istow.id_files/saved_resource(12)">
+                    <img id="ps0pxNqcqn8A4yXxhRI4qgFUQdePk5JC" width="170"
+                        height="93"
+                        data-original="https://images.assets-landingi.com/uc/6253b47e-9ce4-4ac2-af51-b0da3e6268eb/PIS.png"
+                        class="widget widget-image landingi-mockup" alt="Image"
+                        decoding="async"
+                        src="./istow.id_files/saved_resource(13)">
+                    <img id="vecSmHD59KZfbRaHc97xI6iPpXhBzMKL" width="170"
+                        height="93"
+                        data-original="https://images.assets-landingi.com/uc/4aa9defc-5e00-482f-bc08-3bd734d9137f/SMDR.png"
+                        class="widget widget-image landingi-mockup" alt="Image"
+                        decoding="async"
+                        src="./istow.id_files/saved_resource(14)">
+                    <img id="GTOJSlXC5sInzZAH4Mifcqsens16pgXp" width="170"
+                        height="94"
+                        data-original="https://images.assets-landingi.com/uc/77e4c4f0-3525-4742-90f2-8027c6a63ac1/BP.png"
+                        class="widget widget-image landingi-mockup" alt="Image"
+                        decoding="async"
+                        src="./istow.id_files/saved_resource(15)">
+                    <img id="pE3VVcOPk3wRWksVSOT0OwgcHzc3ac5E" width="170"
+                        height="94"
+                        data-original="https://images.assets-landingi.com/uc/fd9ba916-fbf1-4a3f-8600-9bc413a7773b/PPE.png"
+                        class="widget widget-image landingi-mockup" alt="Image"
+                        decoding="async"
+                        src="./istow.id_files/saved_resource(16)">
+                    <img id="EMel4JeSSKdBcCA66KwE9giIieS6rAWK" width="170"
+                        height="94"
+                        data-original="https://images.assets-landingi.com/uc/3ee946a4-46b3-49a4-a579-9c957147d988/ASG.png"
+                        class="widget widget-image landingi-mockup" alt="Image"
+                        decoding="async"
+                        src="./istow.id_files/saved_resource(17)">
+                    <img id="QBtTCbl4CQPhiTxCHRTJoBewCn1FT7Av" width="170"
+                        height="94"
+                        data-original="https://images.assets-landingi.com/uc/64086cf3-09df-4a20-899e-bc42d2963c77/ENC.png"
+                        class="widget widget-image landingi-mockup" alt="Image"
+                        decoding="async"
+                        src="./istow.id_files/saved_resource(18)">
+                    <img id="q8v3bwMeFFamiNvM6B8dHL7Jf84xfAGM" width="170"
+                        height="94"
+                        data-original="https://images.assets-landingi.com/uc/0541657f-8d5f-4cbf-899e-003af15f0474/DML.png"
+                        class="widget widget-image" alt="Image" decoding="async"
+                        src="./istow.id_files/saved_resource(19)">
+                    <div id="E3I9SDAf84vod1yKzzRTQzcSWhcDrJqe"
+                        class="widget widget-box"></div><div
+                        id="mPeGx2ogKnKnxU4vdMi7WQAJq08kbNSU"
+                        class="widget widget-box"></div><div
+                        id="Q3GwUb1vIdBcCTsaK3LWyoScfFDf3xCi"
+                        class="widget widget-box"></div><div
+                        id="P14aPBRvGxv8y0TdapI0L4tkx8sXZs1H"
+                        class="widget widget-box"></div><img
+                        id="HlNTfIOLc892N3sg6teiSpsDkB6teCR0" width="166"
+                        height="93"
+                        data-original="https://images.assets-landingi.com/uc/bbb48c01-15d9-4f48-b1e9-9f516f7c3555/other.png"
+                        class="widget widget-image" alt="Image" decoding="async"
+                        src="./istow.id_files/saved_resource(20)">
+
+                </div>
+            </div>
+        </div>
+        <div id="TtsZZPcy1WsavxpdwNkybOMirDGLFzwD"
+            class="widget widget-section adaptive-delivery-prevent-bg"
+            style="background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url(&quot;https://cdn.lugc.link/4b1a4f8b-a71c-414b-8cb0-e5df552c985f/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/resize/1920x1080/&quot;);">
+            <div class="row">
+
+                <div class="container ">
+
+                    <div id="sIizKxSw2oLRyxJK7rFCnS5sB37waFQl"
+                        class="widget widget-text"><h1>Hubungi
+                            Kami</h1></div><div
+                        id="t4JlzTLhWHSakpAFOQxgO38R98q9K3UN"
+                        class="widget widget-box"></div><div
+                        id="NoqSpsdTliTdfZ4xvET343cvgUMPiHOx"
+                        class="widget widget-box"></div><div
+                        id="n0quSpixAkeyd499pBKv3Z3CsqeMckb3"
+                        class="widget widget-box"></div><div
+                        id="Te8KyCq1d3CmrHmbUH4KzPly5SwpUZ0D"
+                        class="widget widget-box"></div><div
+                        id="wC73fOFsUXEfDkM33BAN49HbipH9tLdq"
+                        class="widget widget-text"><p>Temukan bagaimana iStow
+                            Loading Instrument dapat mendukung kapal tanker Anda
+                            <i>comply</i> dengan regulasi, sekaligus mendorong
+                            efisiensi operasional.</p></div><img
+                        src="./istow.id_files/icon_2e82d15870f8a12f207200e494fe906a9b09c8b4.svg"
+                        id="EvMlv0uxMy78fzvwOENau2TbX97a5FxP"
+                        class="widget widget-svgicon" alt><div
+                        id="oicITARaHA9n7uBIDBHIqXTI39QEOG2u"
+                        class="widget widget-text"><p>info@istow.id</p></div><div
+                        id="KdArr0nhoVf7ZRbBLNbV9T8ROM0Kmx8e"
+                        class="widget widget-text"><p>Email</p></div><div
+                        id="sw766mzlJaRextNF9wIiauqdK40yzMKi"
+                        class="widget widget-text"><p>Location</p></div><img
+                        src="./istow.id_files/icon_a529a97f75be12488c942ed87e8c4e0c0db51f75.svg"
+                        id="KUalKSJViEF4xa41P4AoVyvOag13zbEX"
+                        class="widget widget-svgicon" alt><div
+                        id="VrXhvidSxOcGoFJ6RaW86f8g156IX0vb"
+                        class="widget widget-text"><p>Klampis Aji Tengah 29c,
+                            Sukolilo. Kota Surabaya</p><p>60117</p></div><div
+                        id="hZrmeEfOXRmHil8rcuhhLBtXMxDIwpUc"
+                        class="widget widget-text"><p>(+62) 82 260260
+                            607</p></div><img
+                        src="./istow.id_files/icon_5016c47bceb03b5bed665b72619f3c0625ad31c3.svg"
+                        id="TI3xw9vsfLNU7mU1DVcDRk6NpZkyvyZE"
+                        class="widget widget-svgicon" alt><div
+                        id="RDLh2IfJ3mx6okiVySyhH3QQnKRlSlIT"
+                        class="widget widget-text"><p>Phone</p></div><div
+                        id="Ss6DTQGA8JlcIbe4MSxUmQLtzZUOfUIW"
+                        class="widget widget-text"><p>KONTAK</p></div><a
+                        href="https://api.whatsapp.com/send/?phone=6282260260607&amp;text=Halo+iStow%2C+saya+baru+saja+mengunjungi+halaman+Anda+dan+ingin+mengetahui+lebih+banyak+tentang+iStow+Loading+Instrument+untuk+Tanker.+Bisakah+Anda+memberikan+detail+lebih+lanjut%3F+Terima+kasih%21&amp;type=phone_number&amp;app_absent=0&amp;utm_campaign=konsultasi2"
+                        id="UCreetOsusTG6JZPLcomfyTDUwxkyS2O"
+                        class="widget widget-button" version="3"
+                        subtype="redirect" target="_blank"
+                        rel="noopener noreferrer"
+                        data-origin-label="Dapatkan iStow sekarang"
+                        aria-labelledby="U2vtaeEKZTa72F6lSTIFV5f4gU7wIvga">
+                        <div class="widget-overlay" aria-hidden="true"></div>
+                        <div id="U2vtaeEKZTa72F6lSTIFV5f4gU7wIvga"
+                            class="widget widget-text"
+                            aria-hidden="true">Dapatkan iStow sekarang</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="agWBEhvCCg5qgA1ypfnSO3lT8xhTNiL4"
+            class="widget widget-section ">
+            <div class="row">
+
+                <div class="container ">
+
+                    <a id="AgNstpdhzx5hcqeRh8iKaCnwNMQChXna"
+                        class="widget widget-button" version="3"
+                        rel="noopener noreferrer"
+                        data-origin-label="Privacy Policy"
+                        aria-labelledby="ClxUIJUGvKe0m0JZczsBelSSbC4sOTlL"
+                        role="button" tabindex="0">
+                        <div class="widget-overlay" aria-hidden="true"></div>
+                        <div id="ClxUIJUGvKe0m0JZczsBelSSbC4sOTlL"
+                            class="widget widget-text"
+                            aria-hidden="true">Privacy Policy</div>
+                    </a><a id="mOVBLrXpyscsvLrrnRQI2WWTVsKq3c4y"
+                        class="widget widget-button" version="3"
+                        rel="noopener noreferrer"
+                        data-origin-label="Terms of Service"
+                        aria-labelledby="EqppeIzt80HFX6o1QkVhEDfUAwsh0mHw"
+                        role="button" tabindex="0">
+                        <div class="widget-overlay" aria-hidden="true"></div>
+                        <div id="EqppeIzt80HFX6o1QkVhEDfUAwsh0mHw"
+                            class="widget widget-text" aria-hidden="true">Terms
+                            of Service</div>
+                    </a><a id="bpnQyPpCZBUVe7viz1DbfXAJBlu6ZInH"
+                        class="widget widget-button" version="3"
+                        rel="noopener noreferrer"
+                        data-origin-label="Cookies Settings"
+                        aria-labelledby="HMeC3wKk2SAqHOpkxv13bhmNyTM0kNLO"
+                        role="button" tabindex="0">
+                        <div class="widget-overlay" aria-hidden="true"></div>
+                        <div id="HMeC3wKk2SAqHOpkxv13bhmNyTM0kNLO"
+                            class="widget widget-text"
+                            aria-hidden="true">Cookies Settings</div>
+                    </a><div id="u5rCpGU8Zk9reXc7nnQ9iaRxQi0k8wRm"
+                        class="widget widget-text"><p>© 2025 iStow. All rights
+                            reserved.</p></div><a
+                        href="https://istow.id/istow-loading-instrument-for-tanker/#QeAiNy0p1yPT50bVl8H8178T9AmTvd6F"
+                        id="OiE3zg3Z546LBw4IeTA6LPkNx7JyF5Ze"
+                        class="widget widget-image" aria-label="Image"
+                        subtype="anchor">
+                        <img alt="Image" width="140" height="68"
+                            src="./istow.id_files/saved_resource(21)">
+                    </a>
+
+                </div>
+            </div>
+        </div><script type="text/javascript"
+            src="./istow.id_files/jquery-3-6-0.min.js.download"
+            fetchpriority="high"></script><script defer type="text/javascript"
+            src="./istow.id_files/030724-anchors.js.download"></script> <script
+            src="./istow.id_files/frodo.js.download"></script>
+        <script>
+const lpStatsModule = (function () {    
+    const url = "https://stats.landingi.com/visit/1907100";
+    const data = {"lid":1907100,"luuid":"af28f941-27cf-479b-8c41-3cd16da75366","lhash":"d2fecb6b9094b4ababf4","fid":1907100,"auuid":"1f068595-673d-6818-841d-579138d6e0e7","acid":361274,"agid":null,"tid":null,"hasAccessToEventTracker":false,"hasAccessToEventTrackerDev":false,"hasAccessToEventTrackerData":false,"hasAccessToVisitWithoutCookie":false,"hasAccessToVisitWithLocalStorage":false,"hasAccessToExternalEvents":false,"hasAccessToLocalStorageOptimization":false};
+    const cookieName = "ls_sid_1907100";
+
+    if (data.hasAccessToEventTrackerDev) { 
+        console.log('Running runScript in dev mode')
+        frodo.runScriptDev(cookieName, url, data)
+    } else {
+        frodo.runScript(cookieName, url, data)
+    }
+
+    return {
+        getData: function() { return data; },
+        cookieName: function() { return cookieName; },
+        endpoint: function() { return url; },
+        path: function() { return path; }
+    };
+})();
+</script><script defer type="text/javascript"
+            src="./istow.id_files/files.js.download"></script><script defer
+            fetchpriority="low" type="text/javascript"
+            src="./istow.id_files/jquery.form.min.js.download"></script> <script
+            type="text/javascript"
+            src="./istow.id_files/new_landend.js.download"></script><script
+            defer
+            src="./istow.id_files/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+            integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+            data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;94c67ab734224b8a9a8da0afd65e1920&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}"
+            crossorigin="anonymous"></script>
+
+    </body></html>
