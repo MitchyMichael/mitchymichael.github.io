@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KJM | CV Kawi Jaya Makmoer</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#1662ad',
+                        brand_light: '#5aa0d8'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Scroll Behaviour -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+    <!-- Logo -->
+    <link rel="icon" type="image/png" href="https://kawijayamakmoer.com/public/img/logo_kwi.png">
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- MARK: Navbar -->
+    <nav id="navbar" class="fixed w-full top-0 z-50 bg-transparent transition-colors duration-500 text-white">
+        <div class="container mx-auto flex items-center justify-between py-3 sm:px-20 px-3">
+            <a href="./index.html">
+                <div class="flex items-center space-x-2">
+                    <img src="https://kawijayamakmoer.com/public/img/logo_kwi.png" alt="Logo" class="w-8 h-8">
+                    <h1 id="navbar_title" class="text-xl font-bold transition-colors">KJM</h1>
+                </div>
+            </a>
+
+            <!-- Menu -->
+            <ul class="hidden md:flex">
+                <li><a href="#about" class="nav-child hover:bg-white text-sm py-1 px-4 rounded transition duration-200">About</a></li>
+                <li><a href="#services" class="nav-child hover:bg-white text-sm py-1 px-4 rounded transition duration-200">Services</a></li>
+                <li><a href="#choose" class="nav-child hover:bg-white text-sm py-1 px-4 rounded transition duration-200">Why Choose Us</a></li>
+                <li><a href="#contact" class="nav-child hover:bg-white text-sm py-1 px-4 rounded transition duration-200">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MARK: Hero Section -->
+    <section class="relative flex items-center h-svh transition-all duration-5000 bg-cover bg-center bg-[url('https://kawijayamakmoer.com/public/img/banner/banner_home2.jpg')]">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle,rgba(0,0,0,0)_60%,rgba(0,0,0,0.8)_100%)]"></div>
+
+        <div class="container mx-auto z-10">
+            <div class="mx-auto p-20 w-fit bg-white/10 backdrop-blur-xl rounded-2xl shadow-2xl border border-white/20">
+                <h1 class="text-white font-extrabold text-5xl sm:text-6xl md:text-7xl leading-tight tracking-tight drop-shadow-lg">
+                    CV. Kawi Jaya Makmoer
+                </h1>
+                <p class="text-center text-white text-xl sm:text-2xl mt-4 font-light italic drop-shadow-md">Terlengkap & Terpercaya </p>
+                <div class="mx-auto w-fit">
+                    <a href="#" class="mt-8 inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition duration-300 transform hover:scale-105">
+                        Lihat Produk Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARK: Sejarah & Nilai (Enhanced) -->
+    <section id="sejarah-nilai" class="relative py-20 bg-gray-100 overflow-hidden">
+        <!-- Dekorasi lembut -->
+        <span class="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full bg-brand/10 blur-3xl"></span>
+        <span class="pointer-events-none absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-brand_light/10 blur-3xl"></span>
+
+        <div class="container mx-auto sm:px-20 px-3">
+            <!-- Heading -->
+            <div class="text-center mb-10" data-aos="fade-up">
+                <div class="inline-flex items-center gap-2 rounded-full bg-brand/10 px-3 py-1 text-[10px] sm:text-xs font-semibold text-brand tracking-widest uppercase">
+                    <span class="h-1 w-1 rounded-full bg-brand"></span> Tentang Kami
+                </div>
+                <h2 class="mt-3 text-2xl sm:text-4xl font-bold">
+                    <span class="bg-gradient-to-r from-brand to-brand_light bg-clip-text text-transparent">
+                    Sejarah & Nilai
+                    </span>
+                </h2>
+                <div class="h-1 w-10 bg-brand/30 mx-auto mt-3 rounded"></div>
+            </div>
+
+            <!-- Grid konten -->
+            <div class="grid lg:grid-cols-12 gap-6 items-stretch">
+                <!-- Kolom Gambar / Badge -->
+                <div class="lg:col-span-5" data-aos="fade-right">
+                    <div class="relative h-72 sm:h-80 lg:h-full rounded-2xl overflow-hidden shadow-xl border border-white/60">
+                    <div class="absolute inset-0 bg-[url('https://kawijayamakmoer.com/public/img/banner/banner_home2.jpg')] bg-cover bg-center"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+
+                    <!-- Badge Sejak 1978 -->
+                    <div class="absolute bottom-4 left-4">
+                        <div class="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 shadow">
+                        <svg class="h-4 w-4 text-brand" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M12 2a10 10 0 1010 10A10.01 10.01 0 0012 2zm1 11H7a1 1 0 010-2h5V6a1 1 0 012 0v6a1 1 0 01-1 1z"/>
+                        </svg>
+                        <span class="text-[11px] sm:text-xs font-semibold text-brand">Sejak 1978</span>
+                        </div>
+                        <div class="mt-2 text-white/90 text-xs sm:text-sm">
+                        Distributor bahan bangunan tepercaya
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Kolom Teks & Nilai -->
+                <div class="lg:col-span-7" data-aos="fade-left">
+                    <div class="h-full rounded-2xl bg-white shadow-xl border border-gray-200 p-6 sm:p-8">
+                    <!-- Paragraf utama dengan highlight first-letter -->
+                    <p class="text-sm sm:text-base text-gray-700 leading-relaxed text-justify">
+                        Kawi Jaya Makmoer dinamai sesuai dengan nama pendirinya, Agus Makmoer, dengan
+                        harapan agar perusahaan tersebut akan menjadi jaya dan makmur. Perusahaan ini
+                        didirikan pada tahun 1978 dan sekarang telah memiliki jalur distribusi di seluruh
+                        pulau-pulau utama Indonesia. Kawi Jaya Makmoer berfokus membangun hubungan yang
+                        tulus dan menguntungkan dengan distributor bahan bangunan lainnya, dan terkenal
+                        karena komitmen mereka dalam menjaga kualitas produk dan layanan mereka dengan baik.
+                    </p>
+
+                    <!-- Divider tipis -->
+                    <div class="my-6 h-px w-full bg-gradient-to-r from-transparent via-brand/20 to-transparent"></div>
+
+                    <!-- Nilai inti (chips) -->
+                    <div class="flex flex-wrap gap-2">
+                        <span class="inline-flex items-center gap-2 rounded-full bg-brand/10 text-brand px-3 py-1 text-xs font-semibold">
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4a1 1 0 111.41 1.42l-4.7 4.7a1 1 0 01-1.41 0l-2.7-2.7A1 1 0 019 12z"/></svg>
+                        Integritas
+                        </span>
+                        <span class="inline-flex items-center gap-2 rounded-full bg-brand/10 text-brand px-3 py-1 text-xs font-semibold">
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.1L18 21l-6-4-6 4 1.5-7.9L2 9h7z"/></svg>
+                        Kualitas
+                        </span>
+                        <span class="inline-flex items-center gap-2 rounded-full bg-brand/10 text-brand px-3 py-1 text-xs font-semibold">
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M21 7v10a2 2 0 01-2 2h-5l-2 2-2-2H5a2 2 0 01-2-2V7a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                        Kemitraan
+                        </span>
+                        <span class="inline-flex items-center gap-2 rounded-full bg-brand/10 text-brand px-3 py-1 text-xs font-semibold">
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 6a6 6 0 016 6h2A8 8 0 106 12h2a6 6 0 016-6z"/></svg>
+                        Konsistensi Layanan
+                        </span>
+                    </div>
+
+                    <!-- Info bar -->
+                    <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <div class="rounded-lg border border-gray-200 p-3">
+                        <div class="text-xs text-gray-500">Fokus</div>
+                        <div class="text-sm font-semibold text-gray-800">Hubungan jangka panjang</div>
+                        </div>
+                        <div class="rounded-lg border border-gray-200 p-3">
+                        <div class="text-xs text-gray-500">Jangkauan</div>
+                        <div class="text-sm font-semibold text-gray-800">Pulau-pulau utama Indonesia</div>
+                        </div>
+                        <div class="rounded-lg border border-gray-200 p-3">
+                        <div class="text-xs text-gray-500">Komitmen</div>
+                        <div class="text-sm font-semibold text-gray-800">Kualitas & layanan prima</div>
+                        </div>
+                    </div>
+
+                    <!-- CTA opsional -->
+                    <!-- <div class="mt-6">
+                        <a href="./profil.html"
+                        class="inline-flex items-center gap-2 rounded-lg bg-brand px-4 py-2 text-white text-sm font-medium shadow hover:bg-brand_light transition">
+                        Pelajari sejarah kami
+                        <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 010-1.414L9.586 11H3a1 1 0 110-2h6.586L7.293 6.707A1 1 0 118.707 5.293l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/></svg>
+                        </a>
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARK: Produk Unggulan (Enhanced) -->
+    <section class="py-20 overflow-hidden">
+        <div class="container mx-auto">
+            <!-- Heading -->
+            <div class="text-center mb-10" data-aos="fade-up">
+            <div class="inline-flex items-center gap-2 rounded-full bg-brand/10 px-3 py-1 text-[10px] sm:text-xs font-semibold text-brand tracking-widest uppercase">
+                <span class="h-1 w-1 rounded-full bg-brand"></span> Produk
+            </div>
+            <h2 class="mt-3 text-2xl sm:text-4xl font-bold">
+                <span class="bg-gradient-to-r from-brand to-brand_light bg-clip-text text-transparent">
+                Produk Unggulan Kami
+                </span>
+            </h2>
+            <div class="h-1 w-10 bg-brand/30 mx-auto mt-3 rounded"></div>
+            </div>
+
+            <!-- List produk: scroll-snap di mobile, grid di desktop -->
+            <div class="sm:ml-20 ml-3 sm:mr-20 mr-3">
+            <div
+                class="grid gap-4 sm:grid-cols-5
+                    [grid-auto-flow:column] sm:[grid-auto-flow:initial]
+                    auto-cols-[80%] sm:auto-cols-auto
+                    overflow-x-auto sm:overflow-visible snap-x snap-mandatory pb-2 -mx-3 sm:mx-0 px-3 sm:px-0"
+            >
+                <!-- Card helper classes (reusable): group, shine via before, gradient ring -->
+                <!-- 1) Paku G-C -->
+                <a href="./katalog.html?produk=paku-gc" data-aos="fade-up"
+                class="group relative h-[260px] sm:h-[300px] rounded-2xl overflow-hidden
+                        bg-white/5 ring-1 ring-white/20 backdrop-blur-sm
+                        hover:ring-white/40 hover:shadow-2xl hover:-translate-y-1 transition-all
+                        snap-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-black">
+                <!-- Gambar -->
+                <div class="absolute inset-0 bg-[url('https://kawijayamakmoer.com/public/img/barang/15.jpg?20251003')] bg-cover bg-center transition duration-500 group-hover:scale-[1.03]"></div>
+                <!-- Shine -->
+                <div class="absolute inset-0 before:content-[''] before:absolute before:inset-0
+                            before:bg-gradient-to-tr before:from-white/0 before:via-white/25 before:to-white/0
+                            before:-translate-x-[150%] group-hover:before:translate-x-[150%] before:transition before:duration-[800ms]"></div>
+                <!-- Overlay gradien -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                <!-- Badge -->
+                <span class="absolute top-3 left-3 rounded-full bg-brand/90 text-white text-[10px] px-2 py-0.5 font-semibold">Terlaris</span>
+                <!-- Title & CTA -->
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                    <h3 class="text-white font-semibold text-lg sm:text-xl">Paku G-C</h3>
+                    <div class="mt-2 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition">
+                    <span class="inline-flex items-center gap-2 text-xs text-white/90 bg-white/10 px-3 py-1 rounded-lg">
+                        Lihat detail
+                        <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 010-1.414L9.586 11H3a1 1 0 110-2h6.586L7.293 6.707A1 1 0 118.707 5.293l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/></svg>
+                    </span>
+                    </div>
+                </div>
+                <span class="sr-only">Detail produk Paku G-C</span>
+                </a>
+
+                <!-- 2) Rooftop -->
+                <a href="./katalog.html?produk=rooftop" data-aos="fade-up" data-aos-delay="50"
+                class="group relative h-[260px] sm:h-[300px] rounded-2xl overflow-hidden
+                        bg-white/5 ring-1 ring-white/20 backdrop-blur-sm
+                        hover:ring-white/40 hover:shadow-2xl hover:-translate-y-1 transition-all
+                        snap-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-black">
+                <div class="absolute inset-0 bg-[url('https://kawijayamakmoer.com/public/img/barang/197.jpg?20251003')] bg-cover bg-center transition duration-500 group-hover:scale-[1.03]"></div>
+                <div class="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-tr before:from-white/0 before:via-white/25 before:to-white/0 before:-translate-x-[150%] group-hover:before:translate-x-[150%] before:transition before:duration-[800ms]"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                <span class="absolute top-3 left-3 rounded-full bg-white/90 text-brand text-[10px] px-2 py-0.5 font-semibold">Premium</span>
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                    <h3 class="text-white font-semibold text-lg sm:text-xl">Rooftop</h3>
+                    <div class="mt-2 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition">
+                    <span class="inline-flex items-center gap-2 text-xs text-white/90 bg-white/10 px-3 py-1 rounded-lg">Lihat detail
+                        <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 010-1.414L9.586 11H3a1 1 0 110-2h6.586L7.293 6.707A1 1 0 118.707 5.293l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/></svg>
+                    </span>
+                    </div>
+                </div>
+                <span class="sr-only">Detail produk Rooftop</span>
+                </a>
+
+                <!-- 3) Gajahmada Galvalum Biru Resin -->
+                <a href="./katalog.html?produk=galvalum-biru-resin" data-aos="fade-up" data-aos-delay="100"
+                class="group relative h-[260px] sm:h-[300px] rounded-2xl overflow-hidden
+                        bg-white/5 ring-1 ring-white/20 backdrop-blur-sm
+                        hover:ring-white/40 hover:shadow-2xl hover:-translate-y-1 transition-all
+                        snap-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-black">
+                <div class="absolute inset-0 bg-[url('https://kawijayamakmoer.com/public/img/barang/182.jpg?20251003')] bg-cover bg-center transition duration-500 group-hover:scale-[1.03]"></div>
+                <div class="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-tr before:from-white/0 before:via-white/25 before:to-white/0 before:-translate-x-[150%] group-hover:before:translate-x-[150%] before:transition before:duration-[800ms]"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                <span class="absolute top-3 left-3 rounded-full bg-brand/90 text-white text-[10px] px-2 py-0.5 font-semibold">Best Value</span>
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                    <h3 class="text-white font-semibold text-lg sm:text-xl leading-tight">Gajahmada Galvalum Biru Resin</h3>
+                    <div class="mt-2 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition">
+                    <span class="inline-flex items-center gap-2 text-xs text-white/90 bg-white/10 px-3 py-1 rounded-lg">Lihat detail
+                        <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 010-1.414L9.586 11H3a1 1 0 110-2h6.586L7.293 6.707A1 1 0 118.707 5.293l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/></svg>
+                    </span>
+                    </div>
+                </div>
+                <span class="sr-only">Detail produk Gajahmada Galvalum Biru Resin</span>
+                </a>
+
+                <!-- 4) Talang Karet Aplas -->
+                <a href="./katalog.html?produk=talang-karet-aplas" data-aos="fade-up" data-aos-delay="150"
+                class="group relative h-[260px] sm:h-[300px] rounded-2xl overflow-hidden
+                        bg-white/5 ring-1 ring-white/20 backdrop-blur-sm
+                        hover:ring-white/40 hover:shadow-2xl hover:-translate-y-1 transition-all
+                        snap-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-black">
+                <div class="absolute inset-0 bg-[url('https://kawijayamakmoer.com/public/img/barang/184.jpg?20251003')] bg-cover bg-center transition duration-500 group-hover:scale-[1.03]"></div>
+                <div class="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-tr before:from-white/0 before:via-white/25 before:to-white/0 before:-translate-x-[150%] group-hover:before:translate-x-[150%] before:transition before:duration-[800ms]"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                <span class="absolute top-3 left-3 rounded-full bg-white/90 text-brand text-[10px] px-2 py-0.5 font-semibold">Favorit</span>
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                    <h3 class="text-white font-semibold text-lg sm:text-xl">Talang Karet Aplas</h3>
+                    <div class="mt-2 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition">
+                    <span class="inline-flex items-center gap-2 text-xs text-white/90 bg-white/10 px-3 py-1 rounded-lg">Lihat detail
+                        <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 010-1.414L9.586 11H3a1 1 0 110-2h6.586L7.293 6.707A1 1 0 118.707 5.293l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/></svg>
+                    </span>
+                    </div>
+                </div>
+                <span class="sr-only">Detail produk Talang Karet Aplas</span>
+                </a>
+
+                <!-- 5) Seng Gelombang -->
+                <a href="./katalog.html?produk=seng-gelombang" data-aos="fade-up" data-aos-delay="200"
+                class="group relative h-[260px] sm:h-[300px] rounded-2xl overflow-hidden
+                        bg-white/5 ring-1 ring-white/20 backdrop-blur-sm
+                        hover:ring-white/40 hover:shadow-2xl hover:-translate-y-1 transition-all
+                        snap-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-black">
+                <div class="absolute inset-0 bg-[url('https://kawijayamakmoer.com/public/img/barang/46.jpg?20251003')] bg-cover bg-center transition duration-500 group-hover:scale-[1.03]"></div>
+                <div class="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-tr before:from-white/0 before:via-white/25 before:to-white/0 before:-translate-x-[150%] group-hover:before:translate-x-[150%] before:transition before:duration-[800ms]"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                <span class="absolute top-3 left-3 rounded-full bg-brand/90 text-white text-[10px] px-2 py-0.5 font-semibold">Handal</span>
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                    <h3 class="text-white font-semibold text-lg sm:text-xl">Seng Gelombang</h3>
+                    <div class="mt-2 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition">
+                    <span class="inline-flex items-center gap-2 text-xs text-white/90 bg-white/10 px-3 py-1 rounded-lg">Lihat detail
+                        <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 010-1.414L9.586 11H3a1 1 0 110-2h6.586L7.293 6.707A1 1 0 118.707 5.293l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/></svg>
+                    </span>
+                    </div>
+                </div>
+                <span class="sr-only">Detail produk Seng Gelombang</span>
+                </a>
+            </div>
+            </div>
+
+            <!-- CTA -->
+            <div data-aos="fade-up" class="container flex justify-end sm:px-20 px-3 mt-6">
+            <a href="./katalog.html"
+                class="group inline-flex items-center gap-2 rounded-lg bg-brand px-5 py-3 text-white font-medium
+                        shadow-sm transition hover:bg-brand_light focus-visible:outline focus-visible:outline-2
+                        focus-visible:outline-offset-2 focus-visible:outline-brand active:scale-[.98] sm:text-sm text-xs">
+                Lihat produk lainnya
+                <svg class="h-4 w-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path d="M7.293 14.707a1 1 0 0 1 0-1.414L9.586 11H3a1 1 0 1 1 0-2h6.586L7.293 6.707A1 1 0 0 1 8.707 5.293l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414 0Z"/>
+                </svg>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARK: Mengapa Harus Kami (Remake) -->
+    <section class="relative py-20 overflow-hidden">
+        <!-- Background image + overlay -->
+        <div class="absolute inset-0 bg-[url('https://kawijayamakmoer.com/public/img/whyus.png')] bg-cover bg-top bg-fixed"></div>
+        <div class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/30"></div>
+
+        <div class="relative container mx-auto">
+            <div class="sm:ml-20 ml-3 sm:mr-20 mr-3">
+                <div class="grid xl:grid-cols-2 gap-6 items-center">
+                    <!-- Left: Title + copy + features -->
+                    <div data-aos="fade-up" class="text-white">
+                        <!-- Tiny badge -->
+                        <div class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-[10px] sm:text-xs font-semibold tracking-widest uppercase">
+                        <span class="h-1 w-1 rounded-full bg-white"></span>
+                        Keunggulan
+                        </div>
+
+                        <!-- Heading -->
+                        <h2 id="whyus-title" class="mt-3 text-2xl sm:text-4xl font-bold">
+                        <span class="bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent">
+                            Mengapa Harus Kami
+                        </span>
+                        </h2>
+                        <div class="h-1 w-10 bg-white/30 mt-3 rounded"></div>
+
+                        <!-- Copy -->
+                        <p class="mt-4 text-xs sm:text-base text-white/90 leading-relaxed">
+                        Kami menyediakan layanan yang komprehensif dan memuaskan untuk kebutuhan Anda.
+                        Sejak hari pertama, kami memperhatikan keinginan Anda—menjaga kualitas produk dan
+                        meningkatkan layanan agar Anda 100% puas.
+                        </p>
+
+                        <!-- Feature chips -->
+                        <div class="mt-6 grid sm:grid-cols-2 gap-4">
+                        <!-- Feature -->
+                        <div class="group flex items-start gap-3 rounded-xl bg-white/10 border border-white/20 p-4 backdrop-blur-md hover:bg-white/15 hover:border-white/30 transition">
+                            <div class="shrink-0 rounded-lg bg-white/15 p-2">
+                            <!-- Calendar / Since -->
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M7 2a1 1 0 0 0 0 2h1v1a1 1 0 1 0 2 0V4h4v1a1 1 0 1 0 2 0V4h1a2 2 0 0 1 2 2v12a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V6a2 2 0 0 1 2-2h1V2a1 1 0 0 0-2 0zM6 10h12v8a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-8z"/>
+                            </svg>
+                            </div>
+                            <div>
+                            <h3 class="font-semibold">Berpengalaman Sejak 1978</h3>
+                            <p class="text-white/80 text-xs mt-1">Kepercayaan panjang dari para mitra di Indonesia.</p>
+                            </div>
+                        </div>
+
+                        <div class="group flex items-start gap-3 rounded-xl bg-white/10 border border-white/20 p-4 backdrop-blur-md hover:bg-white/15 hover:border-white/30 transition">
+                            <div class="shrink-0 rounded-lg bg-white/15 p-2">
+                            <!-- Shield check -->
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M12 2l7 3v6c0 5.25-3.44 9.77-7 11-3.56-1.23-7-5.75-7-11V5l7-3zm-1 12.59l5.3-5.3-1.41-1.41L11 11.76 9.12 9.88 7.7 11.29 11 14.59z"/>
+                            </svg>
+                            </div>
+                            <div>
+                            <h3 class="font-semibold">Kualitas Terjaga</h3>
+                            <p class="text-white/80 text-xs mt-1">Kurasi produk dan QC konsisten untuk ketenangan Anda.</p>
+                            </div>
+                        </div>
+
+                        <div class="group flex items-start gap-3 rounded-xl bg-white/10 border border-white/20 p-4 backdrop-blur-md hover:bg-white/15 hover:border-white/30 transition">
+                            <div class="shrink-0 rounded-lg bg-white/15 p-2">
+                            <!-- Truck / distribution -->
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M3 6h11v7h2.5l2 2H21V9h-3V7l-3-3H3v2zm0 9h1a3 3 0 0 0 6 0h4a3 3 0 0 0 6 0h1v2h-2a3 3 0 0 1-6 0H10a3 3 0 0 1-6 0H2v-2h1z"/>
+                            </svg>
+                            </div>
+                            <div>
+                            <h3 class="font-semibold">Jaringan Distribusi Luas</h3>
+                            <p class="text-white/80 text-xs mt-1">Pengiriman ke berbagai pulau utama di Indonesia.</p>
+                            </div>
+                        </div>
+
+                        <div class="group flex items-start gap-3 rounded-xl bg-white/10 border border-white/20 p-4 backdrop-blur-md hover:bg-white/15 hover:border-white/30 transition">
+                            <div class="shrink-0 rounded-lg bg-white/15 p-2">
+                            <!-- Headset / support -->
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M12 2a9 9 0 0 0-9 9v4a3 3 0 0 0 3 3h2v-6H6v-1a6 6 0 1 1 12 0v1h-2v6h2a3 3 0 0 0 3-3v-4a9 9 0 0 0-9-9z"/>
+                            </svg>
+                            </div>
+                            <div>
+                            <h3 class="font-semibold">Dukungan Responsif</h3>
+                            <p class="text-white/80 text-xs mt-1">Tim siap bantu dari konsultasi sampai after-sales.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- CTA -->
+                        <div class="mt-7 flex flex-wrap gap-3">
+                        <a href="./katalog.html"
+                            class="inline-flex items-center gap-2 rounded-lg bg-brand px-5 py-3 text-white font-medium shadow-sm transition hover:bg-brand_light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                            Lihat Produk
+                            <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 0 1 0-1.414L9.586 11H3a1 1 0 1 1 0-2h6.586L7.293 6.707A1 1 0 1 1 8.707 5.293l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414 0Z"/></svg>
+                        </a>
+                        <a href="./hubungi.html"
+                            class="inline-flex items-center gap-2 rounded-lg bg-white/10 px-5 py-3 text-white font-medium border border-white/20 hover:bg-white/20 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                            Hubungi Kami
+                        </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Glass card checklist -->
+                    <div data-aos="fade-left"
+                        class="xl:h-[420px] h-fit rounded-2xl shadow-2xl bg-white/10 border border-white/20 backdrop-blur-md p-8 text-white">
+                        <h3 class="text-lg sm:text-2xl font-semibold">Komitmen Kami</h3>
+                        <p class="text-white/85 text-xs sm:text-sm mt-2">
+                        Fokus pada hubungan yang tulus dan menguntungkan dengan menjaga kualitas serta layanan terbaik.
+                        </p>
+
+                        <ul class="mt-6 space-y-3 text-sm">
+                            <li class="flex items-start gap-3">
+                                <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-400/20">
+                                <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 0 0-1.414 0L8 12.586 4.707 9.293A1 1 0 0 0 3.293 10.707l4 4a1 1 0 0 0 1.414 0l7.999-8a1 1 0 0 0 0-1.414z"/></svg>
+                                </span>
+                                <span>Kualitas produk terjaga & konsisten</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-400/20">
+                                <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 0 0-1.414 0L8 12.586 4.707 9.293A1 1 0 0 0 3.293 10.707l4 4a1 1 0 0 0 1.414 0l7.999-8a1 1 0 0 0 0-1.414z"/></svg>
+                                </span>
+                                <span>Harga dan layanan yang kompetitif</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-400/20">
+                                <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 0 0-1.414 0L8 12.586 4.707 9.293A1 1 0 0 0 3.293 10.707l4 4a1 1 0 0 0 1.414 0l7.999-8a1 1 0 0 0 0-1.414z"/></svg>
+                                </span>
+                                <span>Dukungan purna jual yang sigap</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-400/20">
+                                <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 0 0-1.414 0L8 12.586 4.707 9.293A1 1 0 0 0 3.293 10.707l4 4a1 1 0 0 0 1.414 0l7.999-8a1 1 0 0 0 0-1.414z"/></svg>
+                                </span>
+                                <span>Relasi jangka panjang dengan mitra</span>
+                            </li>
+                        </ul>
+
+                        <div class="mt-8 grid sm:grid-cols-3 gap-3 text-center">
+                            <div class="rounded-xl bg-white/10 border border-white/20 p-4">
+                                <div class="text-xl font-bold">1978</div>
+                                <div class="text-[10px] uppercase tracking-wider text-white/80 mt-1">Sejak</div>
+                            </div>
+                            <div class="rounded-xl bg-white/10 border border-white/20 p-4">
+                                <div class="text-xl font-bold">Kualitas</div>
+                                <div class="text-[10px] uppercase tracking-wider text-white/80 mt-1">Terjaga</div>
+                            </div>
+                            <div class="rounded-xl bg-white/10 border border-white/20 p-4">
+                                <div class="text-xl font-bold">Layanan</div>
+                                <div class="text-[10px] uppercase tracking-wider text-white/80 mt-1">Responsif</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARK: Footer -->
+    <footer class="relative overflow-hidden pt-24 text-white">
+        <!-- Background gradient + subtle pattern + glow blobs -->
+        <div class="absolute inset-0 -z-10 bg-gradient-to-br from-brand to-brand_light"></div>
+        <div class="absolute inset-0 -z-10 opacity-10 bg-[radial-gradient(60%_60%_at_30%_20%,white_0,transparent_60%)]"></div>
+        <div class="pointer-events-none absolute -top-24 -left-24 h-72 w-72 rounded-full bg-white/10 blur-3xl"></div>
+        <div class="pointer-events-none absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-white/10 blur-3xl"></div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-20">
+            <!-- Top CTA strip (gradient border / glass) -->
+            <div class="relative" data-aos="fade-up">
+            <div class="rounded-3xl p-[1px] bg-gradient-to-r from-white/20 via-white/40 to-white/20">
+                <div class="rounded-3xl bg-white/10 backdrop-blur-md border border-white/10 px-5 sm:px-8 py-6 sm:py-8 flex flex-col md:flex-row items-center justify-between gap-5">
+                <div class="flex items-center gap-4">
+                    <img src="https://kawijayamakmoer.com/public/img/logo_kwi.png" alt="Logo KJM" class="h-10 w-auto rounded shadow-sm">
+                    <div>
+                    <div class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-[10px] sm:text-xs font-semibold tracking-widest uppercase">
+                        <span class="h-1 w-1 rounded-full bg-emerald-300"></span> Sejak 1978
+                    </div>
+                    <h3 class="mt-2 text-lg sm:text-xl font-semibold leading-snug">Butuh bantuan memilih produk terbaik?</h3>
+                    <p class="text-xs opacity-90">Tim kami siap bantu dari hari pertama.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <a href="./hubungi.html"
+                    class="group inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2 text-sm font-medium text-black shadow-sm hover:bg-brand hover:text-white transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:scale-110" viewBox="0 0 39.61 48.09" fill="currentColor" aria-hidden="true"><path d="M39.16,22.24a2.83,2.83,0,0,0-1.8-1.33V16.76C37.36,7.53,29.48,0,19.79,0S2.21,7.53,2.21,16.76v4.15A2.81,2.81,0,0,0,.42,22.28,3.8,3.8,0,0,0,0,24.12v9.13a3.78,3.78,0,0,0,.42,1.83,3.06,3.06,0,0,0,2.93,1.51H4.73a1.79,1.79,0,0,0,1.79,1.68H8.09a1.79,1.79,0,0,0,1.79-1.79V20.7a1.79,1.79,0,0,0-1.79-1.78H6.47A1.78,1.78,0,0,0,4.69,20.7v.08H4v-4c0-8.26,7.08-15,15.79-15s15.79,6.71,15.79,15v4h-.73V20.7A1.78,1.78,0,0,0,33,18.92H31.52a1.78,1.78,0,0,0-1.78,1.78V36.55a1.79,1.79,0,0,0,1.59,1.73,5.83,5.83,0,0,1-1.45,3c-1.41,1.55-3.69,2.45-6.78,2.68v-.39a1.88,1.88,0,0,0-2-1.79H17.32a1.88,1.88,0,0,0-2,1.79V46.3a1.88,1.88,0,0,0,2,1.79h3.87a1.88,1.88,0,0,0,1.95-1.79v-.5c3.62-.24,6.35-1.33,8.1-3.26a7.58,7.58,0,0,0,1.95-4.27,1.79,1.79,0,0,0,1.69-1.67h1.38a3,3,0,0,0,2.92-1.51,3.67,3.67,0,0,0,.42-1.83V24.12A3.75,3.75,0,0,0,39.16,22.24Z"/></svg>
+                    Hubungi Kami
+                    </a>
+                    <a href="https://maps.app.goo.gl/w7v8VAjtbTuFKQJC6" target="_blank" rel="noopener"
+                    class="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/10 px-4 py-2 text-sm font-medium hover:bg-white/20 transition">
+                    Lihat Lokasi
+                    </a>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Sponsor bar -->
+            <section data-aos="fade-up" aria-label="Sponsor" class="py-8 mt-10">
+            <div class="flex items-center gap-3 text-white text-[10px] sm:text-xs font-semibold tracking-widest uppercase mb-4">
+                <span class="h-px flex-1 bg-white/20"></span>
+                <span>Didukung oleh</span>
+                <span class="h-px flex-1 bg-white/20"></span>
+            </div>
+
+            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-6 items-center justify-items-center">
+                <a href="" target="_blank" rel="noopener" aria-label="Sumber Djaja Perkasa" class="group opacity-80 hover:opacity-100 transition">
+                <img src="https://kawijayamakmoer.com/public/img/brand/13.png" alt="Sumber Djaja Perkasa" class="h-8 sm:h-10 md:h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition">
+                </a>
+                <a href="" target="_blank" rel="noopener" aria-label="Sumber Djaja Perkasa" class="group opacity-80 hover:opacity-100 transition">
+                <img src="https://kawijayamakmoer.com/public/img/brand/16.png" alt="Sumber Djaja Perkasa" class="h-8 sm:h-10 md:h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition">
+                </a>
+                <a href="" target="_blank" rel="noopener" aria-label="Sumber Djaja Perkasa" class="group opacity-80 hover:opacity-100 transition">
+                <img src="https://kawijayamakmoer.com/public/img/brand/18.png" alt="Sumber Djaja Perkasa" class="h-8 sm:h-10 md:h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition">
+                </a>
+                <a href="" target="_blank" rel="noopener" aria-label="Sumber Djaja Perkasa" class="group opacity-80 hover:opacity-100 transition">
+                <img src="https://kawijayamakmoer.com/public/img/brand/20.png" alt="Sumber Djaja Perkasa" class="h-8 sm:h-10 md:h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition">
+                </a>
+                <a href="http://paku2000.com" target="_blank" rel="noopener" aria-label="Paku 2000" class="group opacity-80 hover:opacity-100 transition">
+                <img src="https://kawijayamakmoer.com/public/img/brand/3.png" alt="Paku 2000" class="h-8 sm:h-10 md:h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition">
+                </a>
+                <a href="" aria-label="Sponsor" class="group opacity-80 hover:opacity-100 transition">
+                <img src="https://kawijayamakmoer.com/public/img/brand/25.png" alt="Sponsor" class="h-8 sm:h-10 md:h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition">
+                </a>
+                <a href="http://www.cahayabentengmas.co.id/" target="_blank" rel="noopener" aria-label="Cahaya Benteng Mas" class="group opacity-80 hover:opacity-100 transition">
+                <img src="https://kawijayamakmoer.com/public/img/brand/27.png" alt="Cahaya Benteng Mas" class="h-8 sm:h-10 md:h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition">
+                </a>
+            </div>
+            </section>
+
+            <!-- Main footer grid -->
+            <div class="grid md:grid-cols-4 gap-10 mt-8">
+                <!-- About -->
+                <div data-aos="fade-up">
+                    <div class="flex items-center gap-3 mb-4">
+                    <img src="https://kawijayamakmoer.com/public/img/logo_kwi.png" alt="KJM" class="h-9 w-auto rounded shadow">
+                    <span class="text-xl font-semibold">KJM</span>
+                    </div>
+                    <p class="text-white/90 text-xs leading-relaxed">
+                    CV Kawi Jaya Makmoer — distributor bahan bangunan terpercaya sejak 1978. Kami berkomitmen menjaga kualitas produk dan layanan untuk mitra di seluruh Indonesia.
+                    </p>
+                    <div class="mt-4 flex items-center gap-3">
+                    <a href="https://www.instagram.com/kawijayamakmoer/" class="p-2 rounded-lg bg-white/10 border border-white/20 hover:bg-white/20 transition" aria-label="Instagram">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2.2A2.8 2.8 0 1112 15.8 2.8 2.8 0 0112 9.2zm5.5-.95a.95.95 0 11-1.9 0 .95.95 0 011.9 0z"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/hendra.makmur.524" class="p-2 rounded-lg bg-white/10 border border-white/20 hover:bg-white/20 transition" aria-label="Facebook">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S1.86 6.48 1.86 12.07C1.86 17.08 5.66 21.2 10.45 22v-7.02H7.9v-2.91h2.55V9.41c0-2.52 1.5-3.91 3.8-3.91 1.1 0 2.25.2 2.25.2v2.47h-1.27c-1.25 0-1.65.78-1.65 1.58v1.9h2.8l-.45 2.91h-2.35V22c4.79-.8 8.59-4.92 8.59-9.93z"/></svg>
+                    </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="text-lg font-semibold mb-4">Tautan Cepat</h4>
+                    <ul class="space-y-2 text-white/90 text-xs">
+                    <li><a href="./index.html" class="group inline-flex items-center gap-2 hover:underline"><span class="h-1 w-1 rounded-full bg-white/60"></span> Beranda</a></li>
+                    <li><a href="./profil.html" class="group inline-flex items-center gap-2 hover:underline"><span class="h-1 w-1 rounded-full bg-white/60"></span> Tentang KJM</a></li>
+                    <li><a href="./katalog.html" class="group inline-flex items-center gap-2 hover:underline"><span class="h-1 w-1 rounded-full bg-white/60"></span> Produk</a></li>
+                    <li><a href="./hubungi.html" class="group inline-flex items-center gap-2 hover:underline"><span class="h-1 w-1 rounded-full bg-white/60"></span> Hubungi Kami</a></li>
+                    </ul>
+                </div>
+
+                <!-- Popular Products -->
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="text-lg font-semibold mb-4">Produk Populer</h4>
+                    <ul class="space-y-2 text-white/90 text-xs">
+                    <li><a href="#" class="hover:underline">Paku G-C</a></li>
+                    <li><a href="#" class="hover:underline">Rooftop</a></li>
+                    <li><a href="#" class="hover:underline">Galvalum Biru Resin</a></li>
+                    <li><a href="#" class="hover:underline">Talang Karet Aplas</a></li>
+                    <li><a href="#" class="hover:underline">Seng Gelombang</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <h4 class="text-lg font-semibold mb-4">Kontak</h4>
+                    <div class="grid gap-3 text-white/90 text-xs">
+                    <!-- Alamat -->
+                    <div class="grid grid-cols-12 gap-3">
+                        <svg class="col-span-1 w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+                        </svg>
+                        <a href="https://maps.app.goo.gl/w7v8VAjtbTuFKQJC6" target="_blank" rel="noopener" class="col-span-11 leading-relaxed hover:underline" aria-label="Buka alamat di Google Maps">
+                        Pergudangan Ragam Jemundo Blok B No. 6, SIDOARJO, JAWA TIMUR
+                        </a>
+                    </div>
+
+                    <!-- Telepon (3 nomor) -->
+                    <div class="grid grid-cols-12 gap-3">
+                        <svg class="col-span-1 w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.1.37 2.28.57 3.5.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.22.2 2.4.57 3.5a1 1 0 01-.24 1.01l-2.2 2.28z"/>
+                        </svg>
+                        <div class="col-span-11 grid gap-2">
+                        <a href="https://wa.me/62317860786?text=Halo%20KJM,%20saya%20ingin%20bertanya%20tentang%20produk." target="_blank" rel="noopener"
+                            class="w-fit inline-grid place-items-start rounded-md border border-white/20 bg-white/10 px-2 py-1 hover:bg-white/20 transition">
+                            +6231 7860-786
+                        </a>
+                        <a href="https://wa.me/62317860799?text=Halo%20KJM,%20saya%20ingin%20bertanya%20tentang%20produk." target="_blank" rel="noopener"
+                            class="w-fit inline-grid place-items-start rounded-md border border-white/20 bg-white/10 px-2 py-1 hover:bg-white/20 transition">
+                            +6231 7860-799
+                        </a>
+                        <a href="https://wa.me/62317860711?text=Halo%20KJM,%20saya%20ingin%20bertanya%20tentang%20produk." target="_blank" rel="noopener"
+                            class="w-fit inline-grid place-items-start rounded-md border border-white/20 bg-white/10 px-2 py-1 hover:bg-white/20 transition">
+                            +6231 7860-711
+                        </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom bar -->
+            <div class="mt-10 border-t border-white/20 py-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/90">
+            <p>&copy; 1978–<span id="kjm-year">2025</span> CV Kawi Jaya Makmoer. All rights reserved.</p>
+            <div class="inline-flex items-center gap-3">
+                <a href="./katalog.html" class="rounded-lg bg-white/10 px-3 py-1.5 border border-white/20 hover:bg-white/20 transition">Lihat Katalog</a>
+                <a href="./hubungi.html" class="rounded-lg bg-white/10 px-3 py-1.5 border border-white/20 hover:bg-white/20 transition">Kontak</a>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MARK: Auto year -->
+    <script>
+        document.getElementById('kjm-year').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- MARK: Navbar Change Color -->
+    <script>
+        function makeScrollHandler(handler) {
+            let ticking = false;
+            return function onScroll() {
+                if (!ticking) {
+                    window.requestAnimationFrame(() => {
+                        handler();
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            };
+        }
+
+        const navbar = document.getElementById("navbar");
+        const navbarTitle = document.getElementById("navbar_title");
+        const navbarChild = document.querySelectorAll(".nav-child");
+
+        const applyNavbarState = () => {
+            const scrolled = window.scrollY > 10;
+
+            // Background & shadow
+            navbar.classList.toggle("bg-gray-50", scrolled);
+            navbar.classList.toggle("shadow", scrolled);
+            navbar.classList.toggle("bg-transparent", !scrolled);
+
+            navbar.classList.toggle("text-white", !scrolled);
+            navbarTitle.classList.toggle("text-brand", scrolled);
+
+            navbarChild.forEach((el) => {
+                // text hover
+                el.classList.toggle("hover:text-black", !scrolled);
+                el.classList.toggle("hover:text-white", scrolled);
+
+                // bg hover
+                el.classList.toggle("hover:bg-white", !scrolled);
+                el.classList.toggle("hover:bg-black", scrolled);
+            });
+        }
+
+        applyNavbarState();
+        window.addEventListener("scroll", makeScrollHandler(applyNavbarState), { passive: true });
+    </script>
+
+    <!-- MARK: Animate on Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
